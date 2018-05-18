@@ -15,7 +15,8 @@
 
 # 图像去噪论文复现：
 - 论文地址
- http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2017&filename=JSJC201703042&uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=
+ [基于深度卷积神经网络的图像去噪研究][1]
+
 - 验证集可视化有bug
 - 效果
 
@@ -26,15 +27,20 @@ header 1 | header 2
 第50次网络生成的去噪图像 | 第99次网络生成的去噪图像
 
 
-<center  class="half">
-    <img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/35562877.jpg" ><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/35562877.jpg">
-        <img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/94087410.jpg"><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/20206610.jpg">
-</center >
+<div align="center">
+<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/35562877.jpg" height="300px" alt="图片说明" ><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/35562877.jpg" height="300px" alt="图片说明" > 
+<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/94087410.jpg" height="300px" alt="图片说明" ><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/20206610.jpg" height="300px" alt="图片说明" > 
+
+</div>
 
 **loss**
 ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/9788775.jpg)
 
 
-
 **参数**
 ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/41620436.jpg)
+
+
+  
+  
+  [1]: http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2017&filename=JSJC201703042&uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=
