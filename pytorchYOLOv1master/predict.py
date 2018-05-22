@@ -101,6 +101,7 @@ def nms(bboxes,scores,threshold=0.5):
 def predict_gpu(model,image_name,root_path=''):
 
     result = []
+    aaaa=root_path+image_name
     image = cv2.imread(root_path+image_name)
     h,w,_ = image.shape
     img = cv2.resize(image,(224,224))
@@ -143,10 +144,10 @@ if __name__ == '__main__':
                 #nn.Dropout(),
                 nn.Linear(4096, 1470),
             )
-    model.load_state_dict(torch.load('yolo.pth'))
+    model.load_state_dict(torch.load('/home/bobo/PycharmProjects/torchProjectss/pytorchYOLOv1master/checkpoint/yolo_bobo.pth'))
     model.eval()
     model.cuda()
-    image_name = 'test.jpg'
+    image_name = 'testbobo.JPG'
     image = cv2.imread(image_name)
     result = predict_gpu(model,image_name)
     for left_up,right_bottom,class_name,_,prob in result:
@@ -154,7 +155,7 @@ if __name__ == '__main__':
         cv2.putText(image,class_name,left_up,cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,255),1,cv2.LINE_AA)
         print(prob)
 
-    cv2.imwrite('result.jpg',image)
+    cv2.imwrite('resultbobo.JPG',image)
 
 
 
