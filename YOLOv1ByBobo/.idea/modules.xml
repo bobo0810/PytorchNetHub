@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/YOLOv1ByBobo.iml" filepath="$PROJECT_DIR$/.idea/YOLOv1ByBobo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pytorchYOLOv1master/.idea/pytorchYOLOv1master.iml" filepath="$PROJECT_DIR$/../pytorchYOLOv1master/.idea/pytorchYOLOv1master.iml" />
+    </modules>
+  </component>
+</project>
