@@ -1,19 +1,19 @@
-import os
+from collections import defaultdict
+
+import cv2
+import numpy as np
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader
 import torchvision.transforms as transforms
-
 from torch.autograd import Variable
-from models.net import vgg16
-from yoloLoss import yoloLoss
-from data.dataset import yoloDataset
-from utils.visualize import Visualizer
-from config import opt
-import numpy as np
-import cv2
-from collections import defaultdict
+from torch.utils.data import DataLoader
 from tqdm import tqdm
+
+from config import opt
+from data.dataset import yoloDataset
+from models.net import vgg16
+from utils.visualize import Visualizer
+from utils.yoloLoss import yoloLoss
 
 
 def train():
@@ -161,7 +161,7 @@ def predict():
     if opt.use_gpu:
         predict_model.cuda()
     # 测试集照片地址
-    test_img_dir="testbobo.JPG"
+    test_img_dir=opt.test_img_dir
     image = cv2.imread(test_img_dir)
     result = predict_gpu(predict_model, test_img_dir)
     for left_up, right_bottom, class_name, _, prob in result:
@@ -170,7 +170,7 @@ def predict():
         cv2.putText(image, class_name, left_up, cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 1, cv2.LINE_AA)
         print(prob)
     # 将测试结果写入
-    cv2.imwrite('resultbobo.JPG',image)
+    cv2.imwrite(opt.result_img_dir,image)
 
 
 def predict_gpu(model,image_name,root_path=''):
