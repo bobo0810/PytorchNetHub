@@ -43,6 +43,12 @@ tags: yolo,pytorch
 
   2、保存的最后一个网络模型 （[百度网盘](https://pan.baidu.com/s/1HKY7qGgK7i3Fv_ks9ldflw)）
 
+- 效果:
+   验证集:voc2012训练集
+   模型:在VOC2007测试集上验证的效果最好的一个网络模型
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-24/60726940.jpg)
+  
 
 
 ### loss趋势
