@@ -11,15 +11,31 @@ tags: yolo,pytorch
     |  3.5  | 0.3.0   |  
 
  - 说明：
+
+   1、基本实现参考： [pytorchYOLOv1master][1]
  
-   1、仅重构代码，并未提升效果
+   2、仅重构代码，并未提升效果
+
+   3、 测试时，在VOC2012训练集上loss为0.1左右，在VOC2007测试集上loss基本降低很少。怀疑过拟合。
+
  - 当前工作：
     
    1、~~训练完，可视化测试图像和loss等~~
 
    2、~~将训练好的模型放到这里~~
    
-   3、测试时，在VOC2012训练集上loss为0.1左右，在VOC2007测试集上loss基本降低很少。怀疑学习率设置问题或者网络结构问题，之后更改学习率，测试第二版。
+   3、~~准备添加注释，以便理解~~
+   
+   4、尝试优化网络模型，提高mAP
+   
+ - 改进方向：
+   
+   1、更改学习率
+
+   2、调整网络结构（参考版本为vgg16，试试残差）
+   
+   3、更改优化器从SGD到Adam
+   
  
 - 下载网络模型：
 
@@ -57,3 +73,8 @@ tags: yolo,pytorch
 <img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-23/4137984.jpg" height="300px" alt="图片说明" ><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-23/77285051.jpg" height="300px" alt="图片说明" > 
 <img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-23/25022049.jpg" height="300px" alt="图片说明" ><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-23/49753476.jpg" height="300px" alt="图片说明" > 
 </div>
+
+
+
+
+  [1]: https://github.com/xiongzihua/pytorch-YOLO-v1

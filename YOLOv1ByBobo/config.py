@@ -10,8 +10,8 @@ class DefaultConfig():
     voc_2007test='/home/bobo/PycharmProjects/torchProjectss/YOLOv1ByBobo/data/voc2007test.txt'
     voc_2012train='/home/bobo/PycharmProjects/torchProjectss/YOLOv1ByBobo/data/voc2012train.txt'
 
-    test_img_dir='/home/bobo/PycharmProjects/torchProjectss/YOLOv1ByBobo/testImgs/testbobo.JPG'
-    result_img_dir='/home/bobo/PycharmProjects/torchProjectss/YOLOv1ByBobo/testImgs/resultbobo.JPG'
+    test_img_dir='/home/bobo/PycharmProjects/torchProjectss/YOLOv1ByBobo/testImgs/cc.jpg'
+    result_img_dir='/home/bobo/PycharmProjects/torchProjectss/YOLOv1ByBobo/testImgs/result_cc.jpg'
 
 
 

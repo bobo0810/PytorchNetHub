@@ -183,25 +183,25 @@ def vgg19_bn(pretrained=False, **kwargs):
         model.load_state_dict(model_zoo.load_url(model_urls['vgg19_bn']))
     return model
 
-def test():
-    import torch
-    from torch.autograd import Variable
-    model = vgg16()
-    model.classifier = nn.Sequential(
-            nn.Linear(512 * 7 * 7, 4096),
-            nn.ReLU(True),
-            nn.Dropout(),
-            nn.Linear(4096, 4096),
-            nn.ReLU(True),
-            nn.Dropout(),
-            nn.Linear(4096, 1470),
-        )
-    print(model.classifier[6]) 
-    #print(model)
-    img = torch.rand(2,3,224,224)
-    img = Variable(img)
-    output = model(img)
-    print(output.size())
-
-if __name__ == '__main__':
-    test()
+# def test():
+#     import torch
+#     from torch.autograd import Variable
+#     model = vgg16()
+#     model.classifier = nn.Sequential(
+#             nn.Linear(512 * 7 * 7, 4096),
+#             nn.ReLU(True),
+#             nn.Dropout(),
+#             nn.Linear(4096, 4096),
+#             nn.ReLU(True),
+#             nn.Dropout(),
+#             nn.Linear(4096, 1470),
+#         )
+#     print(model.classifier[6])
+#     #print(model)
+#     img = torch.rand(2,3,224,224)
+#     img = Variable(img)
+#     output = model(img)
+#     print(output.size())
+#
+# if __name__ == '__main__':
+#     test()
