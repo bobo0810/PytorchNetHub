@@ -45,7 +45,9 @@ class VGG(nn.Module):
         x = self.features(x)
         x = x.view(x.size(0), -1)
         x = self.classifier(x)
-        x = F.sigmoid(x) #归一化到0-1
+        # 从vgg16得到输出，经过sigmoid 归一化到0-1之间
+        x = F.sigmoid(x)
+        # 再改变形状，返回（xxx,7,7,30）  xxx代表几张照片，（7,7,30）代表一张照片的信息
         x = x.view(-1,7,7,30)
         return x
 
@@ -183,25 +185,31 @@ def vgg19_bn(pretrained=False, **kwargs):
         model.load_state_dict(model_zoo.load_url(model_urls['vgg19_bn']))
     return model
 
-# def test():
-#     import torch
-#     from torch.autograd import Variable
-#     model = vgg16()
-#     model.classifier = nn.Sequential(
-#             nn.Linear(512 * 7 * 7, 4096),
-#             nn.ReLU(True),
-#             nn.Dropout(),
-#             nn.Linear(4096, 4096),
-#             nn.ReLU(True),
-#             nn.Dropout(),
-#             nn.Linear(4096, 1470),
-#         )
-#     print(model.classifier[6])
-#     #print(model)
-#     img = torch.rand(2,3,224,224)
-#     img = Variable(img)
-#     output = model(img)
-#     print(output.size())
-#
-# if __name__ == '__main__':
-#     test()
+def test():
+    import torch
+    from torch.autograd import Variable
+    model = vgg16()
+    # 提取特征层不动
+    # 修改分类层最后三层全连接层
+    # 修改vgg的分类层结构
+    model.classifier = nn.Sequential(
+            nn.Linear(512 * 7 * 7, 4096),
+            nn.ReLU(True),
+            nn.Dropout(),
+            nn.Linear(4096, 4096),
+            nn.ReLU(True),
+            nn.Dropout(),
+            # 最后一层修改为1470   即为1470代表一张图的信息（1470=7x7x30）
+            nn.Linear(4096, 1470),
+        )
+    print(model.classifier[6])
+    print('=============================')
+    print(model)
+    print('=============================')
+    img = torch.rand(2,3,224,224)
+    img = Variable(img)
+    output = model(img)
+    print(output.size())
+
+if __name__ == '__main__':
+    test()
