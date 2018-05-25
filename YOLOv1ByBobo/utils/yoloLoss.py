@@ -146,7 +146,7 @@ class yoloLoss(nn.Module):
         # box_pred_response:[72,5]
         # 计算c  有物体的概率的loss
         not_contain_loss = F.mse_loss(box_pred_response[:,4],box_target_response[:,4],size_average=False)
-        # 3.class loss  计算传入的所有的网格  分类的类别损失   这块有问题？？？？？？？？   原论文为 只计算真实存在物体的网格的类别损失，而不是就算全部
+        # 3.class loss  计算传入的真实有物体的网格  分类的类别损失 
         class_loss = F.mse_loss(class_pred,class_target,size_average=False)
         # 除以N  即平均一张图的总损失
         return (self.l_coord*loc_loss + contain_loss + not_contain_loss + self.l_noobj*nooobj_loss + class_loss)/N
