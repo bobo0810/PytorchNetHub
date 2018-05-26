@@ -10,7 +10,37 @@
 
 ----------
 
+# 项目结构：
 
+```graphLR
+    A[网络模型定义] --> B(数据加载)
+    B --> C(训练测试)
+```
+
+```graphLR
+    A[models层] --> B[AlexNet]
+    A[models层] --> C[ResNet34]
+```
+
+```graphLR
+    A[data层] --> B[产生数据]
+    A[data层] --> C[封装并加载数据集]
+```
+
+```graphLR
+    A[utils层] --> B[visualize 可视化工具]
+    A[utils层] --> C[config 配置文件]
+```
+
+```graphLR
+    A[main.py] --> B[train 训练网络]
+    A[main.py] --> C[val  验证模型mAP]
+    A[main.py] --> C[predict  预测]
+```
+
+
+
+----------
 # FatserRcnn实现：
 - 参考知乎[从编程实现角度学习FasterR-CNN](https://zhuanlan.zhihu.com/p/32404424)
 - 基本理清结构，尚未完全理解
@@ -38,7 +68,7 @@
 
    2、~~仅重构完代码，效果一样~~
 
-   3、需抽时间优化模型效果
+   3、~~需抽时间优化模型效果~~
 
 ----------
 
