@@ -11,6 +11,8 @@
    2、仅重构代码，并未提升效果
 
    3、 测试时，在VOC2012训练集上loss为0.1左右，在VOC2007测试集上loss基本降低   很少。怀疑过拟合。
+   
+   4、运行main.py请确保启动可视化工具visdom
 
  - 当前工作：
    
@@ -89,8 +91,6 @@
 </div>
 
 
-[1]: https://github.com/xiongzihua/pytorch-YOLO-v1
-
 #  以下为本人新增内容
 
 - 新增内容：
@@ -122,9 +122,12 @@
    2、Resnet50去掉最后一层，加入类似VGG16的两层全连接层+Drop等 。loss仍降不下去，该项目以后不再提供提升效果的内容。
 
 
- - 特别鸣谢：朱辉师兄
+ - 特别鸣谢：
+    xiongzihua：[原作者][2]
+    朱辉师兄：抽空帮我理清思路，讲清代码。
 
    
 
 
-
+  [1]: https://github.com/xiongzihua/pytorch-YOLO-v1
+  [2]: https://github.com/xiongzihua/pytorch-YOLO-v1

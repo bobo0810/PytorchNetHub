@@ -1,42 +1,30 @@
 # 代码注释
 
-标签（空格分隔）： 以便理解
+加入大量代码注释， 以便理解
 
 ---
 
 # 注意事项：
-- 仅供看注释，代码不完整，不能执行。
-- 写代码建议参考原pytorch-book
+- chapter7、8项目仅供看注释，代码不完整，不能执行。
+- 写代码建议参考 [原pytorch-book ][5]
 
 ----------
 
 # 项目结构：
 
-```graphLR
-    A[网络模型定义] --> B(数据加载)
-    B --> C(训练测试)
-```
+- 总结构
 
-```graphLR
-    A[models层] --> B[AlexNet]
-    A[models层] --> C[ResNet34]
-```
-
-```graphLR
-    A[data层] --> B[产生数据]
-    A[data层] --> C[封装并加载数据集]
-```
-
-```graphLR
-    A[utils层] --> B[visualize 可视化工具]
-    A[utils层] --> C[config 配置文件]
-```
-
-```graphLR
-    A[main.py] --> B[train 训练网络]
-    A[main.py] --> C[val  验证模型mAP]
-    A[main.py] --> C[predict  预测]
-```
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/99053959.jpg)
+  
+- 项目结构
+  1、定义网络
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/16409622.jpg) 
+   2、封装数据集
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/38894621.jpg)
+   3、工具类
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/98583532.jpg)
+   4、主函数
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/32257225.jpg)
 
 
 
@@ -54,9 +42,9 @@
 ----------
 
 # YOLO V1版本：
-- 基本实现： [pytorchYOLOv1master][1]
+- 基本实现： [pytorchYOLOv1master][2]
 
-- 重构代码实现：YOLOv1ByBobo
+- 重构代码实现：[YOLOv1ByBobo][3]
 
 - ~~目前可用，需要重构格式~~
 
@@ -69,6 +57,8 @@
    2、~~仅重构完代码，效果一样~~
 
    3、~~需抽时间优化模型效果~~
+   
+   4、不再提升效果
 
 ----------
 
@@ -77,9 +67,10 @@
 
  - 实现：papersReproduced
  - 论文地址
- [基于深度卷积神经网络的图像去噪研究][2]
+ [基于深度卷积神经网络的图像去噪研究][4]
 
 
-
-[1]: https://github.com/xiongzihua/pytorch-YOLO-v1
-[2]: http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&amp;dbname=CJFDLAST2017&amp;filename=JSJC201703042&amp;uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=
+  [5]: https://github.com/chenyuntc/pytorch-book
+  [2]: https://github.com/xiongzihua/pytorch-YOLO-v1
+  [3]:https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/YOLOv1ByBobo
+  [4]: http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&amp;dbname=CJFDLAST2017&amp;filename=JSJC201703042&amp;uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=
