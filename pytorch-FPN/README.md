@@ -15,4 +15,5 @@ References:
 
 - 基本流程
  
- ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-5/53665573.jpg)
+
+ ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-5/28743914.jpg)
