@@ -12,6 +12,11 @@ References:
 
 # 自己想法
 
+- 目前工作
+
+  无意完成 以FPN为基础的RPN网络的fast rcnn，仅了解FPN基本思想即可。
+
+
 
 - 基本流程
  
