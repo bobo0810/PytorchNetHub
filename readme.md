@@ -4,7 +4,7 @@
 
 ----------
 
-# 接下来工作：
+# 接下来工作
  
 - Faster rcnn  源码解析
 - FPN特征金字塔网络 源码解析
@@ -13,13 +13,13 @@
 
 ----------
 
-# 注意事项：
+# 注意事项
 - chapter7、8项目仅供看注释，代码不完整，不能执行。
 - 写代码建议参考 [原pytorch-book ][5]
 
 ----------
 
-# 项目结构：
+# 项目结构
 
 
 - 总结构
@@ -49,19 +49,19 @@
 
 
 ----------
-# FatserRcnn实现：
+# FatserRcnn实现
 - 参考知乎[从编程实现角度学习FasterR-CNN](https://zhuanlan.zhihu.com/p/32404424)
 - 基本理清结构，尚未完全理解
 ----------
 
 
-# pytorch书：
+# pytorch书
 - dogvscat只加注释，不能运行  仅用于理解
 - chapter7-GAN生成动漫头像
 
 ----------
 
-# YOLO V1版本：
+# YOLO V1版本
 - 基本实现： [pytorchYOLOv1master][2]
 
 - 重构代码实现：[YOLOv1ByBobo][3]
@@ -83,11 +83,16 @@
 ----------
 
 
-# 图像去噪论文复现：
+# 图像去噪论文复现
 
  - 实现：papersReproduced
  - 论文地址
  [基于深度卷积神经网络的图像去噪研究][4]
+
+
+# FPN特征金字塔网络
+- 实现：pytorch-FPN
+- [原地址](https://github.com/kuangliu/pytorch-fpn) 
 
 
   [5]: https://github.com/chenyuntc/pytorch-book
