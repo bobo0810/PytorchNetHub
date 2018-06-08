@@ -6,10 +6,10 @@
 
 # 接下来工作
  
-- Faster rcnn  源码解析
-- FPN特征金字塔网络 源码解析
-- R-fcn全卷积网络 源码解析
-- FPN 源码解析
+- Faster rcnn  源码注释
+- ~~FPN特征金字塔网络 源码注释~~
+- R-fcn全卷积网络 源码注释
+- SSD 源码注释
 
 ----------
 
@@ -99,3 +99,7 @@
   [2]: https://github.com/xiongzihua/pytorch-YOLO-v1
   [3]:https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/YOLOv1ByBobo
   [4]: http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&amp;dbname=CJFDLAST2017&amp;filename=JSJC201703042&amp;uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=
+
+# SSD
+- 实现：pytorchSSD
+- [原地址](https://github.com/amdegroot/ssd.pytorch) 
