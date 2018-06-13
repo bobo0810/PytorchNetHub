@@ -31,9 +31,16 @@ COCO_CLASSES = ('person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',
 
 
 def get_label_map(label_file):
+    '''
+    coco_labels.txt 需要分类的类别名
+    '''
+
     label_map = {}
     # labels = open(label_file, 'r')
+    # Linux下面
     labels = open('/home/bobo/windowsPycharmProject/pytorchSSD/data/coco_labels.txt', 'r')
+    # windows下面
+    # labels = open('D:\PyCharmProject\pytorchSSD\data\coco_labels.txt', 'r')
     for line in labels:
         ids = line.split(',')
         label_map[int(ids[0])] = int(ids[1])
@@ -43,6 +50,8 @@ def get_label_map(label_file):
 class COCOAnnotationTransform(object):
     """Transforms a COCO annotation into a Tensor of bbox coords and label index
     Initilized with a dictionary lookup of classnames to indexes
+    将COCO注释转换为 真实框bbox坐标和标签索引的tensor
+  用索引的字典名称的字典'coco_labels.txt进行初始化
     """
     def __init__(self):
         self.label_map = get_label_map(osp.join(COCO_ROOT, 'coco_labels.txt'))
@@ -55,6 +64,7 @@ class COCOAnnotationTransform(object):
             width (int): width
         Returns:
             a list containing lists of bounding boxes  [bbox coords, class idx]
+            一个包含真值框的bbox
         """
         scale = np.array([width, height, width, height])
         res = []
@@ -77,11 +87,14 @@ class COCODetection(data.Dataset):
     """`MS Coco Detection <http://mscoco.org/dataset/#detections-challenge2016>`_ Dataset.
     Args:
         root (string): Root directory where images are downloaded to.
+                       图像的根目录
         set_name (string): Name of the specific set of COCO images.
         transform (callable, optional): A function/transform that augments the
                                         raw images`
+                                        图像增强
         target_transform (callable, optional): A function/transform that takes
         in the target (bbox) and transforms it.
+
     """
 
     def __init__(self, root, image_set='trainval35k', transform=None,
@@ -104,7 +117,9 @@ class COCODetection(data.Dataset):
             tuple: Tuple (image, target).
                    target is the object returned by ``coco.loadAnns``.
         """
+        # 图像im, 真实框gt, 图像的高h, 图像的宽w
         im, gt, h, w = self.pull_item(index)
+        # 返回 图像im, 真实框gt
         return im, gt
 
     def __len__(self):
@@ -125,18 +140,22 @@ class COCODetection(data.Dataset):
         target = self.coco.loadAnns(ann_ids)
         path = osp.join(self.root, self.coco.loadImgs(img_id)[0]['file_name'])
         assert osp.exists(path), 'Image path does not exist: {}'.format(path)
+        # 读取一张图像
         img = cv2.imread(osp.join(self.root, path))
         height, width, _ = img.shape
+        # 图像增强
         if self.target_transform is not None:
             target = self.target_transform(target, width, height)
         if self.transform is not None:
             target = np.array(target)
             img, boxes, labels = self.transform(img, target[:, :4],
                                                 target[:, 4])
-            # to rgb
+            # to rgb  转为RGB通道修改顺序
             img = img[:, :, (2, 1, 0)]
 
             target = np.hstack((boxes, np.expand_dims(labels, axis=1)))
+        # permute将tensor的维度换位
+        # 图像im, 真实框gt, 图像的高h, 图像的宽w
         return torch.from_numpy(img).permute(2, 0, 1), target, height, width
 
     def pull_image(self, index):

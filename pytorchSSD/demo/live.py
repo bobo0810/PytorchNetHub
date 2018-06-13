@@ -5,9 +5,9 @@ import cv2
 import time
 from imutils.video import FPS, WebcamVideoStream
 import argparse
-
+from matplotlib import pyplot as plt
 parser = argparse.ArgumentParser(description='Single Shot MultiBox Detection')
-parser.add_argument('--weights', default='weights/ssd_300_VOC0712.pth',
+parser.add_argument('--weights', default='C:\\Users\\Administrator\\Desktop\\ssd300_mAP_77.43_v2.pth',
                     type=str, help='Trained state_dict file path')
 parser.add_argument('--cuda', default=False, type=bool,
                     help='Use cuda in live demo')
@@ -46,9 +46,10 @@ def cv2_demo(net, transform):
     # start fps timer
     # loop over frames from the video file stream
     while True:
-        # grab next frame
+        # grab next frame ==============================这儿有问题，未解决
         frame = stream.read()
-        key = cv2.waitKey(1) & 0xFF
+
+        key = cv2.waitKey(10) & 0xFF
 
         # update FPS counter
         fps.update()
@@ -57,7 +58,7 @@ def cv2_demo(net, transform):
         # keybindings for display
         if key == ord('p'):  # pause
             while True:
-                key2 = cv2.waitKey(1) or 0xff
+                key2 = cv2.waitKey(10) or 0xff
                 cv2.imshow('frame', frame)
                 if key2 == ord('p'):  # resume
                     break
@@ -71,11 +72,12 @@ if __name__ == '__main__':
     from os import path
     sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
-    from data import BaseTransform, VOC_CLASSES as labelmap
-    from ssd import build_ssd
+    from pytorchSSD.data import BaseTransform, VOC_CLASSES as labelmap
+    from pytorchSSD.ssd import build_ssd
 
     net = build_ssd('test', 300, 21)    # initialize SSD
-    net.load_state_dict(torch.load(args.weights))
+    # 波波 这儿有bug
+    net.load_state_dict(torch.load(args.weights,map_location=lambda  storage,loc:storage))
     transform = BaseTransform(net.size, (104/256.0, 117/256.0, 123/256.0))
 
     fps = FPS().start()
@@ -88,4 +90,5 @@ if __name__ == '__main__':
 
     # cleanup
     cv2.destroyAllWindows()
+    stream = WebcamVideoStream(src=0).start()  # default camera
     stream.stop()

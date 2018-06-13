@@ -9,24 +9,33 @@ from ..box_utils import match, log_sum_exp
 
 class MultiBoxLoss(nn.Module):
     """SSD Weighted Loss Function
+    SSD的损失函数，继承nn.Module，定义为一个网络模型
     Compute Targets:
+    计算标准
         1) Produce Confidence Target Indices by matching  ground truth boxes
            with (default) 'priorboxes' that have jaccard index > threshold parameter
            (default threshold: 0.5).
+           通过匹配 真值框与 预测框 的IOU重叠率 来产生分类误差
+           默认IOU>0.5即为正样本
         2) Produce localization target by 'encoding' variance into offsets of ground
            truth boxes and their matched  'priorboxes'.
+           通过 编码 真值框与 对应匹配的预测框之间偏移的方差  来产生定位回归误差
         3) Hard negative mining to filter the excessive number of negative examples
            that comes with using a large number of default bounding boxes.
            (default negative:positive ratio 3:1)
+           硬性负开采  参考:https://blog.csdn.net/u012285175/article/details/77866878
+
     Objective Loss:
+        总损失
         L(x,c,l,g) = (Lconf(x, c) + αLloc(x,l,g)) / N
         Where, Lconf is the CrossEntropy Loss and Lloc is the SmoothL1 Loss
         weighted by α which is set to 1 by cross val.
+        Lconf是通过交叉熵计算。Lloc是SmoothL1损失。 α一般为1
         Args:
-            c: class confidences,
-            l: predicted boxes,
-            g: ground truth boxes
-            N: number of matched default boxes
+            c: class confidences,分类置信度
+            l: predicted boxes,预测框
+            g: ground truth boxes 真值框
+            N: number of matched default boxes 匹配到真值框的正样本预测框总数
         See: https://arxiv.org/pdf/1512.02325.pdf for more details.
     """
 

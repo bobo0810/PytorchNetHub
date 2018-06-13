@@ -176,6 +176,21 @@ We have accumulated the following to-do list, which we hope to complete in the n
 
 # 本人新增内容
 
+## 网络结构
+
+- 总体结构
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-13/79572279.jpg)
+
+- 详细结构
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-13/78236504.jpg)
+
+
+
+
+## 结果
+
 - 左侧为原版提供的[ssd300_mAP_77.43_v2.pth](https://s3.amazonaws.com/amdegroot-models/ssd300_mAP_77.43_v2.pth)
 
 - 右侧为自己训练100000个batch结果[ssd300_VOC_100000_mAP_75.57](https://pan.baidu.com/s/1CC_QQBkiKRrkW6l6zpnFQQ)
