@@ -6,7 +6,7 @@
 
 # 阅读源码三步骤
 
-- 数据预处理（重点看 输出真值的定义）
+- 数据预处理（重点：输出真值的定义）
 - 网络模型搭建
 - 损失函数定义
 
@@ -17,6 +17,7 @@
 - ~~FPN特征金字塔网络 源码注释~~
 - R-fcn全卷积网络 源码注释
 - ~~YOLO v1  源码注释~~
+- YOLO v2  源码注释
 - ~~SSD 源码注释~~
 
 ----------
@@ -69,24 +70,10 @@
 
 ----------
 
-# YOLO V1版本
-- 基本实现： [pytorchYOLOv1master][2]
+# YOLO V1
+- 原地址： [pytorchYOLOv1master][2]
 
 - 重构代码实现：[YOLOv1ByBobo][3]
-
-- ~~目前可用，需要重构格式~~
-
-- 模型在训练集上效果差不多，在测试集效果很不好
-
-- 目前工作：
-
-   1、~~抽时间重构代码，以便更容易理解~~
-
-   2、~~仅重构完代码，效果一样~~
-
-   3、~~需抽时间优化模型效果~~
-   
-   4、不再提升效果
 
 ----------
 
@@ -109,5 +96,7 @@
   [4]: http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&amp;dbname=CJFDLAST2017&amp;filename=JSJC201703042&amp;uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=
 
 # SSD
-- 实现：pytorchSSD
+
+- 实现：[pytorchSSD](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/pytorchSSD) 
+
 - [原地址](https://github.com/amdegroot/ssd.pytorch) 
