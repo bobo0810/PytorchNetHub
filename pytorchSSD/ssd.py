@@ -131,9 +131,9 @@ class SSD(nn.Module):
         else:
             # 训练集上的输出
             output = (
-                loc.view(loc.size(0), -1, 4),    # loc preds  定位的预测
-                conf.view(conf.size(0), -1, self.num_classes),  #conf preds  分类的预测
-                self.priors   #不同feature map生成的预测框结果
+                loc.view(loc.size(0), -1, 4),    # loc preds [32,8732,4] 通过网络输出的定位的预测
+                conf.view(conf.size(0), -1, self.num_classes),  #conf preds [32,8732,21]  通过网络输出的分类的预测
+                self.priors   # 不同feature map根据公式生成的框结果 [8732,4]
             )
         return output
 

@@ -72,6 +72,8 @@ def match(threshold, truths, priors, variances, labels, loc_t, conf_t, idx):
     """Match each prior box with the ground truth box of the highest jaccard
     overlap, encode the bounding boxes, then return the matched indices
     corresponding to both confidence and location preds.
+    将每个预测框与最高IOU的真实框相匹配，对边界框进行编码，然后返回匹配的索引
+  对应于置信度和位置预测。
     Args:
         threshold: (float) The overlap threshold used when mathing boxes.
         truths: (tensor) Ground truth boxes, Shape: [num_obj, num_priors].
@@ -162,10 +164,16 @@ def log_sum_exp(x):
     """Utility function for computing log_sum_exp while determining
     This will be used to determine unaveraged confidence loss across
     all examples in a batch.
+
     Args:
         x (Variable(tensor)): conf_preds from conf layers
     """
     x_max = x.data.max()
+    # 1、矩阵逐元素-矩阵最大值
+    # 2、矩阵逐元素求exp
+    # 3、每行相加，结果 行不变，列变为1
+    # 4、逐元素log
+    # 5、逐元素+矩阵最大值
     return torch.log(torch.sum(torch.exp(x-x_max), 1, keepdim=True)) + x_max
 
 

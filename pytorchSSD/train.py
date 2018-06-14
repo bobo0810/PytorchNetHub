@@ -193,6 +193,7 @@ def train():
         # load train data
         # 加载数据集   batch_size=32
         try:
+            # target：一行内容是boxes坐标+类别
             images, targets = next(batch_iterator)
         except StopIteration:  # 遇到StopIteration，即迭代完数据集，则再重头开始迭代
             data_loader = data.DataLoader(dataset, args.batch_size,
