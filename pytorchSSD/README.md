@@ -176,11 +176,27 @@ We have accumulated the following to-do list, which we hope to complete in the n
 
 # 本人新增内容
 
+ - 环境：
+
+| python版本 | pytorch版本 |
+|------------|-------------|
+| 3.5        | 0.3.0       |
+
+- 说明：
+ 
+运行train.py之前请确保启动可视化工具visdom
+
 ## 总体思路
 
+- 1、数据预处理
+- 2、网络模型搭建
+- 3、损失函数定义
 
+#### 1、数据预处理
 
-## 网络结构
+- 读取图像及对应xml,返回经过处理的一张图像及对应的真值框和类别
+
+#### 2、网络结构搭建
 
 - 总体结构
 
@@ -189,6 +205,62 @@ We have accumulated the following to-do list, which we hope to complete in the n
 - 详细结构
 
 ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-13/78236504.jpg)
+
+- 各网络具体结构
+
+vgg基础网络
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-14/26832065.jpg)
+
+extras新增层
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-14/45744439.jpg)
+
+head(loc定位、conf分类)
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-14/90060469.jpg)
+
+loc定位
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-14/73834320.jpg)
+
+conf分类
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-14/18098016.jpg)
+
+
+
+
+
+
+
+
+
+
+- 网络细节
+
+当训练时，网络模型返回loc、conf、priors
+
+一张图片（若干feature map）共生成8732个锚
+
+loc： 通过网络输出的定位的预测 [32,8732,4] 
+
+conf：  通过网络输出的分类的预测 [32,8732,21] 
+
+priors：不同feature map根据公式生成的锚结果 [8732,4]
+（称之为之所以称为锚，而不叫预测框。是因为锚是通过公式生成的，而不是通过网络预测输出的）
+
+
+#### 3、损失函数定义
+
+- 分类损失
+
+使用多类别softmax loss
+
+- 回归损失
+
+使用 Smooth L1 loss
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-14/19492867.jpg)
 
 
 
