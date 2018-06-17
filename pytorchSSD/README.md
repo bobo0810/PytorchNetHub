@@ -145,7 +145,7 @@ jupyter notebook
 
 - Now navigate to `demo/demo.ipynb` at http://localhost:8888 (by default) and have at it!
 
-### Try the webcam demo
+### Try the webcam demo （经测试，存在 bug ）
 - Works on CPU (may have to tweak `cv2.waitkey` for optimal fps) or on an NVIDIA GPU
 - This demo currently requires opencv2+ w/ python bindings and an onboard webcam
   * You can change the default webcam in `demo/live.py`
@@ -264,7 +264,13 @@ priors：不同feature map根据公式生成的锚结果 [8732,4]
 
 ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-14/19492867.jpg)
 
+Hard negative mining（硬性负开采）：
 
+1、先将每一个物体位置上是 负样本 的 锚框 按照  confidence 的大小进行排序
+
+2、选择最高的几个，保证最后 negatives、positives 的比例在 3:1。
+
+这样的比例可以更快的优化，训练也更稳定。
 
 
 ## 结果
