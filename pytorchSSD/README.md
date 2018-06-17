@@ -230,14 +230,6 @@ conf分类
 ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-14/18098016.jpg)
 
 
-
-
-
-
-
-
-
-
 - 网络细节
 
 当训练时，网络模型返回loc、conf、priors
@@ -261,6 +253,15 @@ priors：不同feature map根据公式生成的锚结果 [8732,4]
 - 回归损失
 
 使用 Smooth L1 loss
+
+匹配策略：
+
+1、通过使用IOU最大来匹配每一个 真值框 与 锚，这样就能保证每一个真值框 与 唯一的一个 锚 对应起来。
+
+2、之后又将 锚 与 每一个 真值框 配对，只要两者之间的 IOU 大于一个阈值，这里本文的阈值为 0.5。
+
+这样的结果是 每个真实框对应多个预测框。
+
 ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-14/19492867.jpg)
 
 
