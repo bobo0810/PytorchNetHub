@@ -18,7 +18,7 @@ def parse_rec(filename):
         #obj_struct['truncated'] = int(obj.find('truncated').text)
         #obj_struct['difficult'] = int(obj.find('difficult').text)
         bbox = obj.find('bndbox')
-        # 左下角（xmin，ymin）和右上角(xmax,ymax)
+        # 从原图左上角开始为原点，向右为x轴，向下为y轴。左上角（xmin，ymin）和右下角(xmax,ymax)
         obj_struct['bbox'] = [int(float(bbox.find('xmin').text)),
                               int(float(bbox.find('ymin').text)),
                               int(float(bbox.find('xmax').text)),
