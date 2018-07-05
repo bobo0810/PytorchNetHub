@@ -80,13 +80,13 @@
 
 # 图像去噪论文复现
 
- - 实现：papersReproduced
+ - 实现：[papersReproduced](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/papersReproduced)
  - 论文地址
  [基于深度卷积神经网络的图像去噪研究][4]
 
 
 # FPN特征金字塔网络
-- 实现：pytorch-FPN
+- 实现：[pytorch-FPN](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/pytorch-FPN)
 - [原地址](https://github.com/kuangliu/pytorch-fpn) 
 
 
