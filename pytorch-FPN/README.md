@@ -16,6 +16,9 @@ References:
 
   无意完成 以FPN为基础的RPN网络的fast rcnn，仅了解FPN基本思想即可。
 
+- 网络结构
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-23/67784779.jpg)
 
 
 - 基本流程

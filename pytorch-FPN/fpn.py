@@ -47,7 +47,7 @@ class FPN(nn.Module):
         self.in_planes = 64
         # nn.Conv2d(in_channels, out_channels, kernel_size, stride=1, padding=0, dilation=1, groups=1, bias=True)
 
-        # in_channels=3  out_channels=64
+        # 原论文网络结构 in_channels=3  out_channels=64
         self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3, bias=False)
         # 通道数BN层的参数是输出通道数out_channels=64
         self.bn1 = nn.BatchNorm2d(64)
@@ -59,15 +59,17 @@ class FPN(nn.Module):
         self.layer3 = self._make_layer(block, 256, num_blocks[2], stride=2)
         self.layer4 = self._make_layer(block, 512, num_blocks[3], stride=2)
 
-        # Top layer
+        # Top layer （最顶层只有侧边连接，kernel_size=1目的减少通道数，形状不变）
         self.toplayer = nn.Conv2d(2048, 256, kernel_size=1, stride=1, padding=0)  # Reduce channels  减少通道数
 
-        # Smooth layers   平滑层（原论文：在融合之后还会再采用3*3的卷积核对每个融合结果进行卷积，目的是消除上采样的混叠效应（aliasing effect））
+        # Smooth layers   平滑层
+        # 作用：在融合之后还会再采用3*3的卷积核对每个融合结果进行卷积，目的是消除上采样的混叠效应
         self.smooth1 = nn.Conv2d(256, 256, kernel_size=3, stride=1, padding=1)
         self.smooth2 = nn.Conv2d(256, 256, kernel_size=3, stride=1, padding=1)
         self.smooth3 = nn.Conv2d(256, 256, kernel_size=3, stride=1, padding=1)
 
         # Lateral layers   侧边层
+        # （1*1的卷积核的主要作用是减少卷积核的个数，也就是减少了feature map的个数，并不改变feature map的尺寸大小。）
         self.latlayer1 = nn.Conv2d(1024, 256, kernel_size=1, stride=1, padding=0)
         self.latlayer2 = nn.Conv2d( 512, 256, kernel_size=1, stride=1, padding=0)
         self.latlayer3 = nn.Conv2d( 256, 256, kernel_size=1, stride=1, padding=0)
@@ -110,23 +112,26 @@ class FPN(nn.Module):
         所以我们选择支持任意输出大小的双线性上采样。
         '''
         _,_,H,W = y.size()
-        # 使用 双线性插值bilinear对x进行上采样，之后与y相加
+        # 使用 双线性插值bilinear对x进行上采样，之后与y逐元素相加
         return F.upsample(x, size=(H,W), mode='bilinear') + y
 
     def forward(self, x):
         # Bottom-up  自底向上   conv -> batchnmorm -> relu  ->maxpool
         c1 = F.relu(self.bn1(self.conv1(x)))
         c1 = F.max_pool2d(c1, kernel_size=3, stride=2, padding=1)
+
         # resnet网络
         c2 = self.layer1(c1)
         c3 = self.layer2(c2)
         c4 = self.layer3(c3)
         c5 = self.layer4(c4)
+
         # Top-down  自顶向下并与侧边相连
         p5 = self.toplayer(c5)  #减少通道数
         p4 = self._upsample_add(p5, self.latlayer1(c4))
         p3 = self._upsample_add(p4, self.latlayer2(c3))
         p2 = self._upsample_add(p3, self.latlayer3(c2))
+
         # Smooth  平滑层（在融合之后还会再采用3*3的卷积核对每个融合结果进行卷积，目的是消除上采样的混叠效应）
         p4 = self.smooth1(p4)
         p3 = self.smooth2(p3)
@@ -135,16 +140,21 @@ class FPN(nn.Module):
 
 
 def FPN101():
+    # [2,4,23,3]为FPN101的参数
     # return FPN(Bottleneck, [2,4,23,3])
+
+    #[2,2,2,2]为FPN18的参数
     return FPN(Bottleneck, [2,2,2,2])
 
 
 def test():
     # 新建FPN101网络
     net = FPN101()
+    print('网络结构为')
     print(net)
     # 前向传播，得到网络输出值 fms即为p2, p3, p4, p5
-    fms = net(Variable(torch.randn(1,3,600,900)))
+    fms = net(Variable(torch.randn(1,3,224,224)))
+    print('网络输出的内容为')
     for fm in fms:
         print(fm.size())
 
