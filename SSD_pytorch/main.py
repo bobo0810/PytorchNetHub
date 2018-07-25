@@ -3,7 +3,7 @@ from SSD_pytorch.utils.augmentations import SSDAugmentation
 from SSD_pytorch.models.modules import MultiBoxLoss
 from SSD_pytorch.models.ssd import build_ssd
 from SSD_pytorch.models.modules.init_weights import weights_init
-import time
+from SSD_pytorch.data import VOC_CLASSES as VOC_CLASSES
 import torch
 from SSD_pytorch.utils.config import opt
 from torch.autograd import Variable
@@ -11,7 +11,18 @@ import torch.optim as optim
 import torch.backends.cudnn as cudnn
 import torch.utils.data as data
 from SSD_pytorch.utils.visualize import Visualizer
-import visdom
+from SSD_pytorch.utils.timer import Timer
+from SSD_pytorch.utils.eval_untils import evaluate_detections
+import os
+import time
+import sys
+import pickle
+if sys.version_info[0] == 2:
+    import xml.etree.cElementTree as ET
+else:
+    import xml.etree.ElementTree as ET
+
+
 
 #设置创建tensor的默认类型
 if opt.use_gpu:
@@ -111,8 +122,6 @@ def train():
             for param_group in optimizer.param_groups:
                 param_group['lr'] = lr
 
-
-
         # 加载数据集
         try:
             # batch_iterator 返回一个batch的信息，其中每行代表一张图像 及 对应的真值框和类别
@@ -167,5 +176,81 @@ def train():
     # 保存最后的模型
     ssd_net.saveSSD()
 
+def eval():
+    '''
+    使用验证集进行验证，计算AP及mAP
+    '''
+
+    # 加载网络
+    num_classes = len(VOC_CLASSES) + 1  # +1 为背景
+    net = build_ssd('test', 300, num_classes)  # 初始化SSD
+    # 加载预训练好的的SSD模型
+    if opt.load_model_path:
+        print('加载已训练好的SSD模型')
+        net.load_state_dict(torch.load(opt.load_model_path, map_location=lambda storage, loc: storage))
+        print('加载权重完成!')
+    #模型转为验证模式
+    net.eval()
+    # 加载数据 (使用VOC2007的测试集进行验证)
+    dataset = VOCDetection(opt.voc_data_root, [('2007',  'test')],
+                           BaseTransform(300, opt.MEANS),
+                           VOCAnnotationTransform())
+    if opt.use_gpu:
+        net = net.cuda()
+        cudnn.benchmark = True
+    # 开始验证
+    num_images = len(dataset)
+    # all detections are collected into:
+    #    all_boxes[cls][image] = N x 5 array of detections in
+    #    (x1, y1, x2, y2, score)
+    all_boxes = [[[] for _ in range(num_images)]
+                 for _ in range(len(VOC_CLASSES) + 1)]
+
+    # 计算预测时间
+    _t = {'im_detect': Timer(), 'misc': Timer()}
+    # 保存预测结果的临时文件
+    det_file = os.path.join(opt.temp, 'detections.pkl')
+
+    for i in range(num_images):
+        im, gt, h, w = dataset.pull_item(i)
+
+        x = Variable(im.unsqueeze(0))
+        if opt.use_gpu:
+            x = x.cuda()
+        _t['im_detect'].tic()
+        #得到预测结果
+        detections = net(x).data
+        detect_time = _t['im_detect'].toc(average=False)
+
+        # 跳过j=0，因为它是背景
+        # 遍历验证集 ，得到网络预测的结果
+        for j in range(1, detections.size(1)):
+            dets = detections[0, j, :]
+            mask = dets[:, 0].gt(0.).expand(5, dets.size(0)).t()
+            dets = torch.masked_select(dets, mask).view(-1, 5)
+            if dets.dim() == 0:
+                continue
+            boxes = dets[:, 1:]
+            boxes[:, 0] *= w
+            boxes[:, 2] *= w
+            boxes[:, 1] *= h
+            boxes[:, 3] *= h
+            scores = dets[:, 0].cpu().numpy()
+            cls_dets = np.hstack((boxes.cpu().numpy(),
+                                  scores[:, np.newaxis])).astype(np.float32,
+                                                                 copy=False)
+            all_boxes[j][i] = cls_dets
+
+        print('验证集图像检测进度: {:d}/{:d}  单张预测耗时：{:.3f}s'.format(i + 1,
+                                                    num_images, detect_time))
+
+    with open(det_file, 'wb') as f:
+        pickle.dump(all_boxes, f, pickle.HIGHEST_PROTOCOL)
+
+    print('开始评估检测结果')
+    evaluate_detections(all_boxes, opt.temp, dataset)
+
+
 if __name__ == '__main__':
-    train()
+    # train()
+    eval()

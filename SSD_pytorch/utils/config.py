@@ -23,8 +23,8 @@ class DefaultConfig():
     gamma=0.1  # Gamma update for SGD  学习率调整参数
 
     checkpoint_root ='/home/bobo/windowsPycharmProject/SSD_pytorch/checkpoint/' #保存模型的目录
-    load_model_path = None  # 加载预训练的模型的路径，为None代表不加载
-
+    # load_model_path = None  # 加载预训练的模型的路径，为None代表不加载
+    load_model_path ='/home/bobo/windowsPycharmProject/SSD_pytorch/checkpoint/ssd300_COCO_100000.pth'
 
 
 
@@ -49,6 +49,16 @@ class DefaultConfig():
         'clip': True,
         'name': 'VOC',
     }
+
+    # 验证
+    confidence_threshold=0.01   # 检测置信度阈值  or 0.05
+    top_k=5           # 进一步限制要解析的预测数量
+    cleanup=True               # 清除并删除eval后的结果文件
+    temp= '/home/bobo/windowsPycharmProject/SSD_pytorch/temp'   #保存验证的临时文件
+    annopath = os.path.join(voc_data_root, 'VOC2007', 'Annotations', '%s.xml')
+    imgpath = os.path.join(voc_data_root, 'VOC2007', 'JPEGImages', '%s.jpg')
+    imgsetpath = os.path.join(voc_data_root, 'VOC2007', 'ImageSets',
+                              'Main', '{:s}.txt')
 
 
 #初始化该类的一个对象
