@@ -17,6 +17,7 @@ import os
 import time
 import sys
 import pickle
+from matplotlib import pyplot as plt
 if sys.version_info[0] == 2:
     import xml.etree.cElementTree as ET
 else:
@@ -178,7 +179,7 @@ def train():
 
 def eval():
     '''
-    使用验证集进行验证，计算AP及mAP
+    使用验证集进行验证VOC2007测试集，计算AP及mAP
     '''
 
     # 加载网络
@@ -251,6 +252,141 @@ def eval():
     evaluate_detections(all_boxes, opt.temp, dataset)
 
 
+def test():
+    '''
+    测试集使用VOC2007测试集，将结果存储到voc2007_test.txt中
+    '''
+    num_classes = len(VOC_CLASSES) + 1  # +1 是因为背景
+    net = build_ssd('test', 300, num_classes)  # 初始化SSD
+    # 加载预训练好的的SSD模型
+    if opt.load_model_path:
+        print('加载已训练好的SSD模型')
+        net.load_state_dict(torch.load(opt.load_model_path, map_location=lambda storage, loc: storage))
+        print('加载权重完成!')
+
+    # 模型调整为验证集
+    net.eval()
+    # 加载数据集
+    testset = VOCDetection(opt.voc_data_root, [('2007', 'test')], None, VOCAnnotationTransform())
+    if opt.use_gpu:
+        net = net.cuda()
+        cudnn.benchmark = True
+
+    # dump predictions and assoc. ground truth to text file for now
+    transform=BaseTransform(net.size, (104, 117, 123))
+    filename = opt.temp_test + 'voc2007_test.txt'
+    num_images = len(testset)
+    for i in range(num_images):
+        print('测试进度： {:d}/{:d}'.format(i + 1, num_images))
+        img = testset.pull_image(i)
+        img_id, annotation = testset.pull_anno(i)
+        x = torch.from_numpy(transform(img)[0]).permute(2, 0, 1)
+        x = Variable(x.unsqueeze(0))
+
+        with open(filename, mode='a') as f:
+            f.write('\nGROUND TRUTH FOR: ' + img_id + '\n')
+            for box in annotation:
+                f.write('label: ' + ' || '.join(str(b) for b in box) + '\n')
+        if opt.use_gpu:
+            x = x.cuda()
+
+        y = net(x)  # forward pass
+        detections = y.data
+        # scale each detection back up to the image
+        # 将每个检测缩放回图像
+        scale = torch.Tensor([img.shape[1], img.shape[0],
+                              img.shape[1], img.shape[0]])
+        pred_num = 0
+        for i in range(detections.size(1)):
+            j = 0
+            while detections[0, i, j, 0] >= 0.6:
+                if pred_num == 0:
+                    with open(filename, mode='a') as f:
+                        f.write('PREDICTIONS: ' + '\n')
+                score = detections[0, i, j, 0]
+                label_name = VOC_CLASSES[i - 1]
+                pt = (detections[0, i, j, 1:] * scale).cpu().numpy()
+                coords = (pt[0], pt[1], pt[2], pt[3])
+                pred_num += 1
+                with open(filename, mode='a') as f:
+                    f.write(str(pred_num) + ' label: ' + label_name + ' score: ' +
+                            str(score) + ' ' + ' || '.join(str(c) for c in coords) + '\n')
+                j += 1
+
+def predict():
+    '''
+    使用SSD进行对象检测,并进行可视化
+    '''
+    if torch.cuda.is_available():
+        torch.set_default_tensor_type('torch.cuda.FloatTensor')
+
+    net = build_ssd('test', 300, 21)  # 初始化 SSD300，类别为21（20类别+1背景）
+    if opt.load_model_path:
+        print('加载已训练好的SSD模型')
+        net.load_state_dict(torch.load(opt.load_model_path, map_location=lambda storage, loc: storage))
+        print('加载权重完成!')
+
+    # 加载原图像并可视化
+    image = cv2.imread(opt.test_img, cv2.IMREAD_COLOR)
+    #rgb格式的原图
+    rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    # 显示原图
+    plt.figure(figsize=(10, 10))
+    plt.imshow(rgb_image)
+    plt.title("origin img")
+    plt.show()
+
+    #对输入图像进行预处理
+    #将图像resize到300x300
+    x = cv2.resize(image, (300, 300)).astype(np.float32)
+    #(104.0, 117.0, 123.0)为ImageNet数据集的三通道均值，更符合大自然的分布规律
+    x -= (104.0, 117.0, 123.0)
+    #类型转化
+    x = x.astype(np.float32)
+    x = x[:, :, ::-1].copy()
+    #显示预处理之后的图片
+    plt.title("pre-process img")
+    plt.imshow(x)
+    plt.show()
+    #  permute 按制定的维数排序
+    x = torch.from_numpy(x).permute(2, 0, 1)
+
+    #前向传播，得到网络预测
+    xx = Variable(x.unsqueeze(0))  # 扩展第0维，因为网络的输入要求是一个batch
+    if torch.cuda.is_available():
+        xx = xx.cuda()
+    y = net(xx)
+
+    #解析网络输出并将结果可视化
+    plt.figure(figsize=(10, 10))
+    colors = plt.cm.hsv(np.linspace(0, 1, 21)).tolist()
+    plt.imshow(rgb_image)  # 画出rgb格式的原图
+    currentAxis = plt.gca()  #当前轴
+
+    detections = y.data
+    # 将检测结果缩放匹配到原图上  repeat：沿着指定的尺寸重复 tensor
+    scale = torch.Tensor(rgb_image.shape[1::-1]).repeat(2)
+    for i in range(detections.size(1)):
+        j = 0
+        #置信度分数阈值设置为0.6
+        while detections[0, i, j, 0] >= 0.6:
+            score = detections[0, i, j, 0]
+            label_name = VOC_CLASSES[i - 1]
+            display_txt = '%s: %.2f' % (label_name, score)
+            pt = (detections[0, i, j, 1:] * scale).cpu().numpy()
+            coords = (pt[0], pt[1]), pt[2] - pt[0] + 1, pt[3] - pt[1] + 1
+            color = colors[i]
+            currentAxis.add_patch(plt.Rectangle(*coords, fill=False, edgecolor=color, linewidth=2))
+            currentAxis.text(pt[0], pt[1], display_txt, bbox={'facecolor': color, 'alpha': 0.5})
+            j += 1
+    #可视化最后结果
+    plt.title("predict img")
+    plt.show()
+
+
+
 if __name__ == '__main__':
-    # train()
-    eval()
+    # train()  #使用VOC2007和2012的训练集+验证集 开始训练
+    # eval()  # VOC2007测试集,计算各类AP及mAP
+    # test()  #VOC2007测试集，将预测结果写入txt
+    predict()  #可视化一张预测图片

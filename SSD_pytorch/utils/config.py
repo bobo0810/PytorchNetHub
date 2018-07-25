@@ -25,7 +25,7 @@ class DefaultConfig():
     checkpoint_root ='/home/bobo/windowsPycharmProject/SSD_pytorch/checkpoint/' #保存模型的目录
     # load_model_path = None  # 加载预训练的模型的路径，为None代表不加载
     load_model_path ='/home/bobo/windowsPycharmProject/SSD_pytorch/checkpoint/ssd300_COCO_100000.pth'
-
+    # load_model_path='C:\\Users\\Administrator\\Desktop\\ssd300_COCO_10000.pth'
 
 
     # gets home dir cross platform
@@ -59,6 +59,12 @@ class DefaultConfig():
     imgpath = os.path.join(voc_data_root, 'VOC2007', 'JPEGImages', '%s.jpg')
     imgsetpath = os.path.join(voc_data_root, 'VOC2007', 'ImageSets',
                               'Main', '{:s}.txt')
+
+    #测试
+    temp_test='/home/bobo/windowsPycharmProject/SSD_pytorch/temp/' # 保存测试集（VOC2007测试集）的网络预测结果
+
+    #预测，可视化一张预测图片
+    test_img='/home/bobo/windowsPycharmProject/SSD_pytorch/temp/test.png'
 
 
 #初始化该类的一个对象
