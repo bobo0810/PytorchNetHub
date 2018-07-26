@@ -5,7 +5,8 @@
 
  # 目前支持：
 
-原作者支持VOC、COCO，该仓库仅支持VOC，如果有时间，考虑将COCO加上。
+- 数据集：原作者支持VOC、COCO，该仓库仅支持VOC，如果有时间，考虑将COCO加上。
+- 网络：支持SSD300
 
 # 原因：
 
@@ -43,6 +44,15 @@
     | python版本  |  pytorch版本 |
     | ----------- | ----------   |
     |  3.5  | 0.3.0   |
+
+
+# SSD网络结构
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-26/78466722.jpg)
+
+- vgg16网络结构
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-26/87243004.jpg)
 
 # 准备数据集：
 下载VOC2007和VOC2012的数据集，并在utils/config.py中的voc_data_root配置数据集的根目录。
