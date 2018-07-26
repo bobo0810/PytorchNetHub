@@ -14,9 +14,35 @@
  ###### 注：该项目功能上并未进行任何修改，仅做重构，用于理解。
 
 
-# 相比原作者的特点：
+ # 相比原作者的特点：
+
 - 所有参数均可在config.py中设置
 - 重新整理结构，并加入大量代码注释
+
+# 一般项目结构
+
+  1、定义网络
+  
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/16409622.jpg) 
+  
+   2、封装数据集
+   
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/38894621.jpg)
+  
+   3、工具类
+   
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/98583532.jpg)
+  
+   4、主函数
+   
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/32257225.jpg)
+
+
+ - 环境：
+
+    | python版本  |  pytorch版本 |
+    | ----------- | ----------   |
+    |  3.5  | 0.3.0   |
 
 # 准备数据集：
 下载VOC2007和VOC2012的数据集，并在utils/config.py中的voc_data_root配置数据集的根目录。
@@ -59,7 +85,7 @@ python -m visdom.server
 
 # Eval:
 
-作用：VOC2007测试集,计算各类AP及mAP
+作用：VOC2007测试集,计算各分类AP及mAP
 
 1、在config.py中load_model_path配置预训练模型的路径
 
@@ -78,8 +104,10 @@ python -m visdom.server
 
 2、在main.py中将test()注释取消，其他方法注释掉，即可运行。
 
-结果：
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-8/68841398.jpg)
+<h4 align="center">结果</h1>
+<div align="center">
+<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-8/68841398.jpg"  width="300px" height="400px" alt="图片说明" >
+</div>
 
 # Predict:
 
@@ -90,16 +118,25 @@ python -m visdom.server
 预训练模型下载：[ssd300_VOC_100000.pth](https://pan.baidu.com/s/1hrJo__owbF3ufepwJJ0uzA)
 2、在main.py中将predict()注释取消，其他方法注释掉，即可运行。
 
-结果：
 
-原图:
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-25/88568756.jpg)
+<h4 align="center">原图</h1>
+<div align="center">
+<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-25/88568756.jpg"  width="500px" height="300px" alt="图片说明" >
+</div>
 
-预处理之后的图像:
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-25/33336596.jpg)
 
-结果:
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-25/48601434.jpg)
+<h4 align="center">预处理之后的图像</h1>
+<div align="center">
+<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-25/33336596.jpg"  width="500px" height="300px" alt="图片说明" >
+</div>
+
+
+
+<h4 align="center">预测结果</h1>
+<div align="center">
+<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-25/48601434.jpg"  width="500px" height="300px"     alt="图片说明" >
+</div>
+
 
 # 关于作者
 

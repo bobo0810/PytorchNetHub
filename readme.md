@@ -15,16 +15,15 @@
  
 - Faster rcnn  源码注释
 - ~~FPN特征金字塔网络 源码注释~~
-- R-fcn全卷积网络 源码注释
-- ~~YOLO v1  源码注释~~
+- ~~YOLO v1  源码注释并重构~~
+- ~~SSD 源码注释并重构~~
 - YOLO v2  源码注释
-- ~~SSD 源码注释~~
 
 ----------
 
 # 注意事项
-- 风格迁移（Neural Style）及GAN生成动漫头像项目仅供看注释，代码不完整，不能执行。
-- 写代码建议参考 [原pytorch-book ][5]
+- dogvscat、风格迁移（Neural Style）及GAN生成动漫头像项目仅供看注释，代码不完整，不能执行。
+- 写代码建议参考 [pytorch-book ][5]
 
 ----------
 
@@ -64,12 +63,6 @@
 ----------
 
 
-# pytorch书
-- dogvscat只加注释，不能运行  仅用于理解
-- chapter7-GAN生成动漫头像
-
-----------
-
 # YOLO V1
 - 原地址： [pytorchYOLOv1master][2]
 
@@ -84,6 +77,7 @@
  - 论文地址
  [基于深度卷积神经网络的图像去噪研究][4]
 
+----------
 
 # FPN特征金字塔网络
 - 实现：[pytorch-FPN](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/pytorch-FPN)
@@ -95,8 +89,9 @@
   [3]:https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/YOLOv1ByBobo
   [4]: http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&amp;dbname=CJFDLAST2017&amp;filename=JSJC201703042&amp;uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=
 
+----------
 # SSD
 
-- 实现：[pytorchSSD](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/pytorchSSD) 
-
+- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/SSD_pytorch) 强烈推荐！
 - [原地址](https://github.com/amdegroot/ssd.pytorch) 
+- [原地址的加注释版本](https://github.com/bobo0810/pytorchSSD) 
