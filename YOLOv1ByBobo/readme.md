@@ -53,6 +53,8 @@
 
 ### loss趋势
 
+<div align="center"> 
+
 | epoch | VOC2007测试集的loss |
 |-------|---------------------|
 | 0     | 5.806424896178707   |
@@ -61,9 +63,15 @@
 | ...   | ...                 |
 | 118   | 5.187265388427242   |
 | 119   | 5.190768877152474   |
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-25/15532458.jpg)
 
- 注：蓝线为在VOC2012训练集上的loss，黄线为 VOC2007测试集的loss
+</div>
+
+
+<div align="center">
+<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-25/15532458.jpg" width="500px" height="300px" alt="图片说明" >
+</div>
+<h4 align="center">注：蓝线为在VOC2012训练集上的loss，黄线为 VOC2007测试集的loss</h4>
+ 
  
 ### 网络表现
 
