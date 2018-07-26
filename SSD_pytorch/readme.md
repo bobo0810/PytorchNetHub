@@ -119,20 +119,20 @@ python -m visdom.server
 2、在main.py中将predict()注释取消，其他方法注释掉，即可运行。
 
 
-<h4 align="center">原图</h1>
+<h4 align="center">原图</h4>
 <div align="center">
 <img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-25/88568756.jpg"  width="500px" height="300px" alt="图片说明" >
 </div>
 
 
-<h4 align="center">预处理之后的图像</h1>
+<h4 align="center">预处理之后的图像</h4>
 <div align="center">
 <img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-25/33336596.jpg"  width="500px" height="300px" alt="图片说明" >
 </div>
 
 
 
-<h4 align="center">预测结果</h1>
+<h4 align="center">预测结果</h4>
 <div align="center">
 <img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-25/48601434.jpg"  width="500px" height="300px"     alt="图片说明" >
 </div>
