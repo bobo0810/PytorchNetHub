@@ -1,7 +1,15 @@
 # 重构SSD代码实现
 
+----------
+
 该仓库基于[Max deGroot](https://github.com/amdegroot)与[Ellis Brown](https://github.com/ellisbrown)的[ssd.pytorch](https://github.com/amdegroot/ssd.pytorch)进行的，非常感谢他们无私的奉献。
  
+
+- [原地址](https://github.com/amdegroot/ssd.pytorch) 
+- [原地址的加注释版本](https://github.com/bobo0810/pytorchSSD) 
+- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/SSD_pytorch) 强烈推荐！（即本仓库）
+
+----------
 
  # 目前支持：
 
@@ -19,6 +27,8 @@
 
 - 所有参数均可在config.py中设置
 - 重新整理结构，并加入大量代码注释
+
+----------
 
 # 一般项目结构
 
@@ -45,6 +55,7 @@
     | ----------- | ----------   |
     |  3.5  | 0.3.0   |
 
+----------
 
 # SSD网络结构
 
@@ -53,6 +64,8 @@
 - vgg16网络结构
 
 ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-26/87243004.jpg)
+
+----------
 
 # 准备数据集：
 下载VOC2007和VOC2012的数据集，并在utils/config.py中的voc_data_root配置数据集的根目录。
@@ -71,6 +84,8 @@ VOCdevkit
 │   │   Annotations
 │   │   ...
 ```
+
+----------
 
 # Trian:
 
@@ -93,6 +108,8 @@ python -m visdom.server
 
 在main.py中将train()注释取消，其他方法注释掉，即可运行。
 
+----------
+
 # Eval:
 
 作用：VOC2007测试集,计算各分类AP及mAP
@@ -103,6 +120,8 @@ python -m visdom.server
 
 
 2、在main.py中将eval()注释取消，其他方法注释掉，即可运行。
+
+----------
 
 # Test:
 
@@ -118,6 +137,8 @@ python -m visdom.server
 <div align="center">
 <img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-8/68841398.jpg"  width="300px" height="400px" alt="图片说明" >
 </div>
+
+----------
 
 # Predict:
 
@@ -147,6 +168,7 @@ python -m visdom.server
 <img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-25/48601434.jpg"  width="500px" height="300px"     alt="图片说明" >
 </div>
 
+----------
 
 # 关于作者
 
