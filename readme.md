@@ -6,7 +6,7 @@
 
 # 阅读源码三步骤
 
-- 数据预处理（重点：输出真值的定义）
+- 数据预处理
 - 网络模型搭建
 - 损失函数定义
 
@@ -25,37 +25,6 @@
 # 注意事项
 - dogvscat、风格迁移（Neural Style）及GAN生成动漫头像项目仅供看注释，代码不完整，不能执行。
 - 写代码建议参考 [pytorch-book ][5]
-
-----------
-
-# 项目结构
-
-
-- 总结构
-
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/99053959.jpg)
-  
-  
-- 项目结构
-
-  1、定义网络
-  
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/16409622.jpg) 
-  
-   2、封装数据集
-   
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/38894621.jpg)
-  
-   3、工具类
-   
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/98583532.jpg)
-  
-   4、主函数
-   
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/32257225.jpg)
-  
-
-
 
 ----------
 # FatserRcnn实现
@@ -96,3 +65,34 @@
 - [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/SSD_pytorch) 强烈推荐！
 - [原地址](https://github.com/amdegroot/ssd.pytorch) 
 - [原地址的加注释版本](https://github.com/bobo0810/pytorchSSD) 
+
+
+----------
+
+# 项目一般结构
+
+
+- 总结构
+
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/99053959.jpg)
+  
+  
+- 项目结构
+
+  1、定义网络
+  
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/16409622.jpg) 
+  
+   2、封装数据集
+   
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/38894621.jpg)
+  
+   3、工具类
+   
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/98583532.jpg)
+  
+   4、主函数
+   
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/32257225.jpg)
+  
+
