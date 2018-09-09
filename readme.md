@@ -17,8 +17,7 @@
 - ~~FPN特征金字塔网络 源码注释~~
 - ~~SSD 源码注释并重构~~
 - ~~YOLO v1  源码注释并重构~~
-- YOLO v2  源码注释
-- YOLO v3  源码注释
+- YOLO v3  源码注释（loading）
 
 ----------
 
@@ -27,9 +26,18 @@
 - 写代码建议参考 [pytorch-book ][5]
 
 ----------
+
+# 图像去噪论文复现
+
+ - 实现：[papersReproduced](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/papersReproduced)
+ - 论文地址: [基于深度卷积神经网络的图像去噪研究][4]
+
+
+----------
 # FatserRcnn实现
 - 参考知乎[从编程实现角度学习FasterR-CNN](https://zhuanlan.zhihu.com/p/32404424)
 - 基本理清结构，尚未完全理解
+
 ----------
 
 
@@ -39,13 +47,20 @@
 - 重构代码实现：[YOLOv1ByBobo][3]
 
 ----------
+# YOLO V3
+- [原地址](https://github.com/eriklindernoren/PyTorch-YOLOv3)
 
+- [原地址的加注释版本 loading] 
 
-# 图像去噪论文复现
+- [重构版本  loading]
 
- - 实现：[papersReproduced](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/papersReproduced)
- - 论文地址
- [基于深度卷积神经网络的图像去噪研究][4]
+----------
+# SSD
+
+- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/SSD_pytorch) 强烈推荐！
+- [原地址](https://github.com/amdegroot/ssd.pytorch) 
+- [原地址的加注释版本](https://github.com/bobo0810/pytorchSSD) 
+
 
 ----------
 
@@ -60,14 +75,7 @@
   [4]: http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&amp;dbname=CJFDLAST2017&amp;filename=JSJC201703042&amp;uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=
 
 ----------
-# SSD
 
-- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/SSD_pytorch) 强烈推荐！
-- [原地址](https://github.com/amdegroot/ssd.pytorch) 
-- [原地址的加注释版本](https://github.com/bobo0810/pytorchSSD) 
-
-
-----------
 
 # 项目一般结构
 
