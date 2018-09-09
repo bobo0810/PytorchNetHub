@@ -48,11 +48,12 @@
 
 ----------
 # YOLO V3
-- [原地址](https://github.com/eriklindernoren/PyTorch-YOLOv3)
-
-- [原地址的加注释版本 loading] 
 
 - [重构版本  loading]
+
+- [原地址](https://github.com/eriklindernoren/PyTorch-YOLOv3)
+
+- [原地址的加注释版本](https://github.com/bobo0810/PyTorch-YOLOv3-master) 
 
 ----------
 # SSD
