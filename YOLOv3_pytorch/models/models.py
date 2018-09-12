@@ -244,7 +244,7 @@ class YOLOLayer(nn.Module):
             # 多分类损失
             loss_cls = self.bce_loss(pred_cls * cls_mask, tcls * cls_mask)
             loss = loss_x + loss_y + loss_w + loss_h + loss_conf + loss_cls
-
+            # 总loss为 loss_x、loss_y、loss_w、loss_h、loss_conf、loss_cls之和
             return loss, loss_x.item(), loss_y.item(), loss_w.item(), loss_h.item(), loss_conf.item(), loss_cls.item(), recall
 
         else:
