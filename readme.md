@@ -17,7 +17,7 @@
 - ~~FPN特征金字塔网络 源码注释~~
 - ~~SSD 源码注释并重构~~
 - ~~YOLO v1  源码注释并重构~~
-- YOLO v3  源码注释（loading）
+- ~~YOLO v3  源码注释~~
 
 ----------
 
@@ -49,7 +49,7 @@
 ----------
 # YOLO V3
 
-- [重构版本  loading](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/YOLOv3_pytorch)
+- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/YOLOv3_pytorch)
 
 - [原地址](https://github.com/eriklindernoren/PyTorch-YOLOv3)
 
