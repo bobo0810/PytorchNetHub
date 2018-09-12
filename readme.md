@@ -49,7 +49,7 @@
 ----------
 # YOLO V3
 
-- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/YOLOv3_pytorch)
+- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/YOLOv3_pytorch) 强烈推荐！
 
 - [原地址](https://github.com/eriklindernoren/PyTorch-YOLOv3)
 
