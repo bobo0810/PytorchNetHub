@@ -55,6 +55,21 @@
 
 ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/16734558.jpg)
 
+以下阅读源码有用：
+
+hyperparams
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/97781689.jpg)
+
+module_list
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/10165593.jpg)
+
+module_defs
+
+![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/56737437.jpg)
+
+
 
 ----------
 
