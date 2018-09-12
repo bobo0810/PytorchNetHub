@@ -3,6 +3,9 @@
 # 设置默认参数
 import os.path
 class DefaultConfig_train():
+	'''
+	训练参数
+	'''
     epochs=30    # 训练轮数
     image_folder='data/samples'   #数据集地址
     batch_size=16    #batch大小\
@@ -19,10 +22,13 @@ class DefaultConfig_train():
     checkpoint_interval=1   # 每隔几个模型保存一次
     checkpoint_dir='./checkpoints'   # 保存生成模型的路径
 
-    # load_model_path=None   # 加载预训练的模型的路径，为None代表不加载
-    load_model_path=checkpoint_dir+'/yolov3.weights'  # 预训练权重
+    load_model_path=None   # 加载预训练的模型的路径，为None代表不加载
+    #load_model_path=checkpoint_dir+'/yolov3.weights'  # 预训练权重
 
 class DefaultConfig_test():
+	'''
+	测试参数
+	'''
     epochs=200   #number of epochs
     batch_size=16   #size of each image batch
     model_config_path='config/yolov3.cfg'  #'path to model config file'
@@ -42,6 +48,9 @@ class DefaultConfig_test():
 
 
 class DefaultConfig_detect():
+	'''
+	分割参数
+	'''
     image_folder= 'data/samples'  #path to dataset
     config_path='config/yolov3.cfg'  #path to model config file
 
@@ -61,6 +70,8 @@ class DefaultConfig_detect():
 
 
 #初始化该类的一个对象
-opt_train=DefaultConfig_train()
+opt_train=DefaultConfig_train() 
+ 
 opt_test=DefaultConfig_test()
+
 opt_detect=DefaultConfig_detect()
