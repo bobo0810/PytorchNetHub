@@ -2,6 +2,8 @@
 
 加入大量代码注释， 以便理解
 
+update:2018年9月13日21:05:57
+
 ----------
 
 # 阅读源码三步骤
@@ -13,11 +15,12 @@
 ----------
 # 接下来工作
  
-- Faster rcnn  源码注释
+- Faster rcnn  源码注释（头大，趁早填坑）
 - ~~FPN特征金字塔网络 源码注释~~
 - ~~SSD 源码注释并重构~~
 - ~~YOLO v1  源码注释并重构~~
 - ~~YOLO v3  源码注释并重构~~
+- U-Net 源码注释并重构
 
 ----------
 
@@ -26,28 +29,18 @@
 - 写代码建议参考 [pytorch-book ][5]
 
 ----------
+# 目标检测网络
 
-# 图像去噪论文复现
-
- - 实现：[papersReproduced](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/papersReproduced)
- - 论文地址: [基于深度卷积神经网络的图像去噪研究][4]
-
-
-----------
-# FatserRcnn实现
+### FatserRcnn实现
 - 参考知乎[从编程实现角度学习FasterR-CNN](https://zhuanlan.zhihu.com/p/32404424)
 - 基本理清结构，尚未完全理解
 
-----------
-
-
-# YOLO V1
+### YOLO V1
 - 原地址： [pytorchYOLOv1master][2]
 
 - 重构代码实现：[YOLOv1ByBobo][3]
 
-----------
-# YOLO V3
+### YOLO V3
 
 - [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/YOLOv3_pytorch) 强烈推荐！
 
@@ -55,17 +48,29 @@
 
 - [原地址的加注释版本](https://github.com/bobo0810/PyTorch-YOLOv3-master) 
 
-----------
-# SSD
+
+### SSD
 
 - [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/SSD_pytorch) 强烈推荐！
 - [原地址](https://github.com/amdegroot/ssd.pytorch) 
 - [原地址的加注释版本](https://github.com/bobo0810/pytorchSSD) 
 
+----------
+# 目标分割网络
+
+### U-Net
+- [原地址](https://github.com/milesial/Pytorch-UNet)
 
 ----------
 
-# FPN特征金字塔网络
+# 其他
+
+### 图像去噪论文复现
+
+ - 实现：[papersReproduced](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/papersReproduced)
+ - 论文地址: [基于深度卷积神经网络的图像去噪研究][4]
+
+### FPN特征金字塔网络
 - 实现：[pytorch-FPN](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/pytorch-FPN)
 - [原地址](https://github.com/kuangliu/pytorch-fpn) 
 
