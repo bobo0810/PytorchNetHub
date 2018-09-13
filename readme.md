@@ -31,9 +31,9 @@ update:2018-9-13 21:20:07
 - 基本理清结构，尚未完全理解
 
 ### YOLO V1
-- 原地址： [pytorchYOLOv1master][2]
 
-- 重构代码实现：[YOLOv1ByBobo][3]
+- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/YOLOv1ByBobo) 强烈推荐！
+- [原地址](https://github.com/xiongzihua/pytorch-YOLO-v1)
 
 ### YOLO V3
 
@@ -63,17 +63,13 @@ update:2018-9-13 21:20:07
 ### 图像去噪论文复现
 
  - 实现：[papersReproduced](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/papersReproduced)
- - 论文地址: [基于深度卷积神经网络的图像去噪研究][4]
+ - 论文地址: [基于深度卷积神经网络的图像去噪研究](http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&amp;dbname=CJFDLAST2017&amp;filename=JSJC201703042&amp;uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=)
 
 ### FPN特征金字塔网络
 - 实现：[pytorch-FPN](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/pytorch-FPN)
 - [原地址](https://github.com/kuangliu/pytorch-fpn) 
 
 
-  [5]: https://github.com/chenyuntc/pytorch-book
-  [2]: https://github.com/xiongzihua/pytorch-YOLO-v1
-  [3]:https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/YOLOv1ByBobo
-  [4]: http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&amp;dbname=CJFDLAST2017&amp;filename=JSJC201703042&amp;uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=
 
 ### 猫狗大战
 
