@@ -2,7 +2,7 @@
 
 加入大量代码注释， 以便理解
 
-update:2018年9月13日21:05:57
+update:2018-9-13 21:20:07
 
 ----------
 
@@ -21,12 +21,6 @@ update:2018年9月13日21:05:57
 - ~~YOLO v1  源码注释并重构~~
 - ~~YOLO v3  源码注释并重构~~
 - U-Net 源码注释并重构
-
-----------
-
-# 注意事项
-- dogvscat、风格迁移（Neural Style）及GAN生成动漫头像项目仅供看注释，代码不完整，不能执行。
-- 写代码建议参考 [pytorch-book ][5]
 
 ----------
 # 目标检测网络
@@ -79,6 +73,28 @@ update:2018年9月13日21:05:57
   [2]: https://github.com/xiongzihua/pytorch-YOLO-v1
   [3]:https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/YOLOv1ByBobo
   [4]: http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&amp;dbname=CJFDLAST2017&amp;filename=JSJC201703042&amp;uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=
+
+### 猫狗大战
+
+- 实现：[dogvscat_bo](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/dogvscat_bo)
+
+  仅供看注释，运行见原地址
+- [原地址](https://github.com/chenyuntc/pytorch-book/tree/master/chapter6-%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97)
+
+### 风格迁移
+
+- 实现：[风格迁移(Neural Style)](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/%E9%A3%8E%E6%A0%BC%E8%BF%81%E7%A7%BB(Neural%20Style))
+- [原地址](https://github.com/chenyuntc/pytorch-book/tree/master/chapter8-%E9%A3%8E%E6%A0%BC%E8%BF%81%E7%A7%BB(Neural%20Style))
+
+### GAN生成对抗网络
+- 实现：[GAN生成动漫头像](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/GAN%E7%94%9F%E6%88%90%E5%8A%A8%E6%BC%AB%E5%A4%B4%E5%83%8F)
+- [原地址](https://github.com/chenyuntc/pytorch-book/tree/master/chapter7-GAN%E7%94%9F%E6%88%90%E5%8A%A8%E6%BC%AB%E5%A4%B4%E5%83%8F)
+
+注：猫狗大战、风格迁移、GAN生成对抗网络在[pytorch-book传送门](https://github.com/chenyuntc/pytorch-book),更多内容请进门访问，感谢大佬无私奉献。
+
+
+
+
 
 ----------
 
