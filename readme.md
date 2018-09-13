@@ -31,7 +31,7 @@ update:2018年9月13日21:05:57
 ----------
 # 目标检测网络
 
-### FatserRcnn实现
+### Fatser Rcnn
 - 参考知乎[从编程实现角度学习FasterR-CNN](https://zhuanlan.zhihu.com/p/32404424)
 - 基本理清结构，尚未完全理解
 
