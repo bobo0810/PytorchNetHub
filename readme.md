@@ -55,7 +55,7 @@ update:2018-9-17 16:37:59
 
 ### U-Net
 - [原地址](https://github.com/milesial/Pytorch-UNet)
-- [原地址的加注释版本](https://github.com/bobo0810/UNet_pytorch) 
+- [原地址的加注释版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/UNet_pytorch) 
 
 ----------
 
