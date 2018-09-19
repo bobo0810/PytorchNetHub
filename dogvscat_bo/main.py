@@ -116,9 +116,10 @@ def train(**kwargs):
                     epoch = epoch,loss = loss_meter.value()[0],val_cm = str(val_cm.value()),train_cm=str(confusion_matrix.value()),lr=lr))
         #更新学习率  如果损失开始升高，则降低学习率
         if loss_meter.value()[0]>previous_loss:
+			lr= lr * opt.lr_decay
             # 第二种降低学习率的方法:不会有moment等信息的丢失
             for param_group in optimizer.param_groups:
-                param_group['lr'] =  lr * opt.lr_decay
+                param_group['lr'] = lr
         previous_loss=loss_meter.value()[0]
 
 
