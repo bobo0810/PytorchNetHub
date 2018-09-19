@@ -92,15 +92,3 @@ class Visualizer(object):
             )
         )
 
-    def update_vis_plot(self,iteration, loc, conf,loss, window1, update_type,
-                        epoch_size=1):
-        '''
-        可视化图形里更新数据
-        '''
-        viz = visdom.Visdom()
-        viz.line(
-            X=torch.ones((1, 3)).cpu() * iteration,
-            Y=torch.Tensor([loc, conf, loss]).unsqueeze(0).cpu() / epoch_size,
-            win=window1,
-            update=update_type
-        )

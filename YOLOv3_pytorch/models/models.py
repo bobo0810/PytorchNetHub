@@ -270,10 +270,6 @@ class Darknet(nn.Module):
         # 解析list，返回 pytorch模型结构
         self.hyperparams, self.module_list = create_modules(self.module_defs)
         self.img_size = img_size
-        # 即训练网络过程中使用的图像总个数 （官方权重内seen值为32013312）
-        self.seen = 0
-        # 保存模型时文件头写入的信息（5个字符，其余可不写）
-        self.header_info = np.array([0, 0, 0, self.seen, 0])
         self.loss_names = ['x', 'y', 'w', 'h', 'conf', 'cls', 'recall']
 
     def forward(self, x, targets=None):
@@ -292,9 +288,11 @@ class Darknet(nn.Module):
                 
                 当属性只有一个值时，它会输出由该值索引的网络层的特征图。
                 在我们的示例中，它是−4，因此这个层将从Route层开始倒数第4层的特征图。
+                目的：拿到中间结果，继续网络
 
                 当图层有两个值时，它会返回由其值所索引的图层的连接特征图。 
                 在我们的例子中，它是−1,61，并且该图层将输出来自上一层（-1）和第61层的特征图，并沿深度的维度连接。
+                目的：按照深度的维度连接 两个不同层的特征图，准备去预测
                 
                 '''
                 layer_i = [int(x) for x in module_def['layers'].split(',')]
@@ -330,7 +328,8 @@ class Darknet(nn.Module):
     def load_weights(self, weights_path):
         """Parses and loads the weights stored in 'weights_path'"""
         '''
-        解析并加载存储在'weights_path中的权重
+        解析并加载存储在'weights_path中的权重.
+        为兼容 官方yolov3.weight权重设计，该仓库不再使用
         '''
 
         #Open the weights file
@@ -399,6 +398,7 @@ class Darknet(nn.Module):
             @:param cutoff  - save layers between 0 and cutoff (cutoff = -1 -> all are saved)
             当cutoff=-1时：保存全部网络参数
             当cutoff不为-1时，保存指定的部分网络参数
+            为兼容 官方yolov3.weight权重设计，该仓库不再使用
         """
         fp = open(path, 'wb')
         self.header_info[3] = self.seen

@@ -16,6 +16,25 @@ from skimage.transform import resize
 
 import sys
 
+
+import glob
+import random
+import os
+import numpy as np
+
+import torch
+
+from torch.utils.data import Dataset
+from PIL import Image
+import torchvision.transforms as transforms
+
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+
+from skimage.transform import resize
+
+import sys
+
 class ImageFolder(Dataset):
     '''
     仅detect.py用到，用于测试例子
@@ -72,7 +91,9 @@ class ListDataset(Dataset):
 
         # 读取图像为tensor
         img_path = self.img_files[index % len(self.img_files)].rstrip()
-        img = np.array(Image.open(img_path))
+
+        copy_img=Image.open(img_path).copy()
+        img = np.array(copy_img)
 
         # Handles images with less than three channels
         # 处理 图像的通道数不为3 时(即该图像损坏)，则 读取下一张图片

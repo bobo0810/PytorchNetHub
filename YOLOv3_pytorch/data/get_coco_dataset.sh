@@ -9,13 +9,14 @@ cd coco
 mkdir images
 cd images
 
-# Download Images
-wget -c https://pjreddie.com/media/files/train2014.zip
-wget -c https://pjreddie.com/media/files/val2014.zip
+# 数据集自己已上传
+## Download Images
+#wget -c https://pjreddie.com/media/files/train2014.zip
+#wget -c https://pjreddie.com/media/files/val2014.zip
 
-# Unzip
-unzip -q train2014.zip
-unzip -q val2014.zip
+## Unzip
+#unzip -q train2014.zip
+#unzip -q val2014.zip
 
 cd ..
 

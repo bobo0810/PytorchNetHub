@@ -10,6 +10,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
+def modelinfo(model):
+    #打印模型信息  Plots a line-by-line description of a PyTorch model
+    nparams = sum(x.numel() for x in model.parameters())
+    ngradients = sum(x.numel() for x in model.parameters() if x.requires_grad)
+    print('\n%4s %70s %9s %12s %20s %12s %12s' % ('', 'name', 'gradient', 'parameters', 'shape', 'mu', 'sigma'))
+    for i, (name, p) in enumerate(model.named_parameters()):
+        name = name.replace('module_list.', '')
+        print('%4g %70s %9s %12g %20s %12g %12g' % (
+            i, name, p.requires_grad, p.numel(), list(p.shape), p.mean(), p.std()))
+    print('\n%g layers, %g parameters, %g gradients' % (i + 1, nparams, ngradients))
+
 def load_classes(path):
     """
     Loads class labels at 'path'
