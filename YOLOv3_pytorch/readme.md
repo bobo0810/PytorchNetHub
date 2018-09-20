@@ -114,7 +114,9 @@ python -m visdom.server
 
 在config.py中设置参数。
 
-在main.py中将train()注释取消，即可运行。
+在main.py中将运行train()。
+
+###### 由于原仓库保存、加载模型bug，故不支持保存为 .weight官方格式（二进制且仅保存conv和bn层参数，其余参数读取cfg文件即可），训练保存模型为.pt模型（保存整个模型）。
 
 ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/68971633.jpg)
 
@@ -133,9 +135,11 @@ $ bash download_weights.sh
 
 2、在config.py中load_model_path配置预训练模型的路径
 
+###### 支持官方模型 .weight 和 自训练模型 .pt 
+
 3、 在config.py中设置参数。
    
-    在main.py中将test()注释取消，即可运行。
+    在main.py中运行test()。
 
 
 | Model               | mAP (min. 50 IoU) |
@@ -155,10 +159,11 @@ $ bash download_weights.sh
 功能：可视化预测图片
 
 1、在config.py中load_model_path配置预训练模型的路径
-
+   ###### 支持官方模型 .weight 和 自训练模型 .pt 
 2、在config.py中设置参数。
    
-   在main.py中将detect()注释取消，即可运行。
+   在main.py中将运行detect()。
+
 
 官方模型效果：
 

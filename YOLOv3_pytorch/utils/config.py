@@ -22,7 +22,7 @@ class DefaultConfig_train():
     checkpoint_dir='./checkpoints'   # 保存生成模型的路径
 
     load_model_path=None   # 加载预训练的模型的路径，为None代表不加载
-    # load_model_path=checkpoint_dir+'/latestbobo.pt'  # 预训练权重
+    # load_model_path=checkpoint_dir+'/latestbobo.pt'  # 预训练权重   (仅.pt)
 
 class DefaultConfig_test():
     epochs=200   #number of epochs
@@ -32,7 +32,7 @@ class DefaultConfig_test():
 
     checkpoint_dir = './checkpoints'  # 保存生成模型的路径
     # load_model_path=None   # 加载预训练的模型的路径，为None代表不加载
-    load_model_path=checkpoint_dir+'/8yolov3.pt'  # 预训练权重
+    load_model_path=checkpoint_dir+'/8yolov3.pt'  # 预训练权重     (.weights或者.pt)
 
     class_path='data/coco.names'   #'path to class label file'
     iou_thres=0.5  #'iou threshold required to qualify as detected'
@@ -50,7 +50,7 @@ class DefaultConfig_detect():
 
     checkpoint_dir='./checkpoints'   # 保存生成模型的路径
     # load_model_path=None   # 加载预训练的模型的路径，为None代表不加载
-    load_model_path = checkpoint_dir + '/yolov3.weights'  # 预训练权重
+    load_model_path = checkpoint_dir + '/yolov3.weights'  # 预训练权重  (.weights或者.pt)
 
 
     class_path='data/coco.names'    #path to class label file

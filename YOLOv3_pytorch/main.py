@@ -42,32 +42,29 @@ def train():
     # 初始化模型
     model = Darknet(opt.model_config_path)   # model_config_path：模型网络结构
 
-    start_epoch = 0
+   # 训练不再保存为.weights格式模型
     if opt.load_model_path:
         # 加载预训练好的的yolo v3模型  和 优化器状态
         print('加载已训练好的yolo v3模型')
         #多GPU
         checkpoint = torch.load(opt.load_model_path, map_location='cpu')
         model.load_state_dict(checkpoint['model'])
-        # 多GPU有问题
+        # 多GPU有问题，不可用
         # if torch.cuda.device_count() > 1:
         #     print('Using ', torch.cuda.device_count(), ' GPUs')
         #     model = nn.DataParallel(model)
         model.train() # 转为训练模式
-        optimizer = torch.optim.SGD(model.parameters(), lr=.001, momentum=.9, weight_decay=5e-4, nesterov=True)
-        # optimizer = torch.optim.Adam(model.parameters())
-        optimizer.load_state_dict(checkpoint['optimizer'])
-        start_epoch = checkpoint['epoch'] + 1
+
         del checkpoint  # current, saved
     else:
         print('初始化yolo v3模型参数')
         model.apply(weights_init_normal)
+        # 多GPU有问题，不可用
         # if torch.cuda.device_count() > 1:
         #     print('Using ', torch.cuda.device_count(), ' GPUs')
         #     model = nn.DataParallel(model)
         model.train() # 转为训练模式
-        optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, momentum=momentum, dampening=0,weight_decay=decay)
-        # optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=learning_rate, weight_decay=5e-4)
+
 
     if opt.use_cuda:
         model = model.cuda()
@@ -82,13 +79,15 @@ def train():
         batch_size=opt.batch_size, shuffle=False, num_workers=opt.n_cpu)
     # 设置好 默认新建的tensor类型
     Tensor = torch.cuda.FloatTensor if opt.use_cuda else torch.FloatTensor
-
+    
+    optimizer = optim.SGD(model.parameters(), lr=learning_rate, momentum=momentum, dampening=0, weight_decay=decay)
+    
     # 计算所有书的平均数和标准差，来统计一个epoch中损失的平均值
     loss_meter = meter.AverageValueMeter()
     previous_loss = float('inf')  # 表示正无穷
     # 开始训练
     for epoch in range(opt.epochs):
-        epoch += start_epoch
+       
         # 清空仪表信息和混淆矩阵信息
         loss_meter.reset()
         # 每轮epoch
@@ -124,14 +123,14 @@ def train():
                 vis.plot('batch recall', model.losses['recall'])
         # 每隔几个模型保存一次
         if epoch % opt.checkpoint_interval == 0:
-            checkpoint = {'epoch': epoch,
-                          'optimizer': optimizer.state_dict(),
-                          'model': model.state_dict()}
+            checkpoint = {'model': model.state_dict()}
             torch.save(checkpoint, opt.checkpoint_dir + '/'+str(epoch)+'yolov3.pt')
         print("第" + str(epoch) + "次epoch完成==========================")
         # 当前时刻的一些信息
         vis.log("epoch:{epoch},lr:{lr},loss:{loss}".format(
             epoch=epoch, loss=str(loss.item()), lr=learning_rate))
+        
+        #以下为bobo添加，原作者代码 没有更新学习率参数，故添加。（也可能是弄巧成拙）
         #更新学习率  如果损失开始升高，则降低学习率
         if loss_meter.value()[0]>previous_loss:
             learning_rate = learning_rate * opt.lr_decay
@@ -151,17 +150,19 @@ def test():
     model = Darknet(opt.model_config_path)
 
     if opt.load_model_path:
-        # 加载预训练好的的yolo v3模型
-        print('加载已训练好的yolo v3模型')
-        #多GPU
-        checkpoint = torch.load(opt.load_model_path, map_location='cpu')
-        model.load_state_dict(checkpoint['model'])
-        model.train()
-
+        # 判断是训练模型.pt 还是.weights官方模型
+        if '.pt' in opt.load_model_path:
+            # 加载预训练好的的yolo v3模型
+            print('加载已训练好的yolo v3自训练模型')
+            checkpoint = torch.load(opt.load_model_path, map_location='cpu')
+            model.load_state_dict(checkpoint['model'])
+        if '.weights' in opt.load_model_path:
+            model.load_weights(opt.load_model_path)
     else:
-        model.train()
-
-
+        # 初始化Conv、BatchNorm2d权重
+        print('初始化yolo v3模型参数')
+        model.apply(weights_init_normal)
+        
     if opt.use_cuda:
         model = model.cuda()
 
@@ -266,12 +267,16 @@ def  detect():
 
     # Set up model
     model = Darknet(opt.config_path, img_size=opt.img_size)
+
     if opt.load_model_path:
-        # 加载预训练好的的yolo v3模型
-        print('加载已训练好的yolo v3模型')
-        #多GPU
-        checkpoint = torch.load(opt.load_model_path, map_location='cpu')
-        model.load_state_dict(checkpoint['model'])
+        # 判断是训练模型.pt 还是.weights官方模型
+        if '.pt' in opt.load_model_path:
+            # 加载预训练好的的yolo v3模型
+            print('加载已训练好的yolo v3自训练模型')
+            checkpoint = torch.load(opt.load_model_path, map_location='cpu')
+            model.load_state_dict(checkpoint['model'])
+        if '.weights' in opt.load_model_path:
+            model.load_weights(opt.load_model_path)
     else:
         # 初始化Conv、BatchNorm2d权重
         print('初始化yolo v3模型参数')
