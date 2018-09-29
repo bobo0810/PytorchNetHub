@@ -2,7 +2,7 @@
 
 加入大量代码注释， 以便理解
 
-update:2018-9-17 16:37:59
+update:2018-9-29 10:47:30
 
 ----------
 
@@ -49,6 +49,11 @@ update:2018-9-17 16:37:59
 - [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/SSD_pytorch) 强烈推荐！
 - [原地址](https://github.com/amdegroot/ssd.pytorch) 
 - [原地址的加注释版本](https://github.com/bobo0810/pytorchSSD) 
+
+### FP_SSD
+
+- [实现]()
+- 论文地址:[基于特征金字塔的 SSD 目标检测改进算法](https://pan.baidu.com/s/1oXYksRiqvtN-LCAdcYfEIg)
 
 ----------
 # 目标分割网络
