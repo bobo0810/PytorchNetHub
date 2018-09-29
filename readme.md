@@ -21,6 +21,7 @@ update:2018-9-29 10:47:30
 - ~~YOLO v1  源码注释并重构~~
 - ~~YOLO v3  源码注释并重构~~  
 - ~~U-Net 源码注释~~
+- ~~FP_SSD~~
 - Mask rcnn（脑阔疼）
 
 ----------
@@ -52,7 +53,7 @@ update:2018-9-29 10:47:30
 
 ### FP_SSD
 
-- [实现]()
+- [实现](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/FP_SSD_pytorch)
 - 论文地址:[基于特征金字塔的 SSD 目标检测改进算法](https://pan.baidu.com/s/1oXYksRiqvtN-LCAdcYfEIg)
 
 ----------
