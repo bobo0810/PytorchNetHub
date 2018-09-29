@@ -6,6 +6,11 @@
 - 论文地址:[基于特征金字塔的 SSD 目标检测改进算法](https://pan.baidu.com/s/1oXYksRiqvtN-LCAdcYfEIg)
   ###### 论文为中文版初稿，最终投中SCI
 
+ - 环境：
+
+    | python版本  |  pytorch版本 |
+    | ----------- | ----------   |
+    |  3.5  | 0.3.0   |
 ----------
 ### FP_SSD网络结构
 

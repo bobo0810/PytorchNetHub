@@ -128,7 +128,7 @@ class SSD(nn.Module):
         # k的范围为0-22
 
         #=========开始保存 所需的所有中间信息
-        #  疑问: 什么时候加L2Norm?
+
 
         # 保存pool2（pool下标从1开始）的结果
         # 经过maxpool，所以不需要L2Norm正则化
@@ -171,13 +171,13 @@ class SSD(nn.Module):
         sources_final=list()
 
         # con4_3层融合结果  self.bn1(self.conv1(x))
-        conv4_fp=torch.cat((F.relu(self.bn(self.DilationConv_128_128(sources[0]),inplace=True)), F.relu(self.conv_512_256(sources[1]),inplace=True), F.relu(self.DeConv_1024_128(sources[3]),inplace=True)),1)
+        conv4_fp=torch.cat((F.relu(self.bn(self.DilationConv_128_128(sources[0])),inplace=True), F.relu(self.conv_512_256(sources[1]),inplace=True), F.relu(self.DeConv_1024_128(sources[3]),inplace=True)),1)
         sources_final.append(F.relu(  self.smooth(conv4_fp) , inplace=True))
         # FC7层融合结果
-        fc7_fp = torch.cat((F.relu( self.bn(self.DilationConv_512_128(sources[1]),inplace=True) ),F.relu( self.conv_1024_256(sources[3]),inplace=True) ,F.relu(  self.DeConv_512_128(sources[4]),inplace=True)),1)
+        fc7_fp = torch.cat((F.relu( self.bn(self.DilationConv_512_128(sources[1])) ,inplace=True),F.relu( self.conv_1024_256(sources[3]),inplace=True) ,F.relu(  self.DeConv_512_128(sources[4]),inplace=True)),1)
         sources_final.append(F.relu( self.smooth(fc7_fp) , inplace=True))
         # conv8_2层融合结果
-        conv8_fp= torch.cat(( F.relu( self.bn(self.DilationConv_512_128_2(sources[2]),inplace=True)) ,F.relu(self.conv_512_256_2(sources[4]) ,inplace=True)  ,F.relu( self.DeConv_256_128_2(sources[5]),inplace=True)  ),1)
+        conv8_fp= torch.cat(( F.relu( self.bn(self.DilationConv_512_128_2(sources[2])),inplace=True) ,F.relu(self.conv_512_256_2(sources[4]) ,inplace=True)  ,F.relu( self.DeConv_256_128_2(sources[5]),inplace=True)  ),1)
         sources_final.append( F.relu( self.smooth(conv8_fp) , inplace=True) )
 
 
