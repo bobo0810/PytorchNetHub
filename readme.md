@@ -2,7 +2,7 @@
 
 加入大量代码注释， 以便理解
 
-update:2018-9-29 10:47:30
+update:2018-10-8 17:04:05
 
 ----------
 
@@ -66,6 +66,10 @@ update:2018-9-29 10:47:30
 ----------
 
 # 其他
+
+### 可视化CNN定位
+- 实现：[VisCNN_CVPR_2016_Loc](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/VisCNN_CVPR_2016_Loc)
+- 论文地址:[Learning Deep Features for Discriminative Localization](https://arxiv.org/pdf/1512.04150.pdf)
 
 ### 图像去噪论文复现
 
