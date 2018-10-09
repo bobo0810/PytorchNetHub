@@ -5,6 +5,12 @@ A PyTorch implementation of paper "Learning Deep Features for Discriminative Loc
 ```
 从 https://github.com/metalbubble/CAM 中节选的内容，仅用于理解可视化CNN定位
 ```
+ 
+ - 环境：
+
+    | python版本  |  pytorch版本 |
+    | ----------- | ----------   |
+    |  3.5  | 0.3.0   | 
 
 ## Paper
 ```
