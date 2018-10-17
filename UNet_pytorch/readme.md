@@ -40,6 +40,10 @@
 
 ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-17/659347.jpg)
 
+- ###### 原论文左侧 conv 3x3 无pad，故每次conv后feature map尺寸缩小。故与右侧feature map融合之前需要裁剪。
+- ###### 该仓库左侧 conv 3x3 pad=1，故每次conv后feature map尺寸不变。故反卷积后保证尺度统一与右侧feature map融合即可。
+  
+
 ----------
 
 # 准备数据集：
