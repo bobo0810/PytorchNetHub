@@ -59,7 +59,7 @@ update:2018年10月19日10:55:06
 
 ### Class Activation Mapping
 - 作用：分类、定位（不使用真值框进行定位，论文证明 卷积层本身就有定位功能）
-- 实现：[VisCNN_CVPR_2016_Loc](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/CAM_pytorch)
+- 实现：[CAM_pytorch](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/CAM_pytorch)
 - 论文地址:[CVPR 2016  Learning Deep Features for Discriminative Localization](https://arxiv.org/pdf/1512.04150.pdf)
 
 ----------
