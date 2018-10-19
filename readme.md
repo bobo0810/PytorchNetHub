@@ -2,7 +2,7 @@
 
 加入大量代码注释， 以便理解
 
-update:2018-10-8 17:04:05
+update:2018年10月19日10:55:06
 
 ----------
 
@@ -15,14 +15,15 @@ update:2018-10-8 17:04:05
 ----------
 # 接下来工作
  
-- Faster rcnn  源码注释（头大，趁早填坑）
+- Faster rcnn  源码注释（趁早填坑）
 - ~~FPN特征金字塔网络 源码注释~~
 - ~~SSD 源码注释并重构~~
 - ~~YOLO v1  源码注释并重构~~
 - ~~YOLO v3  源码注释并重构~~  
 - ~~U-Net 源码注释~~
 - ~~FP_SSD~~
-- Mask rcnn（脑阔疼）
+- Mask rcnn（趁早填坑）
+- ~~Class Activation Mapping(CAM 类激活映射)~~
 
 ----------
 # 目标检测网络
@@ -56,6 +57,11 @@ update:2018-10-8 17:04:05
 - [实现](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/FP_SSD_pytorch)
 - 论文地址:[基于特征金字塔的 SSD 目标检测改进算法](https://pan.baidu.com/s/1oXYksRiqvtN-LCAdcYfEIg)
 
+### Class Activation Mapping
+- 作用：分类、定位（不使用真值框进行定位，论文证明 卷积层本身就有定位功能）
+- 实现：[VisCNN_CVPR_2016_Loc](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/CAM_pytorch)
+- 论文地址:[CVPR 2016  Learning Deep Features for Discriminative Localization](https://arxiv.org/pdf/1512.04150.pdf)
+
 ----------
 # 目标分割网络
 
@@ -67,9 +73,6 @@ update:2018-10-8 17:04:05
 
 # 其他
 
-### 可视化CNN定位
-- 实现：[VisCNN_CVPR_2016_Loc](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/VisCNN_CVPR_2016_Loc)
-- 论文地址:[Learning Deep Features for Discriminative Localization](https://arxiv.org/pdf/1512.04150.pdf)
 
 ### 图像去噪论文复现
 
