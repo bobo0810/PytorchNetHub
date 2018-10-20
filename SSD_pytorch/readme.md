@@ -55,12 +55,6 @@
   ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/32257225.jpg)
 
 
- - 环境：
-
-    | python版本  |  pytorch版本 |
-    | ----------- | ----------   |
-    |  3.5  | 0.3.0   |
-
 ----------
 
 # SSD网络结构
