@@ -80,7 +80,7 @@ update:2018年10月24日16:09:31
  - 论文地址: [基于深度卷积神经网络的图像去噪研究](http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&amp;dbname=CJFDLAST2017&amp;filename=JSJC201703042&amp;uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=)
 
 ### FPN特征金字塔网络
-- 实现：[pytorch-FPN](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/pytorch-FPN)
+- 实现：[pytorch-FPN](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/FPN_pytorch)
 - [原地址](https://github.com/kuangliu/pytorch-fpn) 
 
 

@@ -7,7 +7,7 @@
 
 - [原地址](https://github.com/eriklindernoren/PyTorch-YOLOv3) 
 - [原地址的加注释版本](https://github.com/bobo0810/PyTorch-YOLOv3-master) 
-- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/YOLOv3_pytorch) 强烈推荐！（即本仓库）
+- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/Yolov3_pytorch) 强烈推荐！（即本仓库）
 
 ----------
 
