@@ -2,7 +2,7 @@
 
 加入大量代码注释， 以便理解
 
-update:2018年10月24日16:09:31
+update:2019年3月21日20:11:22
 
 ----------
 
@@ -24,6 +24,7 @@ update:2018年10月24日16:09:31
 - ~~FP_SSD~~
 - Mask rcnn（趁早填坑）
 - ~~Class Activation Mapping(CAM 类激活映射)~~
+- Noise2noise
 
 ----------
 # 目标检测网络
@@ -78,6 +79,12 @@ update:2018年10月24日16:09:31
 
  - 实现：[ImageDenoising_pytorch](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/ImageDenoising_pytorch)
  - 论文地址: [基于深度卷积神经网络的图像去噪研究](http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&amp;dbname=CJFDLAST2017&amp;filename=JSJC201703042&amp;uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=)
+
+
+### Noise2noise
+- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/Noise2noise_pytorch)
+- [原地址](https://github.com/joeylitalien/noise2noise-pytorch) 
+
 
 ### FPN特征金字塔网络
 - 实现：[FPN_pytorch](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/FPN_pytorch)
