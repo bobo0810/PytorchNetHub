@@ -1,0 +1,12 @@
+python3 ../train.py \
+  --data ../../data --train-size 100 --valid-size 20 \
+  --ckpt-save-path ../../ckpts \
+  --report-interval 5 \
+  --nb-epochs 100 \
+  --loss l2 \
+  --noise-type gaussian \
+  --noise-param 50 \
+  --crop-size 128 \
+  --clean-targets \
+  --plot-stats \
+  --cuda

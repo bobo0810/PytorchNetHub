@@ -1,0 +1,13 @@
+python3 ../train.py \
+  --train-dir ../../data/mc/train --train-size 48 \
+  --valid-dir ../../data/mc/valid --valid-size 8 \
+  --ckpt-save-path ../../ckpts \
+  --ckpt-overwrite \
+  --report-interval 4 \
+  --nb-epochs 50 \
+  --batch-size 4 \
+  --loss hdr \
+  --noise-type mc \
+  --crop-size 64 \
+  --plot-stats \
+  --cuda
