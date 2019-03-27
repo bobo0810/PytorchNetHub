@@ -2,7 +2,15 @@
 
 加入大量代码注释， 以便理解
 
-update:2019年3月21日20:11:22
+update:2019年3月27日10:51:53
+
+----------
+
+# Issues问题
+
+- 格式要求： 问题+项目名。 例如：数据格式错误——SSD_pytorch
+- 由于每周汇报及准备论文，我尽量回复大家问题
+- 欢迎大家提交pr
 
 ----------
 
@@ -14,11 +22,41 @@ update:2019年3月21日20:11:22
 
 ----------
 
-# Issues问题
+# 本仓库目的
 
-- 格式要求： 问题+项目名。 例如：数据格式错误——SSD_pytorch
-- 由于每周汇报及准备论文，我尽量回复大家问题
-- 欢迎大家提交pr
+- 如果不想阅读源码，只想傻瓜式跟着教程跑起来，推荐看原仓库地址，感谢大佬们的无私奉献！
+- 本仓库将代码改为统一风格，更加规范化，能够更容易、更轻松得阅读源码，以便根据自己需求进行修改。
+
+----------
+
+
+# 项目一般结构
+
+
+- 总结构
+
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/99053959.jpg)
+  
+  
+- 项目结构
+
+  1、定义网络
+  
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/16409622.jpg) 
+  
+   2、封装数据集
+   
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/38894621.jpg)
+  
+   3、工具类
+   
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/98583532.jpg)
+  
+   4、主函数
+   
+  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/32257225.jpg)
+  
+
 
 ----------
 # 接下来工作
@@ -102,33 +140,5 @@ update:2019年3月21日20:11:22
 注：猫狗大战、风格迁移、GAN生成对抗网络在[pytorch-book传送门](https://github.com/chenyuntc/pytorch-book),更多内容请进门访问，感谢大佬无私奉献。
 
 
-----------
 
-
-# 项目一般结构
-
-
-- 总结构
-
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/99053959.jpg)
-  
-  
-- 项目结构
-
-  1、定义网络
-  
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/16409622.jpg) 
-  
-   2、封装数据集
-   
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/38894621.jpg)
-  
-   3、工具类
-   
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/98583532.jpg)
-  
-   4、主函数
-   
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/32257225.jpg)
-  
 
