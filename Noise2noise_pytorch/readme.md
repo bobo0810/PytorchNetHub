@@ -10,7 +10,7 @@
 * Matplotlib(3.0.3)
 * Pillow(5.4.1)
 * ~~OpenEXR(1.3.0，仅蒙特卡洛图像用到，去噪和去水印均不受影响，不易安装，本仓库注释掉相关代码)~~
-
+* [原地址](https://github.com/joeylitalien/noise2noise-pytorch) 感谢大佬无私奉献
 ## 改动项
 
 - 规范化为统一风格
