@@ -5,9 +5,9 @@ import torch
 import torch.nn as nn
 from torch.optim import Adam, lr_scheduler
 
-from unet import UNet
-from utils import *
+from models.unet import UNet
 
+from utils.utils import *
 import os
 import json
 
@@ -20,15 +20,18 @@ class Noise2Noise(object):
 
         self.p = params
         self.trainable = trainable
-        self._compile()
+        self._compile()  #初始化模型
 
 
     def _compile(self):
-        """Compiles model (architecture, loss function, optimizers, etc.)."""
+        """
+        Compiles model (architecture, loss function, optimizers, etc.).
+        初始化 网络、损失函数、优化器等
+        """
 
         print('Noise2Noise: Learning Image Restoration without Clean Data (Lethinen et al., 2018)')
 
-        # Model (3x3=9 channels for Monte Carlo since it uses 3 HDR buffers)
+        # Model (3x3=9 channels for Monte Carlo since it uses 3 HDR buffers)  已删除蒙特卡洛相关代码
         if self.p.noise_type == 'mc':
             self.is_mc = True
             self.model = UNet(in_channels=9)
@@ -37,6 +40,7 @@ class Noise2Noise(object):
             self.model = UNet(in_channels=3)
 
         # Set optimizer and loss, if in training mode
+        # 如果 为训练，则初始化优化器和损失
         if self.trainable:
             self.optim = Adam(self.model.parameters(),
                               lr=self.p.learning_rate,
@@ -139,14 +143,10 @@ class Noise2Noise(object):
         stats['valid_psnr'].append(valid_psnr)
         self.save_model(epoch, stats, epoch == 0)
 
-        # Plot stats
-        if self.p.plot_stats:
-            loss_str = f'{self.p.loss.upper()} loss'
-            plot_per_epoch(self.ckpt_dir, 'Valid loss', stats['valid_loss'], loss_str)
-            plot_per_epoch(self.ckpt_dir, 'Valid PSNR', stats['valid_psnr'], 'PSNR (dB)')
 
 
-    def test(self, test_loader, show):
+
+    def test(self, test_loader, show=1):
         """Evaluates denoiser on test set."""
 
         self.model.train(False)
