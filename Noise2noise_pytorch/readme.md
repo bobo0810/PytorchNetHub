@@ -1,5 +1,12 @@
 # Noise2Noise: Learning Image Restoration without Clean Data
 
+## 待解决问题
+
+* 注意 训练集大小、验证集大小
+* 未加visdom
+* 测试可用，但存在小问题
+
+
 ## 依赖
 
 * Ubuntu
