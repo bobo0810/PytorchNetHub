@@ -5,7 +5,7 @@
 - 如果不想阅读源码，只想傻瓜式跟着教程跑起来，推荐看原仓库地址，感谢大佬们的无私奉献！
 - 本仓库将代码改为统一风格，更加规范化，能够更容易、更轻松得阅读源码，以便根据自己需求进行修改。
 
-- update:2019年3月27日17:01:27
+- update:2019年5月22日10:18:12
 
 ----------
 
@@ -67,7 +67,8 @@
 - ~~FP_SSD~~
 - Mask rcnn（趁早填坑）
 - ~~Class Activation Mapping(CAM 类激活映射)~~
-- Noise2noise
+- ~~Noise2noise~~
+- ~~S4ND~~
 
 ----------
 # 目标检测网络
@@ -106,6 +107,12 @@
 - 实现：[CAM_pytorch](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/CAM_pytorch)
 - 论文地址:[CVPR 2016  Learning Deep Features for Discriminative Localization](https://arxiv.org/pdf/1512.04150.pdf)
 
+
+### S4ND
+- 作用：单次单尺度肺结节检测
+- 实现：[S4ND_Pytorch](https://github.com/bobo0810/S4ND_Pytorch) 
+- 论文地址:[MICCAI2018 S4ND](https://arxiv.org/pdf/1805.02279.pdf?fbclid=IwAR0B3dI8tjvWz-Mk9Xpyymfnk-SNs6k8tw2B8HU3dTTP-vFinQURHGZSCQs)
+
 ----------
 # 目标分割网络
 
@@ -118,7 +125,7 @@
 # 其他
 
 
-### 图像去噪论文复现
+### 图像去噪
 
  - 实现：[ImageDenoising_pytorch](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/ImageDenoising_pytorch)
  - 论文地址: [基于深度卷积神经网络的图像去噪研究](http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&amp;dbname=CJFDLAST2017&amp;filename=JSJC201703042&amp;uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=)
