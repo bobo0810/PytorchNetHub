@@ -5,7 +5,7 @@
 - 如果不想阅读源码，只想傻瓜式跟着教程跑起来，推荐看原仓库地址，感谢大佬们的无私奉献！
 - 本仓库将代码改为统一风格，更加规范化，能够更容易、更轻松得阅读源码，以便根据自己需求进行修改。
 
-- update:2019年5月22日10:18:12
+- update:2019年6月12日17:02:36
 
 ----------
 
@@ -69,7 +69,7 @@
 - ~~Class Activation Mapping(CAM 类激活映射)~~
 - ~~Noise2noise~~
 - ~~S4ND~~
-
+- ~~SKNet~~
 ----------
 # 目标检测网络
 
@@ -123,6 +123,12 @@
 ----------
 
 # 其他
+
+
+### SKNet
+- 作用：继Res\Dense\SE Block之后新的Block
+- 实现：[SKNet](https://github.com/bobo0810/SKNet_Pytorch)
+- 论文地址:[CVPR 2019 SKNet](https://arxiv.org/abs/1903.06586)
 
 
 ### 图像去噪
