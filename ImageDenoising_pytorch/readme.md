@@ -20,8 +20,8 @@
 
 
 <div align="center">
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/35562877.jpg" height="300px" alt="图片说明" ><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/35562877.jpg" height="300px" alt="图片说明" > 
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/94087410.jpg" height="300px" alt="图片说明" ><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/20206610.jpg" height="300px" alt="图片说明" > 
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/35562877.jpg" height="300px" alt="图片说明" ><img src="https://github.com/bobo0810/imageRepo/blob/master/img/35562877.jpg" height="300px" alt="图片说明" > 
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/94087410.jpg" height="300px" alt="图片说明" ><img src="https://github.com/bobo0810/imageRepo/blob/master/img/20206610.jpg" height="300px" alt="图片说明" > 
 
 </div>
 
@@ -29,5 +29,5 @@
 ### 训练损失
 
 <div align="center">
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/9788775.jpg" height="300px"  width="400px" alt="图片说明" ><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-18/41620436.jpg" height="300px"  width="400px"alt="图片说明" > 
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/9788775.jpg" height="300px"  width="400px" alt="图片说明" ><img src="https://github.com/bobo0810/imageRepo/blob/master/img/41620436.jpg" height="300px"  width="400px"alt="图片说明" > 
 </div>

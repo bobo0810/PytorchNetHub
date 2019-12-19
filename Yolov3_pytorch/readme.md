@@ -29,19 +29,19 @@
 
   1、定义网络
   
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/16409622.jpg) 
+  ![](https://github.com/bobo0810/imageRepo/blob/master/img/16409622.jpg) 
   
    2、封装数据集
    
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/38894621.jpg)
+  ![](https://github.com/bobo0810/imageRepo/blob/master/img/38894621.jpg)
   
    3、工具类
    
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/98583532.jpg)
+  ![](https://github.com/bobo0810/imageRepo/blob/master/img/98583532.jpg)
   
    4、主函数
    
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/32257225.jpg)
+  ![](https://github.com/bobo0810/imageRepo/blob/master/img/32257225.jpg)
 
 - 环境：
 
@@ -53,21 +53,21 @@
 
 # Darknet-52网络结构
 
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/16734558.jpg)
+![](https://github.com/bobo0810/imageRepo/blob/master/img/16734558.jpg)
 
 以下阅读源码有用：
 
 hyperparams
 
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/97781689.jpg)
+![](https://github.com/bobo0810/imageRepo/blob/master/img/97781689.jpg)
 
 module_list
 
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/10165593.jpg)
+![](https://github.com/bobo0810/imageRepo/blob/master/img/10165593.jpg)
 
 module_defs
 
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/56737437.jpg)
+![](https://github.com/bobo0810/imageRepo/blob/master/img/56737437.jpg)
 
 
 
@@ -118,7 +118,7 @@ python -m visdom.server
 
 ###### 由于原仓库保存、加载模型bug，故不支持保存为 .weight官方格式（二进制且仅保存conv和bn层参数，其余参数读取cfg文件即可），训练保存模型为.pt模型（保存整个模型）。
 
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/68971633.jpg)
+![](https://github.com/bobo0810/imageRepo/blob/master/img/68971633.jpg)
 
 ----------
 
@@ -150,7 +150,7 @@ $ bash download_weights.sh
 
 
 
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/77791130.jpg)
+![](https://github.com/bobo0810/imageRepo/blob/master/img/77791130.jpg)
 
 ----------
 
@@ -168,11 +168,11 @@ $ bash download_weights.sh
 官方模型效果：
 
 <div align="center">
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/11371083.jpg" width="400px"  height="300px" alt="图片说明" > 
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/39079856.jpg" width="400px"  height="300px" alt="图片说明" > 
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/11371083.jpg" width="400px"  height="300px" alt="图片说明" > 
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/39079856.jpg" width="400px"  height="300px" alt="图片说明" > 
 </div>
 <div align="center">
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/91451324.jpg" width="400px"  height="300px" alt="图片说明" ><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-12/28759426.jpg" width="400px"  height="300px" alt="图片说明" > 
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/91451324.jpg" width="400px"  height="300px" alt="图片说明" ><img src="https://github.com/bobo0810/imageRepo/blob/master/img/28759426.jpg" width="400px"  height="300px" alt="图片说明" > 
 </div>
 
 

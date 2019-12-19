@@ -40,30 +40,30 @@
 
   1、定义网络
   
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/16409622.jpg) 
+  ![](https://github.com/bobo0810/imageRepo/blob/master/img/16409622.jpg) 
   
    2、封装数据集
    
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/38894621.jpg)
+  ![](https://github.com/bobo0810/imageRepo/blob/master/img/38894621.jpg)
   
    3、工具类
    
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/98583532.jpg)
+  ![](https://github.com/bobo0810/imageRepo/blob/master/img/98583532.jpg)
   
    4、主函数
    
-  ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-5-26/32257225.jpg)
+  ![](https://github.com/bobo0810/imageRepo/blob/master/img/32257225.jpg)
 
 
 ----------
 
 # SSD网络结构
 
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-26/78466722.jpg)
+![](https://github.com/bobo0810/imageRepo/blob/master/img/78466722.jpg)
 
 - vgg16网络结构
 
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-26/87243004.jpg)
+![](https://github.com/bobo0810/imageRepo/blob/master/img/87243004.jpg)
 
 ----------
 
@@ -135,7 +135,7 @@ python -m visdom.server
 
 <h4 align="center">结果</h1>
 <div align="center">
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-8/68841398.jpg"  width="300px" height="400px" alt="图片说明" >
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/68841398.jpg"  width="300px" height="400px" alt="图片说明" >
 </div>
 
 ----------
@@ -152,20 +152,20 @@ python -m visdom.server
 
 <h4 align="center">原图</h4>
 <div align="center">
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-25/88568756.jpg"  width="500px" height="300px" alt="图片说明" >
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/88568756.jpg"  width="500px" height="300px" alt="图片说明" >
 </div>
 
 
 <h4 align="center">预处理之后的图像</h4>
 <div align="center">
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-25/33336596.jpg"  width="500px" height="300px" alt="图片说明" >
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/33336596.jpg"  width="500px" height="300px" alt="图片说明" >
 </div>
 
 
 
 <h4 align="center">预测结果</h4>
 <div align="center">
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-25/48601434.jpg"  width="500px" height="300px"     alt="图片说明" >
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/48601434.jpg"  width="500px" height="300px"     alt="图片说明" >
 </div>
 
 ----------

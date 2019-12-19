@@ -18,10 +18,10 @@ References:
 
 - 网络结构
 
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-7-23/67784779.jpg)
+![](https://github.com/bobo0810/imageRepo/blob/master/img/67784779.jpg)
 
 
 - 基本流程
  
 
- ![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-6-5/28743914.jpg)
+ ![](https://github.com/bobo0810/imageRepo/blob/master/img/28743914.jpg)

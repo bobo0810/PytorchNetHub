@@ -16,7 +16,7 @@ And it has the following features:
 - It's memory-efficient (about 3GB for vgg16)
 
 
-![img](http://7zh43r.com1.z0.glb.clouddn.com/del/faster-speed.jpg)
+
 
 
 

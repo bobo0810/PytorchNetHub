@@ -14,7 +14,7 @@
 ----------
 ### FP_SSD网络结构
 
-![](http://boboprivate.oss-cn-beijing.aliyuncs.com/18-9-29/5188649.jpg)
+![](https://github.com/bobo0810/imageRepo/blob/master/img/5188649.jpg)
 
 ----------
 # Trian、Eval、Test:

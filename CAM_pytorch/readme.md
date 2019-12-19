@@ -40,7 +40,7 @@
 
 ## 训练过程
 <div align="center">
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-10-19/15578714.jpg" width="400px"  height="300px" alt="图片说明" ><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-10-19/81997632.jpg" width="400px"  height="300px" alt="图片说明" > 
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/15578714.jpg" width="400px"  height="300px" alt="图片说明" ><img src="https://github.com/bobo0810/imageRepo/blob/master/img/18-10-19/81997632.jpg" width="400px"  height="300px" alt="图片说明" > 
 </div>
 
 ----------
@@ -50,15 +50,15 @@
 - 网络分类时重点关注的区域(即网络的分类依据)
 
 <div align="center">
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-10-19/97478889.jpg" width="400px"  height="300px" alt="图片说明" ><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-10-19/91606455.jpg" width="400px"  height="300px" alt="图片说明" > 
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/97478889.jpg" width="400px"  height="300px" alt="图片说明" ><img src="https://github.com/bobo0810/imageRepo/blob/master/img/91606455.jpg" width="400px"  height="300px" alt="图片说明" > 
 </div>
 
 <div align="center">
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-10-19/94097073.jpg" width="400px"  height="300px" alt="图片说明" ><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-10-19/27379841.jpg" width="400px"  height="300px" alt="图片说明" > 
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/94097073.jpg" width="400px"  height="300px" alt="图片说明" ><img src="https://github.com/bobo0810/imageRepo/blob/master/img/27379841.jpg" width="400px"  height="300px" alt="图片说明" > 
 </div>
 
 <div align="center">
-<img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-10-19/32549346.jpg" width="400px"  height="300px" alt="图片说明" ><img src="http://boboprivate.oss-cn-beijing.aliyuncs.com/18-10-19/53559366.jpg" width="400px"  height="300px" alt="图片说明" > 
+<img src="https://github.com/bobo0810/imageRepo/blob/master/img/32549346.jpg" width="400px"  height="300px" alt="图片说明" ><img src="https://github.com/bobo0810/imageRepo/blob/master/img/53559366.jpg" width="400px"  height="300px" alt="图片说明" > 
 </div>
 
 ----------
