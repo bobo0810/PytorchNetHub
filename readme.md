@@ -56,7 +56,7 @@
 ----------
 # 接下来工作
  
-- Faster rcnn  源码注释（趁早填坑）
+- ~~Faster rcnn~~
 - ~~FPN特征金字塔网络 源码注释~~
 - ~~SSD 源码注释并重构~~
 - ~~YOLO v1  源码注释并重构~~
@@ -68,6 +68,7 @@
 - ~~Noise2noise~~
 - ~~S4ND~~
 - ~~SKNet~~
+- [YOLO v4](https://github.com/Tianxiaomo/pytorch-YOLOv4) (正在跟进)
 ----------
 # 目标检测网络
 
