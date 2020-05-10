@@ -16,18 +16,18 @@
 # 接下来工作
  
 - ~~Faster rcnn~~
-- ~~FPN特征金字塔网络 源码注释~~
-- ~~SSD 源码注释并重构~~
-- ~~YOLO v1  源码注释并重构~~
-- ~~YOLO v3  源码注释并重构~~  
-- ~~U-Net 源码注释~~
+- ~~FPN特征金字塔网络~~
+- ~~SSD ~~
+- ~~YOLO v1 ~~
+- ~~YOLO v3~~  
+- ~~U-Net~~
 - ~~FP_SSD~~
-- Mask rcnn（趁早填坑）
 - ~~Class Activation Mapping(CAM 类激活映射)~~
 - ~~Noise2noise~~
 - ~~S4ND~~
 - ~~SKNet~~
-- [YOLO v4](https://github.com/bobo0810/YOLOv4_Pytorch) (正在跟进)
+- [YOLO v4](https://github.com/bobo0810/YOLOv4_Pytorch) (推理注释完毕，训练部分正在跟进)
+- 该仓库将拆分为多个子仓库，仅剩readme.md  
 ----------
 # 目标检测网络
 
@@ -52,7 +52,7 @@
 
 - [原地址](https://github.com/Tianxiaomo/pytorch-YOLOv4)
 
-- [注释版本](https://github.com/bobo0810/YOLOv4_Pytorch) 
+- [原地址的注释版本](https://github.com/bobo0810/YOLOv4_Pytorch) 
 
 ### SSD
 
