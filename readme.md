@@ -9,49 +9,8 @@
 
 # Issues问题
 
-- 格式要求： 问题+项目名。 例如：数据格式错误——SSD_pytorch 
-- 由于每周汇报及准备论文，我尽量回复大家问题
-- 欢迎大家提交pr
-
-----------
-
-# 阅读源码三步骤
-
-- 数据预处理
-- 网络模型搭建
-- 损失函数定义
-
-
-----------
-
-
-# 项目一般结构
-
-
-- 总结构
-
-  ![](https://github.com/bobo0810/imageRepo/blob/master/img/99053959.jpg)
-  
-  
-- 项目结构
-
-  1、定义网络
-  
-  ![](https://github.com/bobo0810/imageRepo/blob/master/img/16409622.jpg) 
-  
-   2、封装数据集
-   
-  ![](https://github.com/bobo0810/imageRepo/blob/master/img/38894621.jpg)
-  
-   3、工具类
-   
-  ![](https://github.com/bobo0810/imageRepo/blob/master/img/98583532.jpg)
-  
-   4、主函数
-   
-  ![](https://github.com/bobo0810/imageRepo/blob/master/img/32257225.jpg)
-  
-
+- 格式要求： 问题+项目名。 例如：数据格式错(SSD_pytorch)
+- ~~由于每周汇报及准备论文，我尽量回复大家问题~~
 
 ----------
 # 接下来工作
@@ -68,7 +27,7 @@
 - ~~Noise2noise~~
 - ~~S4ND~~
 - ~~SKNet~~
-- [YOLO v4](https://github.com/Tianxiaomo/pytorch-YOLOv4) (正在跟进)
+- [YOLO v4](https://github.com/bobo0810/YOLOv4_Pytorch) (正在跟进)
 ----------
 # 目标检测网络
 
@@ -76,12 +35,12 @@
 - 参考知乎[从编程实现角度学习FasterR-CNN](https://zhuanlan.zhihu.com/p/32404424)
 - 基本理清结构，尚未完全理解
 
-### YOLO V1
+### YOLO v1
 
 - [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/Yolov1_pytorch) 强烈推荐！
 - [原地址](https://github.com/xiongzihua/pytorch-YOLO-v1)
 
-### YOLO V3
+### YOLO v3
 
 - [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/Yolov3_pytorch) 强烈推荐！
 
@@ -89,6 +48,11 @@
 
 - [原地址的加注释版本](https://github.com/bobo0810/PyTorch-YOLOv3-master) 
 
+### YOLO v4
+
+- [原地址](https://github.com/Tianxiaomo/pytorch-YOLOv4)
+
+- [注释版本](https://github.com/bobo0810/YOLOv4_Pytorch) 
 
 ### SSD
 
@@ -148,6 +112,41 @@
 
 注：猫狗大战、风格迁移、GAN生成对抗网络在[pytorch-book传送门](https://github.com/chenyuntc/pytorch-book),更多内容请进门访问，感谢大佬无私奉献。
 
+----------
+
+# 阅读源码三步骤
+
+- 数据预处理
+- 网络模型搭建
+- 损失函数定义
 
 
+----------
+
+
+# 项目一般结构
+
+
+- 总结构
+
+  ![](https://github.com/bobo0810/imageRepo/blob/master/img/99053959.jpg)
+  
+  
+- 项目结构
+
+  1、定义网络
+  
+  ![](https://github.com/bobo0810/imageRepo/blob/master/img/16409622.jpg) 
+  
+   2、封装数据集
+   
+  ![](https://github.com/bobo0810/imageRepo/blob/master/img/38894621.jpg)
+  
+   3、工具类
+   
+  ![](https://github.com/bobo0810/imageRepo/blob/master/img/98583532.jpg)
+  
+   4、主函数
+   
+  ![](https://github.com/bobo0810/imageRepo/blob/master/img/32257225.jpg)
 
