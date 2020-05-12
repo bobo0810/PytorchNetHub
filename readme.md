@@ -6,30 +6,32 @@
 - 本仓库将代码改为统一风格，更加规范化，能够更容易、更轻松得阅读源码，以便根据自己需求进行修改。
 
 ----------
-
-# Issues问题
-
-- 格式要求： 问题+项目名。 例如：数据格式错(SSD_pytorch)
-- ~~由于每周汇报及准备论文，我尽量回复大家问题~~
-
-----------
 # 接下来工作
+
+### 目标检测
+- [x] Faster rcnn
+- [x] YOLO v1
+- [x] YOLO v3
+- [x] SSD
+- [x] FP_SSD
+- [x] Class Activation Mapping(CAM)
+- [x] S4ND
+- [ ] [YOLO v4](https://github.com/bobo0810/YOLOv4_Pytorch) (推理注释完毕，训练部分正在跟进)
+
+### 语义分割
+- [x] U-Net
+
+### 其他
+- [x] SKNet
+- [x] FPN特征金字塔网络
+- [x] Noise2noise
+- [ ] 该仓库将拆分为多个子仓库，仅保留readme.md
+
+
+
  
-- ~~Faster rcnn~~
-- ~~FPN特征金字塔网络~~
-- ~~SSD~~
-- ~~YOLO v1~~
-- ~~YOLO v3~~  
-- ~~U-Net~~
-- ~~FP_SSD~~
-- ~~Class Activation Mapping(CAM 类激活映射)~~
-- ~~Noise2noise~~
-- ~~S4ND~~
-- ~~SKNet~~
-- [YOLO v4](https://github.com/bobo0810/YOLOv4_Pytorch) (推理注释完毕，训练部分正在跟进)
-- 该仓库将拆分为多个子仓库，仅保留readme.md  
 ----------
-# 目标检测网络
+# 目标检测
 
 ### Fatser Rcnn
 - 参考知乎[从编程实现角度学习FasterR-CNN](https://zhuanlan.zhihu.com/p/32404424)
@@ -77,7 +79,7 @@
 - 论文地址:[MICCAI2018 S4ND](https://arxiv.org/pdf/1805.02279.pdf?fbclid=IwAR0B3dI8tjvWz-Mk9Xpyymfnk-SNs6k8tw2B8HU3dTTP-vFinQURHGZSCQs)
 
 ----------
-# 目标分割网络
+# 语义分割
 
 ### U-Net
 - [原地址](https://github.com/milesial/Pytorch-UNet)
@@ -97,7 +99,7 @@
 ### 图像去噪
 
  - 实现：[ImageDenoising_pytorch](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/ImageDenoising_pytorch)
- - 论文地址: [基于深度卷积神经网络的图像去噪研究](http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&amp;dbname=CJFDLAST2017&amp;filename=JSJC201703042&amp;uid=WEEvREcwSlJHSldRa1FhdXNXa0hIb3VVSnliNDU0a2dObEJYUVM1MzR2cz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;v=MTUzMzkxRnJDVVJMS2ZZdWRvRnk3blVydkJMejdCYmJHNEg5Yk1ySTlCWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00=)
+ - 论文: 基于深度卷积神经网络的图像去噪研究
 
 
 ### Noise2noise
