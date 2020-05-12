@@ -17,8 +17,8 @@
  
 - ~~Faster rcnn~~
 - ~~FPN特征金字塔网络~~
-- ~~SSD ~~
-- ~~YOLO v1 ~~
+- ~~SSD~~
+- ~~YOLO v1~~
 - ~~YOLO v3~~  
 - ~~U-Net~~
 - ~~FP_SSD~~
@@ -27,7 +27,7 @@
 - ~~S4ND~~
 - ~~SKNet~~
 - [YOLO v4](https://github.com/bobo0810/YOLOv4_Pytorch) (推理注释完毕，训练部分正在跟进)
-- 该仓库将拆分为多个子仓库，仅剩readme.md  
+- 该仓库将拆分为多个子仓库，仅保留readme.md  
 ----------
 # 目标检测网络
 
