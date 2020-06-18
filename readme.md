@@ -1,11 +1,9 @@
-
-
 # 本仓库目的
 
 - 如果不想阅读源码，只想傻瓜式跟着教程跑起来，推荐看原仓库地址，感谢大佬们的无私奉献！
 - 本仓库将代码改为统一风格，更加规范化，能够更容易、更轻松得阅读源码，以便根据自己需求进行修改。
 
-----------
+
 # 接下来工作
 
 ### 目标检测
@@ -16,7 +14,7 @@
 - [x] FP_SSD
 - [x] Class Activation Mapping(CAM)
 - [x] S4ND
-- [ ] [YOLO v4](https://github.com/bobo0810/YOLOv4_Pytorch) (推理注释完毕，训练部分正在跟进)
+- [ ] [YOLO v4](https://github.com/bobo0810/YOLOv4_Pytorch) (推理注释完成，训练部分正在跟进)
 
 ### 语义分割
 - [x] U-Net
@@ -28,14 +26,10 @@
 - [ ] 该仓库将拆分为多个子仓库，仅保留readme.md
 
 
-
- 
-----------
 # 目标检测
 
 ### Fatser Rcnn
 - 参考知乎[从编程实现角度学习FasterR-CNN](https://zhuanlan.zhihu.com/p/32404424)
-- 基本理清结构，尚未完全理解
 
 ### YOLO v1
 
@@ -68,7 +62,7 @@
 - 论文地址:[基于特征金字塔的 SSD 目标检测改进算法](https://pan.baidu.com/s/1oXYksRiqvtN-LCAdcYfEIg)
 
 ### Class Activation Mapping
-- 作用：分类、定位（不使用真值框进行定位，论文证明 卷积层本身就有定位功能）
+- 作用：分类、定位（卷积层自身具有弱监督定位）
 - 实现：[CAM_pytorch](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/CAM_pytorch)
 - 论文地址:[CVPR 2016  Learning Deep Features for Discriminative Localization](https://arxiv.org/pdf/1512.04150.pdf)
 
@@ -78,14 +72,14 @@
 - 实现：[S4ND_Pytorch](https://github.com/bobo0810/S4ND_Pytorch) 
 - 论文地址:[MICCAI2018 S4ND](https://arxiv.org/pdf/1805.02279.pdf?fbclid=IwAR0B3dI8tjvWz-Mk9Xpyymfnk-SNs6k8tw2B8HU3dTTP-vFinQURHGZSCQs)
 
-----------
+
 # 语义分割
 
 ### U-Net
 - [原地址](https://github.com/milesial/Pytorch-UNet)
 - [原地址的加注释版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/UNet_pytorch) 
 
-----------
+
 
 # 其他
 
@@ -99,7 +93,7 @@
 ### 图像去噪
 
  - 实现：[ImageDenoising_pytorch](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/ImageDenoising_pytorch)
- - 论文: 基于深度卷积神经网络的图像去噪研究
+ - 论文: [基于深度卷积神经网络的图像去噪研究](http://www.ecice06.com/CN/10.3969/j.issn.1000-3428.2017.03.042)
 
 
 ### Noise2noise
@@ -112,9 +106,9 @@
 - [原地址](https://github.com/kuangliu/pytorch-fpn) 
 
 
-注：猫狗大战、风格迁移、GAN生成对抗网络在[pytorch-book传送门](https://github.com/chenyuntc/pytorch-book),更多内容请进门访问，感谢大佬无私奉献。
+注：猫狗大战、风格迁移、GAN生成对抗网络等更多内容请访问[pytorch-book传送门](https://github.com/chenyuntc/pytorch-book)
 
-----------
+
 
 # 阅读源码三步骤
 
@@ -123,7 +117,6 @@
 - 损失函数定义
 
 
-----------
 
 
 # 项目一般结构
