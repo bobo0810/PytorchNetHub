@@ -23,6 +23,7 @@
 - [x] SKNet
 - [x] FPN特征金字塔网络
 - [x] Noise2noise
+- [x] FunnelAct
 - [ ] 该仓库将拆分为多个子仓库，仅保留readme.md
 
 
@@ -105,6 +106,9 @@
 - 实现：[FPN_pytorch](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/FPN_pytorch)
 - [原地址](https://github.com/kuangliu/pytorch-fpn) 
 
+### FunnelRelu激活函数
+- 实现：[FunnelAct_Pytorch](https://github.com/bobo0810/FunnelAct_Pytorch)
+- [原地址](https://github.com/megvii-model/FunnelAct) 
 
 注：猫狗大战、风格迁移、GAN生成对抗网络等更多内容请访问[pytorch-book传送门](https://github.com/chenyuntc/pytorch-book)
 
