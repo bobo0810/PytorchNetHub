@@ -1,8 +1,7 @@
 # 本仓库目的
 
-- 如果不想阅读源码，只想傻瓜式跟着教程跑起来，推荐看原仓库地址，感谢大佬们的无私奉献！
-- 本仓库将代码改为统一风格，更加规范化，能够更容易、更轻松得阅读源码，以便根据自己需求进行修改。
-
+- 如果不想阅读源码，推荐看原仓库地址，感谢大佬们的无私奉献！
+- 本仓库将代码改为统一风格，能够更容易、更轻松得阅读源码，以便根据自己需求进行修改。
 
 # 接下来工作
 
@@ -11,10 +10,9 @@
 - [x] YOLO v1
 - [x] YOLO v3
 - [x] SSD
-- [x] FP_SSD
-- [x] Class Activation Mapping(CAM)
+- [x] CAM
 - [x] S4ND
-- [ ] [YOLO v4](https://github.com/bobo0810/YOLOv4_Pytorch) (推理注释完成，训练部分正在跟进)
+- [x] YOLO v4
 
 ### 语义分割
 - [x] U-Net
@@ -24,104 +22,36 @@
 - [x] FPN特征金字塔网络
 - [x] Noise2noise
 - [x] FunnelAct
+- [ ] Circle-Loss
 - [ ] 该仓库将拆分为多个子仓库，仅保留readme.md
 
 
-# 目标检测
 
-### Fatser Rcnn
-- 参考知乎[从编程实现角度学习FasterR-CNN](https://zhuanlan.zhihu.com/p/32404424)
+# 汇总
 
-### YOLO v1
-
-- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/Yolov1_pytorch) 强烈推荐！
-- [原地址](https://github.com/xiongzihua/pytorch-YOLO-v1)
-
-### YOLO v3
-
-- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/Yolov3_pytorch) 强烈推荐！
-
-- [原地址](https://github.com/eriklindernoren/PyTorch-YOLOv3)
-
-- [原地址的加注释版本](https://github.com/bobo0810/PyTorch-YOLOv3-master) 
-
-### YOLO v4
-
-- [原地址](https://github.com/Tianxiaomo/pytorch-YOLOv4)
-
-- [原地址的注释版本](https://github.com/bobo0810/YOLOv4_Pytorch) 
-
-### SSD
-
-- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/SSD_pytorch) 强烈推荐！
-- [原地址](https://github.com/amdegroot/ssd.pytorch) 
-- [原地址的加注释版本](https://github.com/bobo0810/pytorchSSD) 
-
-### FP_SSD
-
-- [实现](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/FP_SSD_pytorch)
-- 论文地址:[基于特征金字塔的 SSD 目标检测改进算法](https://pan.baidu.com/s/1oXYksRiqvtN-LCAdcYfEIg)
-
-### Class Activation Mapping
-- 作用：分类、定位（卷积层自身具有弱监督定位）
-- 实现：[CAM_pytorch](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/CAM_pytorch)
-- 论文地址:[CVPR 2016  Learning Deep Features for Discriminative Localization](https://arxiv.org/pdf/1512.04150.pdf)
+|模型|原地址|加注释|实现|来源|备注|更新|
+|:---:|:----:|:---:|:------:|:------:|:------:|:------:|
+|Fatser Rcnn |[原地址](https://zhuanlan.zhihu.com/p/32404424)|[实现](https://github.com/bobo0810/PytorchNetHub/tree/master/FasterRcnn_pytorch)||NIPS 2015||
+|YOLO v1 |[原地址](https://github.com/xiongzihua/pytorch-YOLO-v1)|[实现](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/Yolov1_pytorch)||CVPR2016||
+|YOLO v3 |[原地址](https://github.com/eriklindernoren/PyTorch-YOLOv3)|[实现](https://github.com/bobo0810/PyTorch-YOLOv3-master)|[重构](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/Yolov3_pytorch)|||
+|YOLO v4 |[原地址](https://github.com/Tianxiaomo/pytorch-YOLOv4)|[实现](https://github.com/bobo0810/YOLOv4_Pytorch)||||2020.4|
+|SSD |[原地址](https://github.com/amdegroot/ssd.pytorch)|[实现](https://github.com/bobo0810/pytorchSSD)|[重构](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/SSD_pytorch)|ECCV2016||
+|[CAM](https://arxiv.org/pdf/1512.04150.pdf) ||[实现](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/CAM_pytorch)||CVPR2016|卷积层实现弱监督定位|
+|[S4ND](https://arxiv.org/pdf/1805.02279.pdf?fbclid=IwAR0B3dI8tjvWz-Mk9Xpyymfnk-SNs6k8tw2B8HU3dTTP-vFinQURHGZSCQs) |||[复现](https://github.com/bobo0810/S4ND_Pytorch)|MICCAI 2018|单次单尺度肺结节检测|
+|U-Net|[原地址](https://github.com/milesial/Pytorch-UNet)|[实现](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/UNet_pytorch) ||MICCAI2015||
+|[SKNet]((https://arxiv.org/abs/1903.06586))|||[实现](https://github.com/bobo0810/SKNet_Pytorch)|CVPR2019|继Res\Dense\SE之后新型Block|
+|Noise2noise|[原地址](https://github.com/joeylitalien/noise2noise-pytorch)||[重构](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/Noise2noise_pytorch)|ICML2018||
+|FPN|[原地址](https://github.com/kuangliu/pytorch-fpn)|[实现](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/FPN_pytorch)||CVPR2017||
+|FunnelRelu|[原地址](https://github.com/megvii-model/FunnelAct) ||[复现](https://github.com/bobo0810/FunnelAct_Pytorch)|||2020.7|
 
 
-### S4ND
-- 作用：单次单尺度肺结节检测
-- 实现：[S4ND_Pytorch](https://github.com/bobo0810/S4ND_Pytorch) 
-- 论文地址:[MICCAI2018 S4ND](https://arxiv.org/pdf/1805.02279.pdf?fbclid=IwAR0B3dI8tjvWz-Mk9Xpyymfnk-SNs6k8tw2B8HU3dTTP-vFinQURHGZSCQs)
-
-
-# 语义分割
-
-### U-Net
-- [原地址](https://github.com/milesial/Pytorch-UNet)
-- [原地址的加注释版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/UNet_pytorch) 
-
-
-
-# 其他
-
-
-### SKNet
-- 作用：继Res\Dense\SE Block之后新的Block
-- 实现：[SKNet](https://github.com/bobo0810/SKNet_Pytorch)
-- 论文地址:[CVPR 2019 SKNet](https://arxiv.org/abs/1903.06586)
-
-
-### 图像去噪
-
- - 实现：[ImageDenoising_pytorch](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/ImageDenoising_pytorch)
- - 论文: [基于深度卷积神经网络的图像去噪研究](http://www.ecice06.com/CN/10.3969/j.issn.1000-3428.2017.03.042)
-
-
-### Noise2noise
-- [重构版本](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/Noise2noise_pytorch)
-- [原地址](https://github.com/joeylitalien/noise2noise-pytorch) 
-
-
-### FPN特征金字塔网络
-- 实现：[FPN_pytorch](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/FPN_pytorch)
-- [原地址](https://github.com/kuangliu/pytorch-fpn) 
-
-### FunnelRelu激活函数
-- 实现：[FunnelAct_Pytorch](https://github.com/bobo0810/FunnelAct_Pytorch)
-- [原地址](https://github.com/megvii-model/FunnelAct) 
-
-注：猫狗大战、风格迁移、GAN生成对抗网络等更多内容请访问[pytorch-book传送门](https://github.com/chenyuntc/pytorch-book)
-
-
+注：猫狗大战、风格迁移、GAN生成对抗网络等更多内容请访问[传送门](https://github.com/chenyuntc/pytorch-book)
 
 # 阅读源码三步骤
 
 - 数据预处理
 - 网络模型搭建
 - 损失函数定义
-
-
-
 
 # 项目一般结构
 
