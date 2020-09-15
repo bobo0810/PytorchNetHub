@@ -22,6 +22,7 @@
 - [x] FPN特征金字塔网络
 - [x] Noise2noise
 - [x] FunnelAct
+- [x] DynamicReLU
 - [ ] Circle-Loss
 - [ ] 该仓库将拆分为多个子仓库，仅保留readme.md
 
@@ -43,6 +44,7 @@
 |[Noise2noise](https://arxiv.org/abs/1803.04189)|[原地址](https://github.com/joeylitalien/noise2noise-pytorch)||[重构](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/Noise2noise_pytorch)|ICML 2018||
 |[FPN](https://arxiv.org/abs/1612.03144)|[原地址](https://github.com/kuangliu/pytorch-fpn)|[注释](https://github.com/bobo0810/AnnotatedNetworkModelGit/tree/master/FPN_pytorch)||CVPR 2017||
 |[FunnelRelu](https://arxiv.org/pdf/2007.11824.pdf)|[原地址](https://github.com/megvii-model/FunnelAct) ||[复现](https://github.com/bobo0810/FunnelAct_Pytorch)|ECCV 2020|较Relu\PRelu\Swish更有效|2020.7|
+|[DynamicReLU](https://arxiv.org/abs/2003.10027)|[原地址](https://github.com/Islanna/DynamicReLU)|[注释](https://github.com/bobo0810/DynamicReLU)||ECCV 2020|统一激活函数|2020.9|
 
 
 注：猫狗大战、风格迁移、GAN生成对抗网络等更多内容请访问[传送门](https://github.com/chenyuntc/pytorch-book)
