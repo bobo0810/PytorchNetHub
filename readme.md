@@ -9,21 +9,26 @@
 - [x] Faster rcnn
 - [x] YOLO v1
 - [x] YOLO v3
+- [x] YOLO v4
 - [x] SSD
 - [x] CAM
 - [x] S4ND
-- [x] YOLO v4
+
 
 ### 语义分割
 - [x] U-Net
 
+### 人脸识别
+- [ ] AMSoftmax
+- [ ] ArcFace
+- [ ] Circle-Loss
+
 ### 其他
 - [x] SKNet
-- [x] FPN特征金字塔网络
+- [x] FPN
 - [x] Noise2noise
 - [x] FunnelAct
 - [x] DynamicReLU
-- [ ] Circle-Loss
 - [ ] 该仓库将拆分为多个子仓库，仅保留readme.md
 
 
