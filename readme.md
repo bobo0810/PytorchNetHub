@@ -58,7 +58,7 @@
 |[ArcFace](https://arxiv.org/abs/1801.07698)|[原地址](https://github.com/cavalleria/cavaface.pytorch)|[注释](https://github.com/bobo0810/FaceVerLoss)||CVPR 2019|加法角间隔|2020.9|
 |[CircleLoss](https://arxiv.org/abs/2002.10857)|[原地址](https://github.com/xialuxi/CircleLoss_Face)|[注释](https://github.com/bobo0810/FaceVerLoss)||CVPR 2020 Oral|加权角间隔|2020.9|
 |[SST](https://arxiv.org/abs/2007.08398)|[原地址](https://github.com/dituu/Semi-Siamese-Training)|[注释](https://github.com/bobo0810/Semi-Siamese-Training)||ECCV 2020|浅层人脸学习|2020.10|
-|AMP||||[实现](https://github.com/bobo0810/PytorchNetHub/tree/master/AMP)|自动混合精度|2020.10|
+|AMP|||[实现](https://github.com/bobo0810/PytorchNetHub/tree/master/AMP)||自动混合精度|2020.10|
 
 注：猫狗大战、风格迁移、GAN生成对抗网络等更多内容请访问[传送门](https://github.com/chenyuntc/pytorch-book)
 
