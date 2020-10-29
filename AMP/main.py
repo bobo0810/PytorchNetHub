@@ -12,8 +12,9 @@ def start_train():
     iter_size=8
 
     myNet = MyNet(use_amp).to("cuda:0")
-    myNet = torch.nn.DataParallel(myNet,device_ids=[0,1])
+    myNet = torch.nn.DataParallel(myNet,device_ids=[0,1]) # 数据并行
     myNet.train()
+    # 训练开始前初始化 梯度缩放器
     scaler = GradScaler() if use_amp else None
 
     for epoch in range(1,100):
@@ -25,7 +26,7 @@ def start_train():
 
             # 自动混合精度训练
             if use_amp:
-                # 自动广播 将部分Tensor由FP32自动转为FP16
+                # 自动广播 将支持半精度操作自动转为FP16
                 with autocast():
                     # 提取特征
                     feature=myNet(input)
@@ -48,39 +49,24 @@ def start_train():
                     optimizer.step()
                 # 梯度清零
                 optimizer.zero_grad()
-
+        # scaler 具有状态。恢复训练时需要加载
+        save_model(model,scaler)
 def start_test():
     '''
-    测试 两种情况，哪个性能好选哪个
-    情况1：MyNet开启AMP，且应用with autocast()   仅支持英伟达GPU
-    情况2：MyNet不开启，图像与模型直接half()
+    测试
     '''
-    use_amp=True
-    ##########情况1##########
     # 初始化网络并加载预训练模型
-    myNet = MyNet(use_amp).to("cuda:0")
+    myNet = MyNet().to("cuda:0")
     myNet.eval()
     with torch.no_grad():
-        for i, (img,_) in enumerate(test_dataloader):
-            img=img.to("cuda:0")
-            # 开启半精度预测
-            if use_amp:
-                with autocast():
-                    feature = myNet(input)
-            else:
-                feature = myNet(input)
+        input = input.to("cuda:0")
 
-    ##########情况2##########
-    # 初始化网络并加载预训练模型
-    myNet = MyNet()
-    myNet.eval()
-    with torch.no_grad():
-        for i, (img,_) in enumerate(test_dataloader):
-            img=img.to("cuda:0")
-            # 开启半精度预测
-            if use_amp:
-                img = img.half()
-                myNet = myNet.half()
-            feature = myNet(img)
+        # 若想推理加速，在精度接受范围内img\model手动half()为FP16，然后只能GPU推理
+        # input=input.half()
+        # myNet=myNet.half()
+        feature = myNet(input)
+
+
+
 
 
