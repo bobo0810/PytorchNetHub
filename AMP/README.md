@@ -10,6 +10,7 @@
 
     FP16权重用于反向传播计算（加速训练），并更新参数在FP32权重上（主模型）
 - 若想推理加速，在精度接受范围内img\model手动half()为FP16，然后只能GPU推理
+- [预测问题](https://github.com/jefflomax/pytorch-fizzbuzz-amp/issues/1#issuecomment-719125063)
 
 ## 环境
 
@@ -19,6 +20,10 @@
 
 
 ## 参考
-[pytorch_docs](https://pytorch.org/docs/stable/notes/amp_examples.html)
+[Pytorch_docs](https://pytorch.org/docs/stable/notes/amp_examples.html)
+
+[AUTOMATIC MIXED PRECISION](https://pytorch.org/tutorials/recipes/recipes/amp_recipe.html#advanced-topics)
+
 [基于Apex的混合精度加速](https://zhuanlan.zhihu.com/p/79887894)
+
 [论文精读：Mixed Precision Training](https://zhuanlan.zhihu.com/p/163493798)

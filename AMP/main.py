@@ -17,6 +17,13 @@ def start_train():
     # 训练开始前初始化 梯度缩放器
     scaler = GradScaler() if use_amp else None
 
+    # 加载预训练权重
+    if resume_train:
+        scaler.load_state_dict(checkpoint['scaler']) # amp自动混合精度用到
+        optimizer.load_state_dict(checkpoint['optimizer'])
+        myNet.load_state_dict(checkpoint["model"])
+
+
     for epoch in range(1,100):
         for batch_idx, (input, target) in enumerate(dataloader_train):
 
@@ -50,7 +57,9 @@ def start_train():
                 # 梯度清零
                 optimizer.zero_grad()
         # scaler 具有状态。恢复训练时需要加载
-        save_model(model,scaler)
+        state = {'net': myNet.state_dict(), 'optimizer': optimizer.state_dict(), 'scaler': scaler.state_dict()}
+        torch.save(state, "filename.pth")
+
 def start_test():
     '''
     测试
