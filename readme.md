@@ -26,6 +26,9 @@
 - [x] BroadFace
 - [x] TargetDrop
 
+### 主干网络
+- [x] HS-ResNet
+
 
 ### 激活函数
 - [x] FunnelAct
@@ -52,7 +55,7 @@
 |[CAM](https://arxiv.org/pdf/1512.04150.pdf) |[原地址](https://github.com/jacobgil/keras-cam)|[注释](https://github.com/bobo0810/PytorchNetHub/tree/master/CAM_pytorch)||CVPR 2016|卷积层实现弱监督定位|
 |[S4ND](https://arxiv.org/pdf/1805.02279.pdf?fbclid=IwAR0B3dI8tjvWz-Mk9Xpyymfnk-SNs6k8tw2B8HU3dTTP-vFinQURHGZSCQs) |||[复现](https://github.com/bobo0810/S4ND_Pytorch)|MICCAI 2018|单次单尺度肺结节检测|
 |[U-Net](https://arxiv.org/abs/1505.04597)|[原地址](https://github.com/milesial/Pytorch-UNet)|[注释](https://github.com/bobo0810/PytorchNetHub/tree/master/UNet_pytorch) ||MICCAI 2015|医学影像分割经典网络|
-|[SKNet]((https://arxiv.org/pdf/1903.06586.pdf))|[原地址](https://github.com/implus/SKNet)||[实现](https://github.com/bobo0810/SKNet_Pytorch)|CVPR 2019|继Res\Dense\SE之后新型Block|2019.5|
+|[SKNet](https://arxiv.org/pdf/1903.06586.pdf)|[原地址](https://github.com/implus/SKNet)||[实现](https://github.com/bobo0810/SKNet_Pytorch)|CVPR 2019|继Res\Dense\SE之后新型Block|2019.5|
 |[Noise2noise](https://arxiv.org/abs/1803.04189)|[原地址](https://github.com/joeylitalien/noise2noise-pytorch)||[重构](https://github.com/bobo0810/PytorchNetHub/tree/master/Noise2noise_pytorch)|ICML 2018||
 |[FPN](https://arxiv.org/abs/1612.03144)|[原地址](https://github.com/kuangliu/pytorch-fpn)|[注释](https://github.com/bobo0810/PytorchNetHub/tree/master/FPN_pytorch)||CVPR 2017||
 |[FunnelRelu](https://arxiv.org/pdf/2007.11824.pdf)|[原地址](https://github.com/megvii-model/FunnelAct) ||[复现](https://github.com/bobo0810/FunnelAct_Pytorch)|ECCV 2020|较Relu\PRelu\Swish更有效|2020.7|
@@ -64,6 +67,7 @@
 |AMP|||[实现](https://github.com/bobo0810/PytorchNetHub/tree/master/AMP)||自动混合精度|2020.10|
 |[BroadFace](https://arxiv.org/abs/2008.06674)|||[复现](https://github.com/bobo0810/BroadFace)|ECCV2020|队列更新|2020.10|
 |[TargetDrop](https://arxiv.org/abs/2010.10716)|||[复现](https://github.com/bobo0810/TargetDrop)||注意力Drop|2020.10|
+|[HS-ResNet](https://arxiv.org/abs/2010.07621)|||[复现](https://github.com/bobo0810/HS-ResNet)||改进ResNet|2020.11|
 
 注：猫狗大战、风格迁移、GAN生成对抗网络等更多内容请访问[传送门](https://github.com/chenyuntc/pytorch-book)
 
