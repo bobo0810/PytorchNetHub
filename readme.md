@@ -1,7 +1,9 @@
 # 目的
 
 - 项目注释 
+
   > 即开即用推荐原仓库,阅读源码推荐注释
+  
 - 论文复现
 
 # 接下来工作
@@ -78,44 +80,9 @@
 |[S4ND](https://arxiv.org/pdf/1805.02279.pdf?fbclid=IwAR0B3dI8tjvWz-Mk9Xpyymfnk-SNs6k8tw2B8HU3dTTP-vFinQURHGZSCQs) |||[复现](https://github.com/bobo0810/S4ND_Pytorch)|MICCAI 2018|
 |[U-Net](https://arxiv.org/abs/1505.04597)|[原地址](https://github.com/milesial/Pytorch-UNet)|[注释](https://github.com/bobo0810/PytorchNetHub/tree/master/UNet_pytorch) ||MICCAI 2015|
 |[SKNet](https://arxiv.org/pdf/1903.06586.pdf)|[原地址](https://github.com/implus/SKNet)||[实现](https://github.com/bobo0810/SKNet_Pytorch)|CVPR 2019|
-
 |[FPN](https://arxiv.org/abs/1612.03144)|[原地址](https://github.com/kuangliu/pytorch-fpn)|[注释](https://github.com/bobo0810/PytorchNetHub/tree/master/FPN_pytorch)||CVPR 2017|
 
 
+> 注：猫狗大战、风格迁移、GAN生成对抗网络等更多内容请访问[传送门](https://github.com/chenyuntc/pytorch-book)
 
-
-
-注：猫狗大战、风格迁移、GAN生成对抗网络等更多内容请访问[传送门](https://github.com/chenyuntc/pytorch-book)
-
-# 阅读源码三步骤
-
-- 数据预处理
-- 网络模型搭建
-- 损失函数定义
-
-# 项目结构
-
-
-- 总结构
-
-  ![](https://github.com/bobo0810/imageRepo/blob/master/img/99053959.jpg)
-  
-  
-- 项目结构
-
-  1、定义网络
-  
-  ![](https://github.com/bobo0810/imageRepo/blob/master/img/16409622.jpg) 
-  
-   2、封装数据集
-   
-  ![](https://github.com/bobo0810/imageRepo/blob/master/img/38894621.jpg)
-  
-   3、工具类
-   
-  ![](https://github.com/bobo0810/imageRepo/blob/master/img/98583532.jpg)
-  
-   4、主函数
-   
-  ![](https://github.com/bobo0810/imageRepo/blob/master/img/32257225.jpg)
 
