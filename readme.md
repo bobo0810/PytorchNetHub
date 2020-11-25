@@ -1,7 +1,10 @@
-# 本仓库目的
+# 目的
 
-- 如果不想阅读源码，推荐看原仓库地址，感谢大佬们的无私奉献！
-- 本仓库将代码改为统一风格，能够更容易、更轻松得阅读源码，以便根据自己需求进行修改。
+- 项目注释
+
+    即开即用推荐原仓库；阅读源码推荐注释项目。
+    
+- 论文复现
 
 # 接下来工作
 
@@ -28,7 +31,7 @@
 
 ### 主干网络
 - [x] HS-ResNet
-- [x] AFF-ResNet
+- [x] AFF-ResNet [并入官方库](https://github.com/YimianDai/open-aff/blob/master/aff_pytorch/README_CN.md)
 
 
 ### 激活函数
@@ -58,7 +61,7 @@
 |[SKNet](https://arxiv.org/pdf/1903.06586.pdf)|[原地址](https://github.com/implus/SKNet)||[实现](https://github.com/bobo0810/SKNet_Pytorch)|CVPR 2019|继Res\Dense\SE之后新型Block|2019.5|
 |[Noise2noise](https://arxiv.org/abs/1803.04189)|[原地址](https://github.com/joeylitalien/noise2noise-pytorch)||[重构](https://github.com/bobo0810/PytorchNetHub/tree/master/Noise2noise_pytorch)|ICML 2018||
 |[FPN](https://arxiv.org/abs/1612.03144)|[原地址](https://github.com/kuangliu/pytorch-fpn)|[注释](https://github.com/bobo0810/PytorchNetHub/tree/master/FPN_pytorch)||CVPR 2017||
-|[FunnelRelu](https://arxiv.org/pdf/2007.11824.pdf)|[原地址](https://github.com/megvii-model/FunnelAct) ||[复现](https://github.com/bobo0810/FunnelAct_Pytorch)|ECCV 2020|较Relu\PRelu\Swish更有效|2020.7|
+|[FunnelRelu](https://arxiv.org/pdf/2007.11824.pdf)|[MegEngine版](https://github.com/megvii-model/FunnelAct) ||[复现](https://github.com/bobo0810/FunnelAct_Pytorch)|ECCV 2020|较Relu\PRelu\Swish更有效|2020.7|
 |[DynamicReLU](https://arxiv.org/abs/2003.10027)|[原地址](https://github.com/Islanna/DynamicReLU)|[注释](https://github.com/bobo0810/DynamicReLU)||ECCV 2020|动态激活函数|2020.9|
 |[AMSoftmax](https://arxiv.org/pdf/1801.05599.pdf)|[原地址](https://github.com/cavalleria/cavaface.pytorch)|[注释](https://github.com/bobo0810/FaceVerLoss)|||乘法角间隔|2020.9|
 |[ArcFace](https://arxiv.org/abs/1801.07698)|[原地址](https://github.com/cavalleria/cavaface.pytorch)|[注释](https://github.com/bobo0810/FaceVerLoss)||CVPR 2019|加法角间隔|2020.9|
@@ -68,7 +71,7 @@
 |[BroadFace](https://arxiv.org/abs/2008.06674)|||[复现](https://github.com/bobo0810/BroadFace)|ECCV 2020|队列更新|2020.10|
 |[TargetDrop](https://arxiv.org/abs/2010.10716)|||[复现](https://github.com/bobo0810/TargetDrop)||注意力Drop|2020.10|
 |[HS-ResNet](https://arxiv.org/abs/2010.07621)|||[复现](https://github.com/bobo0810/HS-ResNet)||改进ResNet|2020.11|
-|[AFF-ResNet](https://arxiv.org/abs/2009.14082)|[MXNet版](https://github.com/YimianDai/open-aff)||[复现](https://github.com/bobo0810/AFF)|WACV 2021|统一特征融合|2020.11|
+|[AFF-ResNet](https://arxiv.org/abs/2009.14082)|[MXNet版](https://github.com/YimianDai/open-aff)||[复现](https://github.com/YimianDai/open-aff/blob/master/aff_pytorch/README_CN.md)|WACV 2021|统一特征融合|2020.11|
 
 注：猫狗大战、风格迁移、GAN生成对抗网络等更多内容请访问[传送门](https://github.com/chenyuntc/pytorch-book)
 
@@ -78,7 +81,7 @@
 - 网络模型搭建
 - 损失函数定义
 
-# 项目一般结构
+# 项目结构
 
 
 - 总结构
