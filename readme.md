@@ -1,10 +1,11 @@
 # 目的
 
+- 论文复现
 - 项目注释 
 
   > 即开即用推荐原仓库,阅读源码推荐注释
   
-- 论文复现
+
 
 # 接下来工作
 
@@ -83,6 +84,6 @@
 |[FPN](https://arxiv.org/abs/1612.03144)|[原地址](https://github.com/kuangliu/pytorch-fpn)|[注释](https://github.com/bobo0810/PytorchNetHub/tree/master/FPN_pytorch)||CVPR 2017|
 
 
-> 注：猫狗大战、风格迁移、GAN生成对抗网络等更多内容请访问[传送门](https://github.com/chenyuntc/pytorch-book)
+> 注：猫狗分类、风格迁移、生成对抗等更多内容请访问[pytorch-book](https://github.com/chenyuntc/pytorch-book)
 
 
