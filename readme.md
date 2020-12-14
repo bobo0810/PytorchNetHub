@@ -37,12 +37,13 @@
 - [x] BroadFace
 - [x] TargetDrop
 
-### 损失函数
+### 人脸损失
 
 - [x] AMSoftmax
 - [x] ArcFace
 - [x] Circle-Loss
 - [x] DiscFace
+- [x] NPCFace
 
 ### 激活函数
 
@@ -75,6 +76,7 @@
 |[AFF-ResNet](https://arxiv.org/abs/2009.14082)|[MXNet版](https://github.com/YimianDai/open-aff)||[复现](https://github.com/YimianDai/open-aff/blob/master/aff_pytorch/README_CN.md)|WACV 2021|统一特征融合|2020.11|
 |DDP|||[实现](https://github.com/bobo0810/PytorchNetHub/tree/master/DDP)||分布式数据并行|2020.11|
 |[DiscFace](https://openaccess.thecvf.com/content/ACCV2020/html/Kim_DiscFace_Minimum_Discrepancy_Learning_for_Deep_Face_Recognition_ACCV_2020_paper.html)|||[复现](https://github.com/bobo0810/FaceVerLoss)|ACCV 2020|最小差异学习|2020.12|
+|[NPCFace](https://arxiv.org/abs/2007.10172)|||[复现](https://github.com/bobo0810/FaceVerLoss)||正负联合监督|2020.12|
 
 
 
