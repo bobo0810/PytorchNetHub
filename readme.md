@@ -50,6 +50,10 @@
 - [x] DiscFace
 - [x] NPCFace
 
+### 知识蒸馏
+
+- [x] RepDistiller
+
 ### 其他
 - [x] AMP - 自动混合精度
 - [x] DDP - 分布式数据并行
@@ -63,6 +67,7 @@
 |                  模型                   |                         官方库                         |                           注释                            | 实现 |   来源    |     备注     |  更新  |
 | :-------------------------------------: | :----------------------------------------------------: | :-------------------------------------------------------: | :--: | :-------: | :----------: | :----: |
 | [SST](https://arxiv.org/abs/2007.08398) | [Link](https://github.com/dituu/Semi-Siamese-Training) | [注释](https://github.com/bobo0810/Semi-Siamese-Training) |      | ECCV 2020 | 浅层人脸学习 | 2021.2 |
+|              RepDistiller               |   [Link](https://github.com/HobbitLong/RepDistiller)   |     [注释](https://github.com/bobo0810/RepDistiller)      |      |           |  知识蒸馏库  | 2021.2 |
 
 
 
@@ -74,7 +79,6 @@
 |[AMSoftmax](https://arxiv.org/pdf/1801.05599.pdf)|[Link](https://github.com/cavalleria/cavaface.pytorch)|[注释](https://github.com/bobo0810/FaceVerLoss)|||乘法角间隔|2020.9|
 |[ArcFace](https://arxiv.org/abs/1801.07698)|[Link](https://github.com/cavalleria/cavaface.pytorch)|[注释](https://github.com/bobo0810/FaceVerLoss)||CVPR 2019|加法角间隔|2020.9|
 |[CircleLoss](https://arxiv.org/abs/2002.10857)|[Link](https://github.com/xialuxi/CircleLoss_Face)|[注释](https://github.com/bobo0810/FaceVerLoss)||CVPR 2020|加权角间隔|2020.9|
-|[SST](https://arxiv.org/abs/2007.08398)|[Link](https://github.com/dituu/Semi-Siamese-Training)|[注释](https://github.com/bobo0810/Semi-Siamese-Training)||ECCV 2020|浅层人脸学习|2020.10|
 |AMP|||[实现](https://github.com/bobo0810/PytorchNetHub/tree/master/AMP)||自动混合精度|2020.10|
 |[BroadFace](https://arxiv.org/abs/2008.06674)|||[复现](https://github.com/bobo0810/BroadFace)|ECCV 2020|队列更新|2020.10|
 |[TargetDrop](https://arxiv.org/abs/2010.10716)|||[复现](https://github.com/bobo0810/TargetDrop)||注意力Drop|2020.10|
