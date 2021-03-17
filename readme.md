@@ -3,6 +3,9 @@
 # 目的
 
 - 论文复现
+
+- 算法竞赛
+
 - 项目注释 
 
   > 即开即用推荐官方库,阅读源码推荐注释
@@ -30,6 +33,7 @@
 - [x] SKNet
 - [x] HS-ResNet
 - [x] AFF-ResNet [并入官方库](https://github.com/YimianDai/open-aff/blob/master/aff_pytorch/README_CN.md)
+- [x] TargetDrop
 
 ### 激活函数
 
@@ -40,7 +44,6 @@
 
 - [x] Semi-Siamese-Training
 - [x] BroadFace
-- [x] TargetDrop
 
 ### 人脸损失
 
@@ -53,6 +56,11 @@
 ### 知识蒸馏
 
 - [x] RepDistiller
+
+### 算法竞赛
+
+- [x] [雪浪制造AI挑战赛](https://github.com/bobo0810/XueLangTianchi)    排名: 32/2403
+- [ ] [计图”人工智能算法挑战赛-狗细分类]()   待比赛结束开源
 
 ### 其他
 - [x] AMP - 自动混合精度
@@ -103,6 +111,7 @@
 |[U-Net](https://arxiv.org/abs/1505.04597)|[Link](https://github.com/milesial/Pytorch-UNet)|[注释](https://github.com/bobo0810/PytorchNetHub/tree/master/UNet_pytorch) ||MICCAI 2015|
 |[SKNet](https://arxiv.org/pdf/1903.06586.pdf)|[Link](https://github.com/implus/SKNet)||[实现](https://github.com/bobo0810/SKNet_Pytorch)|CVPR 2019|
 |[FPN](https://arxiv.org/abs/1612.03144)|[Link](https://github.com/kuangliu/pytorch-fpn)|[注释](https://github.com/bobo0810/PytorchNetHub/tree/master/FPN_pytorch)||CVPR 2017|
+|[XueLangTianchi](https://tianchi.aliyun.com/competition/entrance/231666/introduction)|||[实现](https://github.com/bobo0810/XueLangTianchi)|雪浪制造AI挑战赛|
 
 
 > 注：猫狗分类、风格迁移、生成对抗等更多内容请访问[pytorch-book](https://github.com/chenyuntc/pytorch-book)
