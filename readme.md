@@ -60,7 +60,7 @@
 ### 算法竞赛
 
 - [x] [雪浪制造AI挑战赛](https://github.com/bobo0810/XueLangTianchi)    排名: 32/2403
-- [ ] [计图”人工智能算法挑战赛-狗细分类]()   待比赛结束开源
+- [x] [计图”人工智能算法挑战赛-狗细分类](https://github.com/bobo0810/JittorDogsClass)   排名: 7/430
 
 ### 其他
 - [x] AMP - 自动混合精度
@@ -72,10 +72,11 @@
 
 ## 2021
 
-|                  模型                   |                         官方库                         |                           注释                            | 实现 |   来源    |     备注     |  更新  |
-| :-------------------------------------: | :----------------------------------------------------: | :-------------------------------------------------------: | :--: | :-------: | :----------: | :----: |
-| [SST](https://arxiv.org/abs/2007.08398) | [Link](https://github.com/dituu/Semi-Siamese-Training) | [注释](https://github.com/bobo0810/Semi-Siamese-Training) |      | ECCV 2020 | 浅层人脸学习 | 2021.2 |
-|              RepDistiller               |   [Link](https://github.com/HobbitLong/RepDistiller)   |     [注释](https://github.com/bobo0810/RepDistiller)      |      |           |  知识蒸馏库  | 2021.2 |
+|                             模型                             |                         官方库                         |                           注释                            |                        实现                         |   来源    |     备注     |  更新  |
+| :----------------------------------------------------------: | :----------------------------------------------------: | :-------------------------------------------------------: | :-------------------------------------------------: | :-------: | :----------: | :----: |
+|           [SST](https://arxiv.org/abs/2007.08398)            | [Link](https://github.com/dituu/Semi-Siamese-Training) | [注释](https://github.com/bobo0810/Semi-Siamese-Training) |                                                     | ECCV 2020 | 浅层人脸学习 | 2021.2 |
+|                         RepDistiller                         |   [Link](https://github.com/HobbitLong/RepDistiller)   |     [注释](https://github.com/bobo0810/RepDistiller)      |                                                     |           |  知识蒸馏库  | 2021.2 |
+| [JittorDogsClass](https://www.educoder.net/competitions/index/Jittor-2) |                                                        |                                                           | [实现](https://github.com/bobo0810/JittorDogsClass) |           | 狗细分类竞赛 | 2021.4 |
 
 
 
