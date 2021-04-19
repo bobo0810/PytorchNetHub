@@ -60,7 +60,7 @@
 ### 算法竞赛
 
 - [x] [雪浪制造AI挑战赛](https://github.com/bobo0810/XueLangTianchi)    排名: 32/2403
-- [x] [计图”人工智能算法挑战赛-狗细分类](https://github.com/bobo0810/JittorDogsClass)   排名: 7/430
+- [x] [“计图”人工智能算法挑战赛-狗细分类](https://github.com/bobo0810/JittorDogsClass)   排名: 4/430
 
 ### 其他
 - [x] AMP - 自动混合精度
