@@ -9,8 +9,6 @@
 - 项目注释 
 
   > 即开即用推荐官方库,阅读源码推荐注释
-  
-
 
 # 接下来工作
 
@@ -62,9 +60,19 @@
 - [x] [雪浪制造AI挑战赛](https://github.com/bobo0810/XueLangTianchi)    排名: 32/2403
 - [x] [“计图”人工智能算法挑战赛-狗细分类](https://github.com/bobo0810/JittorDogsClass)   排名: 4/430
 
-### 其他
-- [x] AMP - 自动混合精度
-- [x] DDP - 分布式数据并行
+### Pytorch指北
+
+- [x] [AMP - 自动混合精度](https://github.com/bobo0810/PytorchNetHub/tree/master/AMP)
+
+- [x] [DDP - 分布式数据并行](https://github.com/bobo0810/PytorchNetHub/tree/master/DDP)
+
+- [x] [模型统计](https://github.com/bobo0810/PytorchGuide)
+
+  统计模型 计算量|参数量|显存占用|耗时(CPU/GPU)
+
+- [x] [模型转换](https://github.com/bobo0810/PytorchGuide)
+
+  Pytorch -> ONNX -> NCNN or MNN
 
 
 
@@ -116,5 +124,4 @@
 
 
 > 注：猫狗分类、风格迁移、生成对抗等更多内容请访问[pytorch-book](https://github.com/chenyuntc/pytorch-book)
-
 
