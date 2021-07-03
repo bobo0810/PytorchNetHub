@@ -10,6 +10,8 @@
 
   > 即开即用推荐官方库,阅读源码推荐注释
 
+- Pytorch指北 
+
 # 接下来工作
 
 ### 目标检测
@@ -62,18 +64,21 @@
 
 ### Pytorch指北
 
-- [x] [AMP - 自动混合精度](https://github.com/bobo0810/PytorchNetHub/tree/master/AMP)
+- [x] [自动混合精度AMP](https://github.com/bobo0810/PytorchGuide)
 
-- [x] [DDP - 分布式数据并行](https://github.com/bobo0810/PytorchNetHub/tree/master/DDP)
+- [x] [分布式数据并行DDP](https://github.com/bobo0810/PytorchGuide)
 
 - [x] [模型统计](https://github.com/bobo0810/PytorchGuide)
 
   统计模型 计算量|参数量|显存占用|耗时(CPU/GPU)
 
-- [x] [模型转换](https://github.com/bobo0810/PytorchGuide)
+- [x] [移动端部署](https://github.com/bobo0810/PytorchGuide)
 
   Pytorch -> ONNX -> NCNN or MNN
 
+- [x] [服务端部署](https://github.com/bobo0810/PytorchGuide)
+
+  Pytorch -> TensorRT
 
 
 # 汇总
@@ -96,12 +101,12 @@
 |[AMSoftmax](https://arxiv.org/pdf/1801.05599.pdf)|[Link](https://github.com/cavalleria/cavaface.pytorch)|[注释](https://github.com/bobo0810/FaceVerLoss)|||乘法角间隔|2020.9|
 |[ArcFace](https://arxiv.org/abs/1801.07698)|[Link](https://github.com/cavalleria/cavaface.pytorch)|[注释](https://github.com/bobo0810/FaceVerLoss)||CVPR 2019|加法角间隔|2020.9|
 |[CircleLoss](https://arxiv.org/abs/2002.10857)|[Link](https://github.com/xialuxi/CircleLoss_Face)|[注释](https://github.com/bobo0810/FaceVerLoss)||CVPR 2020|加权角间隔|2020.9|
-|AMP|||[实现](https://github.com/bobo0810/PytorchNetHub/tree/master/AMP)||自动混合精度|2020.10|
+|AMP|||[实现](https://github.com/bobo0810/PytorchGuide)||自动混合精度|2020.10|
 |[BroadFace](https://arxiv.org/abs/2008.06674)|||[复现](https://github.com/bobo0810/BroadFace)|ECCV 2020|队列更新|2020.10|
 |[TargetDrop](https://arxiv.org/abs/2010.10716)|||[复现](https://github.com/bobo0810/TargetDrop)||注意力Drop|2020.10|
 |[HS-ResNet](https://arxiv.org/abs/2010.07621)|||[复现](https://github.com/bobo0810/HS-ResNet)||改进ResNet|2020.11|
 |[AFF-ResNet](https://arxiv.org/abs/2009.14082)|[MXNet](https://github.com/YimianDai/open-aff)||[复现](https://github.com/YimianDai/open-aff/blob/master/aff_pytorch/README_CN.md)|WACV 2021|统一特征融合|2020.11|
-|DDP|||[实现](https://github.com/bobo0810/PytorchNetHub/tree/master/DDP)||分布式数据并行|2020.11|
+|DDP|||[实现](https://github.com/bobo0810/PytorchGuide)||分布式数据并行|2020.11|
 |[DiscFace](https://openaccess.thecvf.com/content/ACCV2020/html/Kim_DiscFace_Minimum_Discrepancy_Learning_for_Deep_Face_Recognition_ACCV_2020_paper.html)|||[复现](https://github.com/bobo0810/FaceVerLoss)|ACCV 2020|最小差异学习|2020.12|
 |[NPCFace](https://arxiv.org/abs/2007.10172)|||[复现](https://github.com/bobo0810/FaceVerLoss)||正负联合监督|2020.12|
 
