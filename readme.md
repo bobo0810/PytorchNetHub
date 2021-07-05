@@ -79,6 +79,8 @@
 - [x] [服务端部署](https://github.com/bobo0810/PytorchGuide)
 
   Pytorch -> TensorRT
+  
+  Pytorch -> ONNX -> TensorRT
 
 
 # 汇总
