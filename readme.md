@@ -40,7 +40,11 @@
 - [x] FunnelAct
 - [x] DynamicReLU
 
-### 人脸识别
+
+### 人脸检测
+- [x] Yolov5-Face TensorRT支持 [并入官方库](https://github.com/deepcam-cn/yolov5-face/tree/master/torch2tensorrt)
+
+### 人像比对
 
 - [x] Semi-Siamese-Training
 - [x] BroadFace
@@ -62,25 +66,17 @@
 - [x] [雪浪制造AI挑战赛](https://github.com/bobo0810/XueLangTianchi)    排名: 32/2403
 - [x] [“计图”人工智能算法挑战赛-狗细分类](https://github.com/bobo0810/JittorDogsClass)   排名: 4/430
 
-### Pytorch指北
+### [Pytorch指北](https://github.com/bobo0810/PytorchGuide)
 
-- [x] [自动混合精度AMP](https://github.com/bobo0810/PytorchGuide)
+- [x] 自动混合精度AMP
 
-- [x] [分布式数据并行DDP](https://github.com/bobo0810/PytorchGuide)
+- [x] 分布式数据并行DDP
 
-- [x] [模型统计](https://github.com/bobo0810/PytorchGuide)
+- [x] 模型统计:计算量|参数量|耗时 
 
-  统计模型 计算量|参数量|显存占用|耗时(CPU/GPU)
+- [x] 移动端部署NCNN/MNN
 
-- [x] [移动端部署](https://github.com/bobo0810/PytorchGuide)
-
-  Pytorch -> ONNX -> NCNN or MNN
-
-- [x] [服务端部署](https://github.com/bobo0810/PytorchGuide)
-
-  Pytorch -> TensorRT
-  
-  Pytorch -> ONNX -> TensorRT
+- [x] 服务端部署TensorRT
 
 
 # 汇总
@@ -92,7 +88,7 @@
 |           [SST](https://arxiv.org/abs/2007.08398)            | [Link](https://github.com/dituu/Semi-Siamese-Training) | [注释](https://github.com/bobo0810/Semi-Siamese-Training) |                                                     | ECCV 2020 | 浅层人脸学习 | 2021.2 |
 |                         RepDistiller                         |   [Link](https://github.com/HobbitLong/RepDistiller)   |     [注释](https://github.com/bobo0810/RepDistiller)      |                                                     |           |  知识蒸馏库  | 2021.2 |
 | [JittorDogsClass](https://www.educoder.net/competitions/index/Jittor-2) |                                                        |                                                           | [实现](https://github.com/bobo0810/JittorDogsClass) |           | 狗细分类竞赛 | 2021.4 |
-
+| [Yolov5-Face](https://arxiv.org/abs/2105.12931) | | | [实现](https://github.com/deepcam-cn/yolov5-face/tree/master/torch2tensorrt)| |TensorRT支持|2021.8 | 
 
 
 ## 2020
