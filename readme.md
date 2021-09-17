@@ -42,7 +42,7 @@
 
 
 ### 人脸检测
-- [x] Yolov5-Face TensorRT支持 [并入官方库](https://github.com/deepcam-cn/yolov5-face/tree/master/torch2tensorrt)
+- [x] Yolov5-Face [主要贡献者](https://github.com/deepcam-cn/yolov5-face)
 
 ### 人像比对
 
