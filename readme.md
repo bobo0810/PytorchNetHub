@@ -76,7 +76,9 @@
 
 - [x] 移动端部署NCNN/MNN
 
-- [x] 服务端部署TensorRT
+- [x] TensorRT最佳实践
+
+- [x] 数据集格式转换 
 
 
 # 汇总
