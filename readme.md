@@ -90,7 +90,7 @@
 |           [SST](https://arxiv.org/abs/2007.08398)            | [Link](https://github.com/dituu/Semi-Siamese-Training) | [注释](https://github.com/bobo0810/Semi-Siamese-Training) |                                                     | ECCV 2020 | 浅层人脸学习 | 2021.2 |
 |                         RepDistiller                         |   [Link](https://github.com/HobbitLong/RepDistiller)   |     [注释](https://github.com/bobo0810/RepDistiller)      |                                                     |           |  知识蒸馏库  | 2021.2 |
 | [JittorDogsClass](https://www.educoder.net/competitions/index/Jittor-2) |                                                        |                                                           | [实现](https://github.com/bobo0810/JittorDogsClass) |           | 狗细分类竞赛 | 2021.4 |
-| [Yolov5-Face](https://arxiv.org/abs/2105.12931) | | | [实现](https://github.com/deepcam-cn/yolov5-face/tree/master/torch2tensorrt)| |TensorRT支持|2021.8 | 
+| [Yolov5-Face](https://arxiv.org/abs/2105.12931) | | | [实现](https://github.com/deepcam-cn/yolov5-face)| |纯TensorRT支持|2021.12 | 
 
 
 ## 2020
