@@ -15,19 +15,7 @@
 
 > 目标检测
 >
-> ​	Faster rcnn
->
-> ​	YOLO v1
->
-> ​	YOLO v3
->
-> ​	YOLO v4
->
-> ​	SSD
->
-> ​	CAM
->
-> ​	S4ND
+> ​	Faster rcnn、YOLO v1、YOLO v3、YOLO v4、SSD、CAM、S4ND
 >
 > 语义分割
 >
@@ -35,21 +23,11 @@
 >
 > 主干网络
 >
-> ​	FPN
->
-> ​	SKNet
->
-> ​	HS-ResNet
->
-> ​	AFF-ResNet <u>并入官方库</u>
->
-> ​	TargetDrop
+> ​	FPN、SKNet、HS-ResNet、AFF-ResNet(并入官方库)、TargetDrop
 >
 > 激活函数
 >
-> ​	FunnelAct
->
-> ​	DynamicReLU
+> ​	FunnelAct、DynamicReLU
 >
 > 知识蒸馏
 >
