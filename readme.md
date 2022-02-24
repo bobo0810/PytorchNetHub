@@ -11,27 +11,28 @@
 
 # 工作
 
+### [轻量级图像分类框架Classification](https://github.com/bobo0810/Classification)
+
+> 持续更新
+
+### [Pytorch指北](https://github.com/bobo0810/PytorchGuide)
+
+> 最小实践：自动混合精度AMP、分布式数据并行DDP、TensorRT加速、移动端NCNN/MNN
+>
+> 模型统计:  计算量|参数量|耗时   
+
 ### 视觉任务
 
-> 目标检测
+> 目标检测：Faster rcnn、YOLO v1、YOLO v3、YOLO v4、SSD、CAM、S4ND
 >
-> ​	Faster rcnn、YOLO v1、YOLO v3、YOLO v4、SSD、CAM、S4ND
+> 语义分割：U-Net 
 >
-> 语义分割
+> 主干网络：FPN、SKNet、HS-ResNet、AFF-ResNet(并入官方库)、TargetDrop
 >
-> ​	U-Net
+> 激活函数：FunnelAct、DynamicReLU
 >
-> 主干网络
+> 知识蒸馏：RepDistiller
 >
-> ​	FPN、SKNet、HS-ResNet、AFF-ResNet(并入官方库)、TargetDrop
->
-> 激活函数
->
-> ​	FunnelAct、DynamicReLU
->
-> 知识蒸馏
->
-> ​	RepDistiller
 
 ### 人脸相关
 
@@ -49,33 +50,15 @@
 >
 > “计图”人工智能算法挑战赛-狗细分类  排名: 4/430
 
-### [Pytorch指北](https://github.com/bobo0810/PytorchGuide)
-
-> 自动混合精度AMP、分布式数据并行DDP
->
-> 模型统计:计算量|参数量|耗时 
->
-> 移动端部署NCNN/MNN
->
-> TensorRT最佳实践
->
-> 数据集格式转换 
-
-### [常用工具](https://github.com/bobo0810/ToolsLib)
-
-> 操作：txt、list...
->
-> 其他：图像下载...
-
 
 # 汇总
 
 ## 2022
 
-| 自研                                                         | 备注         | 更新   |
-| ------------------------------------------------------------ | ------------ | ------ |
-| [ToolsLib](https://github.com/bobo0810/ToolsLib)             | 常用工具库   | 2022.2 |
-| [Classification](https://github.com/bobo0810/Classification) | 图像分类框架 | 2022.2 |
+| 自研                                                         | 备注               | 更新   |
+| ------------------------------------------------------------ | ------------------ | ------ |
+| [ToolsLib](https://github.com/bobo0810/ToolsLib)             | 常用工具库         | 2022.2 |
+| [Classification](https://github.com/bobo0810/Classification) | 轻量级图像分类框架 | 2022.2 |
 
 ## 2021
 
