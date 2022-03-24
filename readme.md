@@ -11,7 +11,7 @@
 
 # 工作
 
-### [轻量级图像分类框架Classification](https://github.com/bobo0810/Classification)
+### [轻量级图像识别框架Classification](https://github.com/bobo0810/Classification)![Github stars](https://img.shields.io/github/stars/bobo0810/Classification.svg)
 
 > 持续更新
 
@@ -58,7 +58,7 @@
 | 自研                                                         | 备注               | 更新   |
 | ------------------------------------------------------------ | ------------------ | ------ |
 | [ToolsLib](https://github.com/bobo0810/ToolsLib)             | 常用工具库         | 2022.2 |
-| [Classification](https://github.com/bobo0810/Classification) | 轻量级图像分类框架 | 2022.2 |
+| [Classification](https://github.com/bobo0810/Classification)![Github stars](https://img.shields.io/github/stars/bobo0810/Classification.svg) | 轻量级图像识别框架 | 2022.2 |
 
 ## 2021
 
