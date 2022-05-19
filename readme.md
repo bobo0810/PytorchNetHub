@@ -14,6 +14,8 @@
 ### [轻量级图像识别框架Classification](https://github.com/bobo0810/Classification)![Github stars](https://img.shields.io/github/stars/bobo0810/Classification.svg)
 
 > 支持任务： 1. 图像分类   2. 度量学习/特征对比
+>
+> 轻量级、模块化、可扩展、分布式训练
 
 ### [Pytorch指北](https://github.com/bobo0810/PytorchGuide)
 
