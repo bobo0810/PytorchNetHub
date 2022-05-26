@@ -59,7 +59,7 @@
 
 | 自研                                                         | 备注               | 更新   |
 | ------------------------------------------------------------ | ------------------ | ------ |
-| [botools](https://github.com/bobo0810/botools)             | 常用工具库         | 2022.2 |
+| [bobotools](https://github.com/bobo0810/botools)             | 常用工具库         | 2022.2 |
 | [Classification](https://github.com/bobo0810/Classification)![Github stars](https://img.shields.io/github/stars/bobo0810/Classification.svg) | 轻量级图像识别框架 | 2022.2 |
 
 ## 2021
