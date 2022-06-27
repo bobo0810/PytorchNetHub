@@ -5,9 +5,7 @@
 - 论文复现
 - 算法竞赛
 - 项目注释 
-
-- Pytorch指北 
-- 常用工具
+- 最小实践 
 
 # 工作
 
@@ -15,13 +13,28 @@
 
 > 支持任务： 1. 图像分类   2. 度量学习/特征对比
 >
-> 轻量级、模块化、可扩展、分布式训练
+> 轻量级、模块化、高扩展、分布式
 
-### [Pytorch指北](https://github.com/bobo0810/PytorchGuide)
+### [工具库bobotools](https://github.com/bobo0810/bobotools)![Github stars](https://img.shields.io/github/stars/bobo0810/bobotools.svg)
+> Pytorch工具torch_tools
+> 
+> 图像工具img_tools
+> 
+> 文本工具txt_tools
+> 
+> 列表工具list_tools 
+> 
 
-> 最小实践：自动混合精度AMP、分布式数据并行DDP、TensorRT加速、移动端NCNN/MNN
->
-> 模型统计:  计算量|参数量|耗时   
+### [Pytorch最小实践](https://github.com/bobo0810/PytorchExample)![Github stars](https://img.shields.io/github/stars/bobo0810/PytorchExample.svg)
+
+> 自动混合精度AMP
+> 
+> 分布式数据并行DDP
+> 
+> NCNN/MNN部署
+> 
+> TensorRT部署
+ 
 
 ### 视觉任务
 
@@ -59,8 +72,9 @@
 
 | 自研                                                         | 备注               | 更新   |
 | ------------------------------------------------------------ | ------------------ | ------ |
-| [bobotools](https://github.com/bobo0810/botools)             | 常用工具库         | 2022.2 |
-| [Classification](https://github.com/bobo0810/Classification)![Github stars](https://img.shields.io/github/stars/bobo0810/Classification.svg) | 轻量级图像识别框架 | 2022.2 |
+| [bobotools](https://github.com/bobo0810/botools)![Github stars](https://img.shields.io/github/stars/bobo0810/botools.svg)             | 工具库         | 2022.2 |
+| [Classification](https://github.com/bobo0810/Classification)![Github stars](https://img.shields.io/github/stars/bobo0810/Classification.svg) | 图像识别框架 | 2022.2 |
+| [Pytorch最小实践](https://github.com/bobo0810/PytorchExample)![Github stars](https://img.shields.io/github/stars/bobo0810/PytorchExample.svg)              | Pytorch最小实践         | 2022.6 |
 
 ## 2021
 
@@ -71,8 +85,8 @@
 
 |                             自研                             | 备注                                            | 更新    |
 | :----------------------------------------------------------: | ----------------------------------------------- | ------- |
-| [JittorDogsClass](https://github.com/bobo0810/JittorDogsClass) | “计图”算法挑战赛-狗细分类 4/430                 | 2021.4  |
-|   [Yolov5-Face](https://github.com/deepcam-cn/yolov5-face)   | 人脸检测-支持全TensorRT加速，成为**主要贡献者** | 2021.12 |
+| [JittorDogsClass](https://github.com/bobo0810/JittorDogsClass)![Github stars](https://img.shields.io/github/stars/bobo0810/JittorDogsClass.svg) | “计图”算法挑战赛-狗细分类 4/430                 | 2021.4  |
+|   [Yolov5-Face](https://github.com/deepcam-cn/yolov5-face)![Github stars](https://img.shields.io/github/stars/deepcam-cn/yolov5-face.svg)   | 人脸检测-支持全TensorRT加速，成为**主要贡献者** | 2021.12 |
 
 
 
@@ -87,15 +101,15 @@
 
 |                             自研                             |                   备注                   | 更新    |
 | :----------------------------------------------------------: | :--------------------------------------: | ------- |
-| [FunnelRelu(ECCV 2020)](https://github.com/bobo0810/FunnelAct_Pytorch) |            新型激活函数-复现             | 2020.7  |
-|       [AMP](https://github.com/bobo0810/PytorchGuide)        |            自动混合精度-示例             | 2020.10 |
-| [BroadFace(ECCV 2020)](https://github.com/bobo0810/BroadFace) |        人脸对比队列更新策略-复现         | 2020.10 |
-|     [TargetDrop](https://github.com/bobo0810/TargetDrop)     |          注意力机制Dropout-复现          | 2020.10 |
-|      [HS-ResNet](https://github.com/bobo0810/HS-ResNet)      |            ResNet改进版-复现             | 2020.11 |
-| [AFF-ResNet(WACV 2021)](https://github.com/YimianDai/open-aff/blob/master/aff_pytorch/README_CN.md) | 特征融合的统一方式- 复现，**并入官方库** | 2020.11 |
-|       [DDP](https://github.com/bobo0810/PytorchGuide)        |           分布式数据并行-示例            | 2020.11 |
-| [DiscFace(ACCV 2020)](https://github.com/bobo0810/FaceVerLoss) |            最小差异学习-复现             | 2020.12 |
-|      [NPCFace](https://github.com/bobo0810/FaceVerLoss)      |            正负联合监督-复现             | 2020.12 |
+| [FunnelRelu(ECCV 2020)](https://github.com/bobo0810/FunnelAct_Pytorch)![Github stars](https://img.shields.io/github/stars/bobo0810/FunnelAct_Pytorch.svg) |            新型激活函数-复现             | 2020.7  |
+|       [AMP](https://github.com/bobo0810/PytorchExample) ![Github stars](https://img.shields.io/github/stars/bobo0810/PytorchExample.svg)       |            自动混合精度-示例             | 2020.10 |
+| [BroadFace(ECCV 2020)](https://github.com/bobo0810/BroadFace)![Github stars](https://img.shields.io/github/stars/bobo0810/BroadFace.svg) |        人脸对比队列更新策略-复现         | 2020.10 |
+|     [TargetDrop](https://github.com/bobo0810/TargetDrop)![Github stars](https://img.shields.io/github/stars/bobo0810/TargetDrop.svg)     |          注意力机制Dropout-复现          | 2020.10 |
+|      [HS-ResNet](https://github.com/bobo0810/HS-ResNet)![Github stars](https://img.shields.io/github/stars/bobo0810/HS-ResNet.svg)       |            ResNet改进版-复现             | 2020.11 |
+| [AFF-ResNet(WACV 2021)](https://github.com/YimianDai/open-aff/blob/master/aff_pytorch/README_CN.md)![Github stars](https://img.shields.io/github/stars/YimianDai/open-aff.svg) | 特征融合的统一方式- 复现，**并入官方库** | 2020.11 |
+|       [DDP](https://github.com/bobo0810/PytorchExample) ![Github stars](https://img.shields.io/github/stars/bobo0810/PytorchExample.svg)       |           分布式数据并行-示例            | 2020.11 |
+| [DiscFace(ACCV 2020)](https://github.com/bobo0810/FaceVerLoss)![Github stars](https://img.shields.io/github/stars/bobo0810/FaceVerLoss.svg)  |            最小差异学习-复现             | 2020.12 |
+|      [NPCFace](https://github.com/bobo0810/FaceVerLoss)![Github stars](https://img.shields.io/github/stars/bobo0810/FaceVerLoss.svg)      |            正负联合监督-复现             | 2020.12 |
 
 
 
@@ -113,9 +127,9 @@
 
 |                             自研                             | 备注                                           |
 | :----------------------------------------------------------: | ---------------------------------------------- |
-| [XueLangTianchi](https://github.com/bobo0810/XueLangTianchi) | 雪浪制造AI挑战赛—视觉计算辅助良品检测 -32/2403 |
-|       [S4ND](https://github.com/bobo0810/S4ND_Pytorch)       | 单次单尺度肺结节检测（MICCAI 2018）复现        |
-|    [3D SKconv](https://github.com/bobo0810/SKNet_Pytorch)    | 注意力机制SE模块、SK模块的3D实现               |
+| [XueLangTianchi](https://github.com/bobo0810/XueLangTianchi)![Github stars](https://img.shields.io/github/stars/bobo0810/XueLangTianchi.svg) | 雪浪制造AI挑战赛—视觉计算辅助良品检测 -32/2403 |
+|       [S4ND](https://github.com/bobo0810/S4ND_Pytorch) ![Github stars](https://img.shields.io/github/stars/bobo0810/S4ND_Pytorch.svg)      | 单次单尺度肺结节检测（MICCAI 2018）复现        |
+|    [3D SKconv](https://github.com/bobo0810/SKNet_Pytorch) ![Github stars](https://img.shields.io/github/stars/bobo0810/SKNet_Pytorch.svg)    | 注意力机制SE模块、SK模块的3D实现               |
 
 
 > 注：猫狗分类、风格迁移、生成对抗等更多内容请访问[pytorch-book](https://github.com/chenyuntc/pytorch-book)
