@@ -13,7 +13,7 @@
 
 > 支持任务： 1. 图像分类   2. 度量学习/特征对比
 >
-> 轻量级、模块化、高扩展、分布式
+> 轻量级、模块化、高扩展、分布式、自动剪枝
 
 ### [工具库bobotools](https://github.com/bobo0810/bobotools)![Github stars](https://img.shields.io/github/stars/bobo0810/bobotools.svg)
 > Pytorch工具torch_tools
