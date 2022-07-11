@@ -1,0 +1,17 @@
+# Number of days of inactivity before an issue becomes stale   在一个问题变得陈旧之前不活跃的天数 
+daysUntilStale: 60
+# Number of days of inactivity before a stale issue is closed  在一个陈旧的问题被关闭之前，没有活动的天数
+daysUntilClose: 7
+# Issues with these labels will never be considered stale 这些标签的问题永远不会被认为是过时的
+exemptLabels:
+  - pinned
+  - security
+# Label to use when marking an issue as stale 当标记过期问题时使用的标签
+staleLabel: wontfix
+# Comment to post when marking an issue as stale. Set to `false` to disable 当把一个问题标记为过时时发表评论。设置为' false '禁用
+markComment: >
+  This issue has been automatically marked as stale because it has not had
+  recent activity. It will be closed if no further activity occurs. Thank you
+  for your contributions.(由于长期不活动，机器人自动关闭此问题，如果需要欢迎提问)
+# Comment to post when closing a stale issue. Set to `false` to disable 在关闭过期问题时发表评论。设置为' false '禁用
+closeComment: false
