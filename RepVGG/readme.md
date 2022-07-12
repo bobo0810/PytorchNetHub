@@ -37,7 +37,9 @@
 
 2. 其余分支转为3x3卷积
 
-   1x1conv -> 3x3conv        bn->3x3conv
+   1x1conv -> 3x3conv        
+
+   bn->3x3conv
 
 3. 三个分支合并
 
