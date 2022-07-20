@@ -45,5 +45,5 @@
 
    `conv(x, W1) + conv(x, W2) + conv(x, W3) = conv(x, W1+W2+W3)）`
 
- ![](WechatIMG2228.png)
+ ![](repvgg.png)
 
