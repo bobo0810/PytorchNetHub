@@ -17,5 +17,8 @@
 
 # 具体实现
 
-核心方法`Stage` ![](G-Ghost.png)
+
+核心方法`Stage`,结构图如下
+
+![](G-Ghost.png)
 
