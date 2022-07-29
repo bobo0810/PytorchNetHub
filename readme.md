@@ -77,11 +77,12 @@
 | [RepVGG(CVPR 2021)](https://github.com/DingXiaoH/RepVGG) | 让VGG再次伟大  [解读](./RepVGG/readme.md) | 2022.7 |
 | [G-Ghost(IJCV 2022)](https://github.com/huawei-noah/Efficient-AI-Backbones) | 探索各级别的特征冗余   [解读](./GhostNet/readme.md) | 2022.7 |
 
-| 自研                                                                                                                                          | 备注            | 更新   |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ------ |
-| [bobotools](https://github.com/bobo0810/botools)![Github stars](https://img.shields.io/github/stars/bobo0810/botools.svg)                     | 工具库          | 2022.2 |
-| [Classification](https://github.com/bobo0810/Classification)![Github stars](https://img.shields.io/github/stars/bobo0810/Classification.svg)  | 图像识别框架    | 2022.2 |
-| [Pytorch最小实践](https://github.com/bobo0810/PytorchExample)![Github stars](https://img.shields.io/github/stars/bobo0810/PytorchExample.svg) | Pytorch最小实践 | 2022.6 |
+| 自研                                                         | 备注                                 | 更新   |
+| ------------------------------------------------------------ | ------------------------------------ | ------ |
+| [bobotools](https://github.com/bobo0810/botools)![Github stars](https://img.shields.io/github/stars/bobo0810/botools.svg) | 工具库                               | 2022.2 |
+| [Classification](https://github.com/bobo0810/Classification)![Github stars](https://img.shields.io/github/stars/bobo0810/Classification.svg) | 图像识别框架                         | 2022.2 |
+| [Pytorch最小实践](https://github.com/bobo0810/PytorchExample)![Github stars](https://img.shields.io/github/stars/bobo0810/PytorchExample.svg) | Pytorch最小实践                      | 2022.6 |
+| [BossVision](https://www.yuque.com/bobo0810/boss_vision/guly2g) | 简单、模块化、高扩展的分布式训练框架 | 2022.7 |
 
 ## 2021
 
