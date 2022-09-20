@@ -6,15 +6,15 @@
 
 ### 课程1 使用 Numba 的 CUDA Python 简介
 
-- _基于 Numba 的 CUDA Python 编程简介_
-- _使用 Numba 在 Python 中编写自定义的 CUDA 核函数_
-- _使用 Numba 实现 CUDA Python 的多维网格和共享内存_
+- 基于 Numba 的 CUDA Python 编程简介
+- 使用 Numba 在 Python 中编写自定义的 CUDA 核函数
+- 使用 Numba 实现 CUDA Python 的多维网格和共享内存
 
 ### 课程2 使用 Numba 的 CUDA Python 的自定义核函数和内存管理
 
-- _基于 Numba 的 CUDA Python 编程简介_
-- _使用 Numba 在 Python 中编写自定义的 CUDA 核函数_
-- _使用 Numba 实现 CUDA Python 的多维网格和共享内存_
+- 基于 Numba 的 CUDA Python 编程简介
+- 使用 Numba 在 Python 中编写自定义的 CUDA 核函数
+- 使用 Numba 实现 CUDA Python 的多维网格和共享内存
 
 ### 课程3 有效使用内存子系统
 
