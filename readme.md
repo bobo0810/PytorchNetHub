@@ -20,13 +20,8 @@
 > 轻量级、模块化、高扩展、分布式、自动剪枝
 
 ### [工具库bobotools](https://github.com/bobo0810/bobotools)![Github stars](https://img.shields.io/github/stars/bobo0810/bobotools.svg)
-> Pytorch工具torch_tools
+> Pytorch工具torch_tools、图像工具img_tools、文本工具txt_tools、列表工具list_tools 
 > 
-> 图像工具img_tools
-> 
-> 文本工具txt_tools
-> 
-> 列表工具list_tools 
 
 ### [Pytorch最小实践](https://github.com/bobo0810/PytorchExample)![Github stars](https://img.shields.io/github/stars/bobo0810/PytorchExample.svg)
 
@@ -85,6 +80,7 @@
 | [BossVision](https://www.yuque.com/bobo0810/boss_vision/guly2g) | 简单、模块化、高扩展的分布式训练框架 | 2022.7  |
 | [CUDA-Python](./CUDA_Python/readme.md)                       | Nvidia CUDA加速计算基础课程          | 2022.9  |
 | [DataHub](./DataHub/readme.md)                               | 公开数据集汇总                       | 2022.11 |
+| [LargeModel](https://github.com/bobo0810/LargeModel)         | 一起来训大模型                       | 2022.11 |
 
 ## 2021
 
