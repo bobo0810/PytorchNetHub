@@ -35,3 +35,11 @@
 | [URL2](https://aistudio.baidu.com/aistudio/datasetdetail/90352) | 目标检测 | 2k   |
 | [URL3](https://aistudio.baidu.com/aistudio/datasetdetail/84374/0) | 目标检测 | 5k   |
 
+### 抽烟
+
+| 链接                                                         | 标注类型 | 数量 |
+| ------------------------------------------------------------ | -------- | ---- |
+| [URL1](https://aistudio.baidu.com/aistudio/datasetdetail/72629/0) | 目标检测 | 1.5k |
+
+
+
