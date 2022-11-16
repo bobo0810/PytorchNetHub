@@ -355,7 +355,7 @@ class BBN_Network(nn.Module):
 
 
 
-def BBN_ResNet50(num_classes):
+def BBN_ResNet50(num_classes=1000):
     model = "bbn_res50"
     pretrained = "/root/.cache/torch/hub/checkpoints/resnet50-19c8e357.pth"
     return BBN_Network(num_classes, model, pretrained)
