@@ -21,7 +21,6 @@
 
 ### [工具库bobotools](https://github.com/bobo0810/bobotools)![Github stars](https://img.shields.io/github/stars/bobo0810/bobotools.svg)
 > Pytorch工具torch_tools、图像工具img_tools、文本工具txt_tools、列表工具list_tools 
-> 
 
 ### [Pytorch最小实践](https://github.com/bobo0810/PytorchExample)![Github stars](https://img.shields.io/github/stars/bobo0810/PytorchExample.svg)
 
@@ -69,8 +68,9 @@
 
 |                          官方库                          |                         |  更新  |
 | :------------------------------------------------------: | :-------------: | :----: |
-| [RepVGG(CVPR 2021)](https://github.com/DingXiaoH/RepVGG) | 让VGG再次伟大  [解读](./RepVGG/readme.md) | 2022.7 |
+| [RepVGG(CVPR 2021)](https://github.com/DingXiaoH/RepVGG) | VGG再次伟大  [解读+代码](./RepVGG/readme.md) | 2022.7 |
 | [G-Ghost(IJCV 2022)](https://github.com/huawei-noah/Efficient-AI-Backbones) | 探索各级别的特征冗余   [解读](./GhostNet/readme.md) | 2022.7 |
+| [BBN(CVPR2020)](https://github.com/megvii-research/BBN) | 双边分支网络,以解决长尾分布问题   [解读+代码](./BBN/readme.md) | 2022.11 |
 
 | 自研                                                         |                                      | 更新    |
 | ------------------------------------------------------------ | ------------------------------------ | ------- |
@@ -89,10 +89,10 @@
 | [SST(ECCV 2020)](https://github.com/dituu/Semi-Siamese-Training) | [注释](https://github.com/bobo0810/Semi-Siamese-Training) |   浅层人脸学习   | 2021.2 |
 |    [RepDistiller](https://github.com/HobbitLong/RepDistiller)    |     [注释](https://github.com/bobo0810/RepDistiller)      | 知识蒸馏算法合集 | 2021.2 |
 
-|                                                                      自研                                                                       | 备注                                            | 更新    |
-| :---------------------------------------------------------------------------------------------------------------------------------------------: | ----------------------------------------------- | ------- |
+|                             自研                             | 备注                                            | 更新    |
+| :----------------------------------------------------------: | ----------------------------------------------- | ------- |
 | [JittorDogsClass](https://github.com/bobo0810/JittorDogsClass)![Github stars](https://img.shields.io/github/stars/bobo0810/JittorDogsClass.svg) | “计图”算法挑战赛-狗细分类 4/430                 | 2021.4  |
-|     [Yolov5-Face](https://github.com/deepcam-cn/yolov5-face)![Github stars](https://img.shields.io/github/stars/deepcam-cn/yolov5-face.svg)     | 人脸检测-支持全TensorRT加速，成为**主要贡献者** | 2021.12 |
+| [Yolov5-Face](https://github.com/deepcam-cn/yolov5-face)![Github stars](https://img.shields.io/github/stars/deepcam-cn/yolov5-face.svg) | 人脸检测-支持纯TensorRT加速，成为**主要贡献者** | 2021.12 |
 
 
 
