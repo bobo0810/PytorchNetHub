@@ -69,7 +69,7 @@
 |                          官方库                          |                         |  更新  |
 | :------------------------------------------------------: | :-------------: | :----: |
 | [RepVGG(CVPR 2021)](https://github.com/DingXiaoH/RepVGG) | VGG再次伟大  [解读+代码](./RepVGG/readme.md) | 2022.7 |
-| [G-Ghost(IJCV 2022)](https://github.com/huawei-noah/Efficient-AI-Backbones) | 探索各级别的特征冗余   [解读](./GhostNet/readme.md) | 2022.7 |
+| [G-Ghost(IJCV 2022)](https://github.com/huawei-noah/Efficient-AI-Backbones) | 探索各级别的特征冗余   [解读+代码](./GhostNet/readme.md) | 2022.7 |
 | [BBN(CVPR2020)](https://github.com/megvii-research/BBN) | 双边分支网络,以解决长尾分布问题   [解读+代码](./BBN/readme.md) | 2022.11 |
 
 | 自研                                                         |                                      | 更新    |
