@@ -1,14 +1,12 @@
-
+![linus](https://user-images.githubusercontent.com/26057879/204754749-ba2705ba-0844-4079-8f5e-2a90d5fb634b.jpg)
 
 # 目的
 
 - 论文复现
 - 算法竞赛
-- 最小实践 
-- 项目注释
+- 源码注释
    > paper得来终觉浅，绝知此事要coding。
-   
-   > 培养阅读源码的能力
+
 
 
 # 工作
