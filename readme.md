@@ -5,6 +5,7 @@
 - 论文复现
 - 算法竞赛
 - 源码注释
+   
    > paper得来终觉浅，绝知此事要coding。
 
 
@@ -69,6 +70,7 @@
 | [RepVGG(CVPR 2021)](https://github.com/DingXiaoH/RepVGG) | VGG再次伟大  [解读+代码](./RepVGG/readme.md) | 2022.7 |
 | [G-Ghost(IJCV 2022)](https://github.com/huawei-noah/Efficient-AI-Backbones) | 探索各级别的特征冗余   [解读+代码](./GhostNet/readme.md) | 2022.7 |
 | [BBN(CVPR2020)](https://github.com/megvii-research/BBN) | 双边分支网络,以解决长尾分布问题   [解读+代码](./BBN/readme.md) | 2022.11 |
+| Vision Transformer(ICLR 2021) | Transformer首次应用到视觉领域    [解读+代码](https://github.com/bobo0810/LearnTransformer) | 2022.12 |
 
 | 自研                                                         |                                      | 更新    |
 | ------------------------------------------------------------ | ------------------------------------ | ------- |
