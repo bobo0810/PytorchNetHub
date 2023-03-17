@@ -63,7 +63,14 @@
 > ACCV2022国际细粒度图像分析挑战赛-网络监督的细粒度识别  排名: 8/133
 
 
-# 汇总
+
+# 时间线
+
+## 2023
+
+| 自研                                             |                | 更新   |
+| ------------------------------------------------ | -------------- | ------ |
+| [BigModel](https://github.com/bobo0810/BigModel) | 大模型食用手册 | 2023.3 |
 
 ## 2022
 
@@ -83,7 +90,6 @@
 | [BossVision](https://www.yuque.com/bobo0810/boss_vision/guly2g) | 简单、模块化、高扩展的分布式训练框架 | 2022.7  |
 | [CUDA-Python](./CUDA_Python/readme.md)                       | Nvidia CUDA加速计算基础课程          | 2022.9  |
 | [DataHub](./DataHub/readme.md)                               | 公开数据集汇总                       | 2022.11 |
-| [LargeModel](https://github.com/bobo0810/LargeModel)         | 一起来训大模型                       | 2022.11 |
 
 ## 2021
 
