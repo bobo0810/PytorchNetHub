@@ -64,13 +64,24 @@
 
 
 
+# 长期维护
+
+| 自研                                                         | 备注                   |
+| ------------------------------------------------------------ | ---------------------- |
+| [bobotools](https://github.com/bobo0810/botools)![Github stars](https://img.shields.io/github/stars/bobo0810/botools.svg) | 工具库                 |
+| [BigModel](https://github.com/bobo0810/BigModel)             | 大模型食用手册         |
+| [OpenMM](https://github.com/bobo0810/OpenMM)                 | OpenMM系列最佳食用手册 |
+
+
+
 # 时间线
 
 ## 2023
 
-| 自研                                             |                | 更新   |
-| ------------------------------------------------ | -------------- | ------ |
-| [BigModel](https://github.com/bobo0810/BigModel) | 大模型食用手册 | 2023.3 |
+| 自研                                             | 备注                   | 更新   |
+| ------------------------------------------------ | ---------------------- | ------ |
+| [BigModel](https://github.com/bobo0810/BigModel) | 大模型食用手册         | 2023.3 |
+| [OpenMM](https://github.com/bobo0810/OpenMM)     | OpenMM系列最佳食用手册 | 2023.3 |
 
 ## 2022
 
@@ -82,7 +93,7 @@
 | Vision Transformer(ICLR 2021) | Transformer首次应用到视觉领域    [解读+代码](https://github.com/bobo0810/LearnTransformer) | 2022.12 |
 | [MAE(CVPR2021)](https://github.com/facebookresearch/mae) | 自监督学习   [解读+代码](https://github.com/bobo0810/LearnTransformer) | 2022.12 |
 
-| 自研                                                         |                                      | 更新    |
+| 自研                                                         | 备注                                 | 更新    |
 | ------------------------------------------------------------ | ------------------------------------ | ------- |
 | [bobotools](https://github.com/bobo0810/botools)![Github stars](https://img.shields.io/github/stars/bobo0810/botools.svg) | 工具库                               | 2022.2  |
 | [Classification](https://github.com/bobo0810/Classification)![Github stars](https://img.shields.io/github/stars/bobo0810/Classification.svg) | 图像识别框架                         | 2022.2  |
