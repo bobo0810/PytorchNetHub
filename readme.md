@@ -71,7 +71,8 @@
 | [bobotools](https://github.com/bobo0810/botools)![Github stars](https://img.shields.io/github/stars/bobo0810/botools.svg) | 工具库                 |
 | [BigModel](https://github.com/bobo0810/BigModel)             | 大模型食用手册         |
 | [OpenMM](https://github.com/bobo0810/OpenMM)                 | OpenMM系列最佳食用手册 |
-| [PR](https://github.com/bobo0810/PR)                         | PR开源贡献日志         |
+| [PR](https://github.com/bobo0810/PR)                         | 开源贡献日志           |
+| [DataHub](file:///Users/admin/Documents/GitHub/PytorchNetHub/DataHub/readme.md) | 公开数据集Hub          |
 
 
 
