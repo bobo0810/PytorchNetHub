@@ -72,7 +72,7 @@
 | [BigModel](https://github.com/bobo0810/BigModel)             | 大模型食用手册         |
 | [OpenMM](https://github.com/bobo0810/OpenMM)                 | OpenMM系列最佳食用手册 |
 | [PR](https://github.com/bobo0810/PR)                         | 开源贡献日志           |
-| [DataHub](file:///Users/admin/Documents/GitHub/PytorchNetHub/DataHub/readme.md) | 公开数据集Hub          |
+| [DataHub](./DataHub/readme.md)                               | 公开数据集Hub          |
 
 
 
@@ -163,3 +163,8 @@
 
 > 注：猫狗分类、风格迁移、生成对抗等更多内容请访问[pytorch-book](https://github.com/chenyuntc/pytorch-book)
 
+
+
+
+
+[![Star History Chart](https://api.star-history.com/svg?repos=bobo0810/PytorchNetHub&type=Date)](https://star-history.com/#bobo0810/PytorchNetHub&Date)
