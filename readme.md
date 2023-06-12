@@ -69,7 +69,7 @@
 | 自研                                                         | 备注                   |
 | ------------------------------------------------------------ | ---------------------- |
 | [bobotools](https://github.com/bobo0810/botools)![Github stars](https://img.shields.io/github/stars/bobo0810/botools.svg) | 工具库                 |
-| [BigModel](https://github.com/bobo0810/BigModel)             | 大模型训练-保姆级教程  |
+| [LargeModel](https://github.com/bobo0810/LargeModel)         | 大模型训练-保姆级教程  |
 | [OpenMM](https://github.com/bobo0810/OpenMM)                 | OpenMM系列最佳食用手册 |
 | [PR](https://github.com/bobo0810/PR)                         | 开源贡献日志           |
 | [DataHub](./DataHub/readme.md)                               | 公开数据集Hub          |
@@ -80,11 +80,11 @@
 
 ## 2023
 
-| 自研                                             | 备注                   | 更新   |
-| ------------------------------------------------ | ---------------------- | ------ |
-| [BigModel](https://github.com/bobo0810/BigModel) | 大模型食用手册         | 2023.3 |
-| [OpenMM](https://github.com/bobo0810/OpenMM)     | OpenMM系列最佳食用手册 | 2023.3 |
-| [PR](https://github.com/bobo0810/PR)             | PR开源贡献日志         | 2023.4 |
+| 自研                                                 | 备注                   | 更新   |
+| ---------------------------------------------------- | ---------------------- | ------ |
+| [LargeModel](https://github.com/bobo0810/LargeModel) | 大模型训练-保姆级教程  | 2023.3 |
+| [OpenMM](https://github.com/bobo0810/OpenMM)         | OpenMM系列最佳食用手册 | 2023.3 |
+| [PR](https://github.com/bobo0810/PR)                 | PR开源贡献日志         | 2023.4 |
 
 
 
