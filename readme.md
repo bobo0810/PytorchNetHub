@@ -86,16 +86,6 @@
 | [OpenMM](https://github.com/bobo0810/OpenMM)         | OpenMM系列最佳食用手册 | 2023.3 |
 | [PR](https://github.com/bobo0810/PR)                 | PR开源贡献日志         | 2023.4 |
 
-
-
-|                            官方库                            |                                                              |  更新  |
-| :----------------------------------------------------------: | :----------------------------------------------------------: | :----: |
-| [VisualGLM-6B](https://github.com/THUDM/VisualGLM-6B)![Github stars](https://img.shields.io/github/stars/THUDM/VisualGLM-6B.svg) | 多模态GPT   [同步更新，源码解读](https://github.com/bobo0810/VisualGLM-6B) | 2023.5 |
-
-
-
-
-
 ## 2022
 
 |                          官方库                          |                         |  更新  |
