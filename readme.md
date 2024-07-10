@@ -68,9 +68,8 @@
 
 | 自研                                                         | 备注                                                   |
 | ------------------------------------------------------------ | ------------------------------------------------------ |
-| [bobotools](https://github.com/bobo0810/botools)![Github stars](https://img.shields.io/github/stars/bobo0810/botools.svg) | 工具库                                                 |
+| [bobotools](https://github.com/bobo0810/botools)![Github stars](https://img.shields.io/github/stars/bobo0810/botools.svg) | 工具库（推荐Chat-GPT）                                                 |
 | [OpenMM](https://github.com/bobo0810/OpenMM)                 | OpenMM系列最佳食用手册                                 |
-| [PR](https://github.com/bobo0810/PR)                         | 开源贡献日志                                           |
 | [DataHub](./DataHub/readme.md)                               | 公开数据集Hub                                          |
 | [LearnDeepSpeed](https://github.com/bobo0810/LearnDeepSpeed) | DeepSpeed教程 & 示例注释 & 学习笔记 （大模型高效训练） |
 
@@ -78,13 +77,22 @@
 
 # 时间线
 
+
+
+## 2024
+
+| 自研   | 备注                          | 更新   |
+| ------ | ----------------------------- | ------ |
+| [VLM](https://zhuanlan.zhihu.com/p/705349458) | 多模态大模型 数据&训练&评估&认知 | 2024.7 |
+
+
+
 ## 2023
 
 | 自研                                                         | 备注                                                    | 更新   |
 | ------------------------------------------------------------ | ------------------------------------------------------- | ------ |
 | [LearnColossalAI](https://github.com/bobo0810/LearnColossalAI) | ColossalAI教程 & 示例注释 & 学习笔记 （大模型高效训练） | 2023.3 |
 | [OpenMM](https://github.com/bobo0810/OpenMM)                 | OpenMM系列最佳食用手册                                  | 2023.3 |
-| [PR](https://github.com/bobo0810/PR)                         | PR开源贡献日志                                          | 2023.4 |
 | [LearnDeepSpeed](https://github.com/bobo0810/LearnDeepSpeed) | DeepSpeed教程 & 示例注释 & 学习笔记 （大模型高效训练）  | 2023.8 |
 | [MiniGPT-4-DeepSpeed](https://github.com/bobo0810/MiniGPT-4-DeepSpeed) | MiniGPT-4基于DeepSpeed加速➕ 扩充模型规模 ➕ 实验分析     | 2023.9 |
 
