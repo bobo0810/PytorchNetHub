@@ -64,17 +64,6 @@
 
 
 
-# 长期维护
-
-| 自研                                                         | 备注                                                   |
-| ------------------------------------------------------------ | ------------------------------------------------------ |
-| [bobotools](https://github.com/bobo0810/botools)![Github stars](https://img.shields.io/github/stars/bobo0810/botools.svg) | 工具库（推荐Chat-GPT）                                                 |
-| [OpenMM](https://github.com/bobo0810/OpenMM)                 | OpenMM系列最佳食用手册                                 |
-| [DataHub](./DataHub/readme.md)                               | 公开数据集Hub                                          |
-| [LearnDeepSpeed](https://github.com/bobo0810/LearnDeepSpeed) | DeepSpeed教程 & 示例注释 & 学习笔记 （大模型高效训练） |
-
-
-
 # 时间线
 
 
@@ -95,7 +84,7 @@
 | ------------------------------------------------------------ | ------------------------------------------------------- | ------ |
 | [LearnColossalAI](https://github.com/bobo0810/LearnColossalAI) | ColossalAI教程 & 示例注释 & 学习笔记 （大模型高效训练） | 2023.3 |
 | [OpenMM](https://github.com/bobo0810/OpenMM)                 | OpenMM系列最佳食用手册                                  | 2023.3 |
-| [LearnDeepSpeed](https://github.com/bobo0810/LearnDeepSpeed) | DeepSpeed教程 & 示例注释 & 学习笔记 （大模型高效训练）  | 2023.8 |
+| [LearnDeepSpeed](https://github.com/bobo0810/LearnDeepSpeed)![Github stars](https://img.shields.io/github/stars/bobo0810/LearnDeepSpeed.svg) | DeepSpeed教程 & 示例注释 & 学习笔记 （大模型高效训练）  | 2023.8 |
 | [MiniGPT-4-DeepSpeed](https://github.com/bobo0810/MiniGPT-4-DeepSpeed) | MiniGPT-4基于DeepSpeed加速➕ 扩充模型规模 ➕ 实验分析     | 2023.9 |
 
 
