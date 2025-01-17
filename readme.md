@@ -12,14 +12,19 @@
 
 # 工作
 
+### [LearnLeetCode⭐️⭐️⭐️](https://github.com/bobo0810/LearnLeetCode)
+
+> 八股基础：Transformer知识、位置编码等
+>
+> 手撕代码：梯度下降、SelfAttention、MultiHeadAttention等
+>
+> 刷题方法论：统一解题模板，简单清晰
+
 ### [轻量级图像识别框架Classification](https://github.com/bobo0810/Classification)![Github stars](https://img.shields.io/github/stars/bobo0810/Classification.svg)
 
 > 支持任务： 1. 图像分类   2. 度量学习/特征对比
 >
 > 轻量级、模块化、高扩展、分布式、自动剪枝
-
-### [工具库bobotools](https://github.com/bobo0810/bobotools)![Github stars](https://img.shields.io/github/stars/bobo0810/bobotools.svg)
-> Pytorch工具torch_tools、图像工具img_tools、文本工具txt_tools、列表工具list_tools 
 
 ### [Pytorch最小实践](https://github.com/bobo0810/PytorchExample)![Github stars](https://img.shields.io/github/stars/bobo0810/PytorchExample.svg)
 
@@ -68,11 +73,17 @@
 
 
 
+## 2025
+
+| 自研                                                       | 备注                            | 更新   |
+| ---------------------------------------------------------- | ------------------------------- | ------ |
+| [LearnLeetCode](https://github.com/bobo0810/LearnLeetCode) | 八股基础+手撕代码+刷题方法论⭐️⭐️⭐️ | 2025.1 |
+
 ## 2024
 
 | 自研   | 备注                          | 更新   |
 | ------ | ----------------------------- | ------ |
-| [多模态大模型专栏](https://www.zhihu.com/column/c_1801288994694258689) | 多模态VL系列之高质量数据（一）<br>多模态VL系列之模型架构（二）<br> 多模态VL系列之训练策略（三）<br> | 2024.4 |
+| [多模态大模型专栏](https://www.zhihu.com/column/c_1801288994694258689) | 多模态VL系列之高质量数据（一）<br>多模态VL系列之模型架构（二）<br>多模态VL系列之训练策略（三）<br> | 2024.4 |
 | [24卡+公开数据+4B 可以有多强？](https://zhuanlan.zhihu.com/p/714269886) | 勇闯OpenCompass榜单 | 2024.8 |
 
 
@@ -101,7 +112,7 @@
 
 | 自研                                                         | 备注                                 | 更新    |
 | ------------------------------------------------------------ | ------------------------------------ | ------- |
-| [bobotools](https://github.com/bobo0810/botools)![Github stars](https://img.shields.io/github/stars/bobo0810/botools.svg) | 工具库                               | 2022.2  |
+| [bobotools](https://github.com/bobo0810/botools)![Github stars](https://img.shields.io/github/stars/bobo0810/botools.svg) | 工具库（已废弃，用GPT更顺手）        | 2022.2  |
 | [Classification](https://github.com/bobo0810/Classification)![Github stars](https://img.shields.io/github/stars/bobo0810/Classification.svg) | 图像识别框架                         | 2022.2  |
 | [Pytorch最小实践](https://github.com/bobo0810/PytorchExample)![Github stars](https://img.shields.io/github/stars/bobo0810/PytorchExample.svg) | Pytorch最小实践                      | 2022.6  |
 | [BossVision](https://www.yuque.com/bobo0810/boss_vision/guly2g) | 简单、模块化、高扩展的分布式训练框架 | 2022.7  |
