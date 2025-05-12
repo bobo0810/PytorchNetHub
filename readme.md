@@ -78,6 +78,7 @@
 | 自研                                                       | 备注                            | 更新   |
 | ---------------------------------------------------------- | ------------------------------- | ------ |
 | [LearnLeetCode](https://github.com/bobo0810/LearnLeetCode) | 八股基础+手撕代码+刷题方法论⭐️⭐️⭐️ | 2025.1 |
+| [MLLM-anything](https://github.com/bobo0810/MLLM-anything) | 关于MLLM的训练、评测、最新进展<br>最新进展<br>   1. Omni最新进展<br>   2. VLM最新进展<br>训练<br>   1. Megatron大规模训练框架<br>   2. Energon大规模数据加载库<br>评测<br>   1. OpenCompass文本评测库<br>   2. VLMEvalKit多模评测库<br>   3. UltraEval-Audio音频评测库 | 2025.3 |
 
 ## 2024
 
